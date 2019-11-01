@@ -37,6 +37,7 @@
 .logo_png{
 	width: 60px;
 	height: 60px;
+	cursor: pointer;
 }
 </style>
 <div id="footer_wrap" style="width: 100%; height: 100%;">
@@ -51,8 +52,17 @@
 		Tel : 031-401-9375 l Fax : 031-411-9375
 		</div>
 		<div style="width: 126px; height: 60px; float:left; margin-top: 66px;">
-		<img class="logo_png" src="../img/insta.png">
+		<img id="inst_logo" class="logo_png" src="../img/insta.png">
 		<img class="logo_png" src="../img/NB.png">
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#inst_logo').click(function(){
+		location.href = "https://www.instagram.com/minddental/";
+	});
+});
+
+</script>

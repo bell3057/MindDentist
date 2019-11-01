@@ -31,61 +31,6 @@ html{
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
-#slider_wrap{
-	top: 186px;
-	left: 0px;
-	width: 1920px;
-	height: 800px;
-	/* background: transparent url('../img/Main-01.png') 0% 0% no-repeat padding-box; */
-	opacity: 1;
-}
-#slide-text{
-	display: inline;
-	top: 429px;
-	left: 560px;
-	width: 439px;
-	height: 146px;
-	text-align: left;
-	font-family: 'NanumSquareRound';
-	font-size: 60px;
-	font-weight: normal;
-	letter-spacing: -3px;
-	color: #C8500F;
-	opacity: 1;
-	position: absolute;
-}
-#slide-link{
-	top: 625px;
-	left: 560px;
-	width: 260px;
-	height: 60px;
-	background: #C8500F 0% 0% no-repeat padding-box;
-	border-radius: 5px;
-	opacity: 1;
-	position: absolute;
-}
-#slide-link-text{
-	top: 644px;
-	left: 585px;
-	width: 165px;
-	height: 22px;
-	text-align: left;
-	/* font: Bold 20px/42px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
-	font-size: 20px;
-	letter-spacing: -0.6px;
-	color: #FFFFFF;
-	opacity: 1;
-	display: inline-block;
-    margin: 15px auto auto 25px;
-}
-#slide-link-button{
-	width: 10px;
-	height: 22px;
-	border: 2px solid #FFFFFF;
-	opacity: 1;
-}
-
 #footer{
 	width: 1920px;
 	height: 240px;
@@ -100,24 +45,9 @@ html{
 		<div id="header">
 			<jsp:include page="../template/header.jsp"/>
 		</div>	
-		<!-- content -->
-		<div id="slider_wrap"><!-- slider -->
-			<div>
-				<img src="../img/Main-01.png">
-				<div id="slide-text">
-					<span>안심하세요,</span>
-					<br>
-					<span>마인드치과입니다.</span>
-				</div>
-				<div id="slide-link">
-					<span id="slide-link-text">마인드의 진료시스템</span>
-					&nbsp;&nbsp;&nbsp;
-					<span id="slide-link-button">></span>
-				</div>
-			</div>
-		</div><!-- slider -->
+		<!-- content -->		
 		<div>
-			<jsp:include page="mainPlate.jsp"/>
+			<jsp:include page="${display }"/>
 		</div>
 		<!-- footer -->
 		<div id="footer">
