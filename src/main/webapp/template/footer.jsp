@@ -51,8 +51,8 @@
 		대표 : 양재민 l 사업자등록번호 570-18-00692 
 		Tel : 031-401-9375 l Fax : 031-411-9375
 		</div>
-		<div style="width: 126px; height: 60px; float:left; margin-top: 66px;">
-		<img id="inst_logo" class="logo_png" src="../img/insta.png">
+		<div style="width: 132px; height: 60px; float:left; margin-top: 66px;">
+		<img id="inst_logo" class="logo_png" src="../img/insta.png" style="margin-right:6px;">
 		<img class="logo_png" src="../img/NB.png">
 		</div>
 	</div>

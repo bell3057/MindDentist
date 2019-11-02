@@ -41,7 +41,7 @@
 	width: 165px;
 	height: 22px;
 	text-align: left;
-	font: Bold 20px/42px NanumSquareRoundOTF;
+	/* font: Bold 20px/42px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound';
 	font-size: 20px;
 	letter-spacing: -0.6px;
@@ -79,7 +79,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#main-content-text-03{
+.main-content-text-03{
 	width: 462px;
 	height: 44px;
 	text-align: center;
@@ -148,6 +148,86 @@
 	display: inline-block;
     letter-spacing: -0.8px;
 }
+#main-content-text-07{
+	width: 226px;
+	height: 90px;
+	text-align: left;
+	/* font: Bold 36px/50px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 36px;
+	letter-spacing: -1.8px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+	margin-top: 100px;
+}
+#main-content-text-08{
+	width: 330px;
+	height: 74px;
+	text-align: left;
+	/* font: Bold 30px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 0;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#main-content-text-09{
+	width: 305px;
+	height: 67px;
+	text-align: left;
+	letter-spacing: -1.25px;
+	font-family: 'NanumSquareRound';
+	font-size: 25px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+	margin-top: 36px;
+	display: inline-block;
+}
+#main-content-img-02{
+	width: 480px; 
+	height: 480px; 
+	box-shadow: 2px 5px 6px #0000001F; 
+	opacity: 1;
+	float: left;
+}
+#main-content-img-03{
+	width: 220px;
+	height: 186px;
+	/* background: transparent url('img/Mark.png') 0% 0% no-repeat padding-box; */
+	opacity: 1;
+}
+#main-cotent-text-10{
+	width: 325px;
+	height: 76px;
+	text-align: left;
+	/* font: Bold 30px/42px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 0;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+	margin: 54px 0;
+	display: inline-block;
+}
+#main-cotent-text-11{
+	width: 250px;
+	height: 97px;
+	text-align: left;
+	/* font: Regular 25px/35px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-size: 25px;
+	letter-spacing: -1.25px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
 </style>
 <div id="slider_wrap"><!-- slider -->
 	<div>
@@ -174,7 +254,7 @@
 			통해 보다 체계적인 환자 중심
 			맞춤 진료를 제공합니다.</span>
 		</div>
-		<div style="margin-top: 70px; width: 960px; height: 150px; float: left; background-color: #F5F0E8;">
+		<div style="margin-top: 70px; width: 960px; height: 150px; float: left; background-color: #F5F0E8; box-shadow: 2px 5px 6px #0000001F; border-radius: 5px;">
 		
 		</div>
 	</div>
@@ -182,8 +262,8 @@
 <div style="width:1920px; height: 845px;"><!-- main content-2 -->
 	<img src="../img/D-back.png" style="position: absolute;">
 	<div style="width:960px; height: 845px; margin:auto; position: relative">
-		<span id="main-content-text-03">전문의 및 석박사 출신 의료진</span>
-		<div style="width: 40px; height: 0px; border: 2px solid #C8500F; opacity: 1; position: absolute; top:194.5px; left: 49%;"></div>
+		<span class="main-content-text-03">전문의 및 석박사 출신 의료진</span>
+		<div style="width: 40px; height: 0px; border: 2px solid #C8500F; opacity: 1; position: absolute; top:194.5px; left: 48%;"></div>
 		<div style="width: 960px; height: 500px; position: absolute; top: 244px;">
 			<img class="main-content-img-01" src="../img/D-01.png" style="margin-right: 24px;">
 			<div class="main-content-D-inform" style="left: 15px;">
@@ -211,12 +291,38 @@
 </div>
 <div style="width:1920px; height: 550px;"><!-- main content-3 -->
 	<div style="width:960px; height: 550px; margin:auto;">
-	
+		<div style="width: 480px; height: 350px; margin-top:100px; display: inline-block;">
+			<span id="main-content-text-07">언제나 문을
+			열어두겠습니다</span>
+			<div style="width: 40px; height: 0px; border: 2px solid #C8500F; opacity: 1;	margin: 29.5px 0;"></div>
+			<span id="main-content-text-08">매일 야간진료, 일요일 진료 
+			연중 무휴</span>
+			<br>
+			<span id="main-content-text-09"><b>평 일</b> 10:00 ~ 21:00 
+			<b>주말 및 공휴일</b> 10:00 ~ 17:00</span>
+		</div>
+		<img src="../img/24hour.png" style="width:480px; height:350px; float: right; margin-top: 100px;">
 	</div>
 </div>
 <div style="width:1920px; height: 845px;"><!-- main content-4 -->
 	<img src="../img/WR-back.png" style="position: absolute;">
-	<div style="width:960px; height: 845px; margin:auto; ">
-	
+	<div style="width:960px; height: 845px; margin:auto; position: relative;">
+		<span class="main-content-text-03" style="left:">마인드 책임 진료 프로그램</span>
+		<div style="width: 40px; height: 0px; border: 2px solid #C8500F; opacity: 1; position: absolute; top:194.5px; left: 48%;"></div>
+		<div style="width: 960px; height: 480px; top: 244px; position: absolute; /* border: 1px solid; */">
+			<img id="main-content-img-02" src="../img/WR.png">
+			<div style="width:350px; height:480px; float: left; margin-left:85px;">
+				<img id="main-content-img-03" src="../img/Mark.png">
+				<br>
+				<span id="main-cotent-text-10">마인드만의 책임진료
+				보증서를 발급해드립니다.</span>
+				<br>
+				<span id="main-cotent-text-11">치료 중 뿐만 아니라
+				치료 후에도 최대 7년까지
+				책임 보증</span>
+			</div>
+		</div>
 	</div>
 </div>
+
+
