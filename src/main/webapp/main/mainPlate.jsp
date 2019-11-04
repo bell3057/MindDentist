@@ -238,7 +238,7 @@
 			<span>마인드치과입니다.</span>
 		</div>
 		<div id="slide-link">
-			<span id="slide-link-text">마인드의 진료시스템</span>
+			<span id="slide-link-text">특별한 마인드</span>
 			<!-- <img id="slide-link-button" src="../img/next.png"> -->
 		</div>
 	</div>
