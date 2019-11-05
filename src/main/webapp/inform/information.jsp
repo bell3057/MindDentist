@@ -9,7 +9,7 @@
 	font-weight: normal; 
 	font-style: normal; 
 }
-#inform_wrap{
+#inform_wrap-1{
 	width: 1920px;
 	height: 810px;
 }
@@ -59,7 +59,7 @@
 	color: #C8500F;
 }
 </style>
-<div id="inform_wrap">
+<div id="inform_wrap-1">
 	<div style="width: 960px; height: 100%; margin: auto;">
 	 	<div style="width: 960px; height: 580px; padding-top: 140px;">
 	 		<img src="../img/intro-01.png" style="width: 480px; height: 580px; float: left;">
@@ -94,3 +94,17 @@
 	 	</div> 
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	$('#menu_dropDown').css('display', 'block');
+	$('#menu_dropDown-1').css("display", "block");
+	$('#mdt-01').css("font-weight", "bold");
+	
+	$('#header_wrap').mouseleave(function(){//헤더 벗어나도 유지
+		$('#menu_dropDown').css('display', 'block');
+		$('#menu_dropDown-1').css("display", "block");
+		$('#mdt-01').css("font-weight", "bold");		
+	});
+});
+</script>

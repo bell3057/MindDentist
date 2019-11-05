@@ -83,7 +83,7 @@
 <div id="header_wrap">
 	<a href="../main/index"><img id="logo_img" src="../img/logo.png"></a>
 	<div id="menu_bar">
-		<a id="menu_bar-1" href="../detail_menu-1/information">마인드치과</a>
+		<a id="menu_bar-1" href="../inform/information">마인드치과</a>
 		<a id="menu_bar-2" href="">병원안내</a>
 		<a id="menu_bar-3" href="">임플란트</a>
 		<a id="menu_bar-4" href="">치아교정</a>
@@ -96,36 +96,39 @@
 	 opacity: 1;"></div>
 	<div id="menu_dropDown">
 		<div id="menu_dropDown-1" class="dropDown_menu">
-			<a class="menu_dropDown-text" href="../detail_menu-1/information">인사말</a>
-			<a class="menu_dropDown-text" href="">진료철학</a>
-			<a class="menu_dropDown-text" href="">특별한 마인드</a>
-			<a class="menu_dropDown-text" href="" style="margin-right:0px;">진료시스템</a>
+			<a class="menu_dropDown-text" id="mdt-01" href="../inform/information">인사말</a>
+			<a class="menu_dropDown-text" id="mdt-02" href="../inform/principle">진료철학</a>
+			<a class="menu_dropDown-text" id="mdt-03" href="">특별한 마인드</a>
+			<a class="menu_dropDown-text" id="mdt-04" href="" style="margin-right:0px;">진료시스템</a>
 		</div>
 		<div id="menu_dropDown-2" class="dropDown_menu">
-			<a class="menu_dropDown-text" href="">의료진</a>
-			<a class="menu_dropDown-text" href="">병원시설</a>
-			<a class="menu_dropDown-text" href="">보유장비</a>
-			<a class="menu_dropDown-text" href="" style="margin-right:0px;">진료시간&오시는길</a>
+			<a class="menu_dropDown-text" id="mdt-05" href="">의료진</a>
+			<a class="menu_dropDown-text" id="mdt-06" href="">병원시설</a>
+			<a class="menu_dropDown-text" id="mdt-07" href="">보유장비</a>
+			<a class="menu_dropDown-text" id="mdt-08" href="" style="margin-right:0px;">진료시간&오시는길</a>
 		</div>
 		<div id="menu_dropDown-3" class="dropDown_menu">
-			<a class="menu_dropDown-text" href="">마인드 임플란트</a>
-			<a class="menu_dropDown-text" href="">원데이 임플란트</a>
-			<a class="menu_dropDown-text" href="">네비게이션 임플란트</a>
-			<a class="menu_dropDown-text" href="">인공뼈 이식술</a>
-			<a class="menu_dropDown-text" href="" style="margin-right:0px;">틀니 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-09" href="">마인드 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-10" href="">원데이 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-11" href="">네비게이션 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-12" href="">인공뼈 이식술</a>
+			<a class="menu_dropDown-text" id="mdt-13" href="" style="margin-right:0px;">틀니 임플란트</a>
 		</div>
 		<div id="menu_dropDown-4" class="dropDown_menu">
-			<a class="menu_dropDown-text" href="">돌출입 교정</a>
-			<a class="menu_dropDown-text" href="">가지런한 치아교정</a>
-			<a class="menu_dropDown-text" href="">비발치 교정</a>
-			<a class="menu_dropDown-text" href="">설측 & 부분 교정</a>
-			<a class="menu_dropDown-text" href="" style="margin-right:0px;">투명 교정</a>
+			<a class="menu_dropDown-text" id="mdt-14" href="">돌출입 교정</a>
+			<a class="menu_dropDown-text" id="mdt-15" href="">가지런한 치아교정</a>
+			<a class="menu_dropDown-text" id="mdt-16" href="">비발치 교정</a>
+			<a class="menu_dropDown-text" id="mdt-17" href="">설측 & 부분 교정</a>
+			<a class="menu_dropDown-text" id="mdt-18" href="" style="margin-right:0px;">투명 교정</a>
 		</div>
 	</div>
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	
+	//메뉴바 hover
+	
 	$('#menu_bar-1').mouseover(function(){//마인드치과
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_bar-1').css("color", "#C8500F");

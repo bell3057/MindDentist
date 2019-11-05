@@ -8,10 +8,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class InformController {
 	
-	@RequestMapping(value="/detail_menu-1/information", method=RequestMethod.GET)
+	@RequestMapping(value="/inform/information", method=RequestMethod.GET)
 	public ModelAndView information() {
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("display", "/detail_menu-1/information.jsp");
+		mav.addObject("display", "/inform/information.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/inform/principle", method=RequestMethod.GET)
+	public ModelAndView principle() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/inform/principle.jsp");
 		mav.setViewName("/main/index");
 		
 		return mav;
