@@ -40,5 +40,6 @@
 	<context:component-scan base-package="com.main.MindDentist"/>
 	<context:component-scan base-package="com.inform.MindDentist"/>
 	<context:component-scan base-package="com.guidance.MindDentist"/>
+	<context:component-scan base-package="com.implant.MindDentist"/>
 	
 </beans:beans>

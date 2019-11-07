@@ -85,7 +85,7 @@
 	<div id="menu_bar">
 		<a id="menu_bar-1" href="../inform/information">마인드치과</a>
 		<a id="menu_bar-2" href="../guidance/medicalStaff">병원안내</a>
-		<a id="menu_bar-3" href="">임플란트</a>
+		<a id="menu_bar-3" href="../implant/mindImplant">임플란트</a>
 		<a id="menu_bar-4" href="">치아교정</a>
 		<a id="menu_bar-5" href="">심미치아</a>
 		<a id="menu_bar-6" href="">일반진료</a>
@@ -108,11 +108,11 @@
 			<a class="menu_dropDown-text" id="mdt-08" href="../guidance/dentistMap" style="margin-right:0px;">진료시간&오시는길</a>
 		</div>
 		<div id="menu_dropDown-3" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-09" href="">마인드 임플란트</a>
-			<a class="menu_dropDown-text" id="mdt-10" href="">원데이 임플란트</a>
-			<a class="menu_dropDown-text" id="mdt-11" href="">네비게이션 임플란트</a>
-			<a class="menu_dropDown-text" id="mdt-12" href="">인공뼈 이식술</a>
-			<a class="menu_dropDown-text" id="mdt-13" href="" style="margin-right:0px;">틀니 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-09" href="../implant/mindImplant">마인드 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-10" href="../implant/onedayImplant">원데이 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-11" href="../implant/">네비게이션 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-12" href="../implant/">인공뼈 이식술</a>
+			<a class="menu_dropDown-text" id="mdt-13" href="../implant/" style="margin-right:0px;">틀니 임플란트</a>
 		</div>
 		<div id="menu_dropDown-4" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-14" href="">돌출입 교정</a>
