@@ -84,7 +84,7 @@
 	<a href="../main/index"><img id="logo_img" src="../img/logo.png"></a>
 	<div id="menu_bar">
 		<a id="menu_bar-1" href="../inform/information">마인드치과</a>
-		<a id="menu_bar-2" href="">병원안내</a>
+		<a id="menu_bar-2" href="../guidance/medicalStaff">병원안내</a>
 		<a id="menu_bar-3" href="">임플란트</a>
 		<a id="menu_bar-4" href="">치아교정</a>
 		<a id="menu_bar-5" href="">심미치아</a>
@@ -98,14 +98,14 @@
 		<div id="menu_dropDown-1" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-01" href="../inform/information">인사말</a>
 			<a class="menu_dropDown-text" id="mdt-02" href="../inform/principle">진료철학</a>
-			<a class="menu_dropDown-text" id="mdt-03" href="">특별한 마인드</a>
+			<a class="menu_dropDown-text" id="mdt-03" href="../inform/specialMind">특별한 마인드</a>
 			<a class="menu_dropDown-text" id="mdt-04" href="" style="margin-right:0px;">진료시스템</a>
 		</div>
 		<div id="menu_dropDown-2" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-05" href="">의료진</a>
-			<a class="menu_dropDown-text" id="mdt-06" href="">병원시설</a>
-			<a class="menu_dropDown-text" id="mdt-07" href="">보유장비</a>
-			<a class="menu_dropDown-text" id="mdt-08" href="" style="margin-right:0px;">진료시간&오시는길</a>
+			<a class="menu_dropDown-text" id="mdt-05" href="../guidance/medicalStaff">의료진</a>
+			<a class="menu_dropDown-text" id="mdt-06" href="../guidance/facilities">병원시설</a>
+			<a class="menu_dropDown-text" id="mdt-07" href="../guidance/equipment">보유장비</a>
+			<a class="menu_dropDown-text" id="mdt-08" href="../guidance/dentistMap" style="margin-right:0px;">진료시간&오시는길</a>
 		</div>
 		<div id="menu_dropDown-3" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-09" href="">마인드 임플란트</a>

@@ -25,4 +25,13 @@ public class InformController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/inform/specialMind", method=RequestMethod.GET)
+	public ModelAndView specialMind() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/inform/specialMind.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;		
+	}
 }

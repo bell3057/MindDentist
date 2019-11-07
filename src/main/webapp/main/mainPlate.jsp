@@ -201,7 +201,7 @@
 	/* background: transparent url('img/Mark.png') 0% 0% no-repeat padding-box; */
 	opacity: 1;
 }
-#main-cotent-text-10{
+#main-content-text-10{
 	width: 325px;
 	height: 76px;
 	text-align: left;
@@ -216,7 +216,7 @@
 	margin: 54px 0;
 	display: inline-block;
 }
-#main-cotent-text-11{
+#main-content-text-11{
 	width: 250px;
 	height: 97px;
 	text-align: left;
@@ -227,6 +227,25 @@
 	color: #6E645A;
 	opacity: 1;
 	white-space: pre-line;
+}
+#main-content-text-12{
+	text-align: left;
+	/* font: Regular 25px/35px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-size: 27px;
+	color: #C8500F;
+	opacity: 1;
+}
+#main-content-text-13{
+	text-align: left;
+	/* font: Regular 25px/35px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-size: 21px;
+	letter-spacing: -1.2px;
+	color: #C8500F;
+	opacity: 1;
+	display: inline-block;
+	padding-top: 19.5px;
 }
 </style>
 <div id="slider_wrap"><!-- slider -->
@@ -255,7 +274,13 @@
 			맞춤 진료를 제공합니다.</span>
 		</div>
 		<div style="margin-top: 70px; width: 960px; height: 150px; float: left; background-color: #F5F0E8; box-shadow: 2px 5px 6px #0000001F; border-radius: 5px;">
-		
+			<div style="margin: 34px 0 0 80px; width: 150px; height: 74px; float: left;">
+				<b id="main-content-text-12">M I N D</b>
+				<span id="main-content-text-13">Dental Service</span>
+			</div>
+			<div style="width:570px; height:88px; border: 1px solid; margin: 34px 0 0 85px; float: left;">
+				
+			</div>
 		</div>
 	</div>
 </div>
@@ -314,10 +339,10 @@
 			<div style="width:350px; height:480px; float: left; margin-left:85px;">
 				<img id="main-content-img-03" src="../img/Mark.png">
 				<br>
-				<span id="main-cotent-text-10">마인드만의 책임진료
+				<span id="main-content-text-10">마인드만의 책임진료
 				보증서를 발급해드립니다.</span>
 				<br>
-				<span id="main-cotent-text-11">치료 중 뿐만 아니라
+				<span id="main-content-text-11">치료 중 뿐만 아니라
 				치료 후에도 최대 7년까지
 				책임 보증</span>
 			</div>
