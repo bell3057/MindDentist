@@ -69,7 +69,9 @@
 
 <div id="implant_wrap-1">
 	<div style="width: 800px; height: 100%; margin: auto;">
-		<img src="" style="width: 800px; height: 320px; margin: 130px auto 60px; border: 0.3px solid;">
+		<div style="width: 800px; height: 320px; margin: 130px auto 60px; display: inline-block;">
+			<img src="" style="width: 800px; height: 320px;  border: 0.3px solid;">
+		</div>
 		<div style="width: 800px; height: 320px; border: 0.5px solid;">
 			<img class="mind_implant_img-1" src="">
 			<img class="mind_implant_icon" src="">

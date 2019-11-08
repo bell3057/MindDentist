@@ -110,8 +110,8 @@
 		<div id="menu_dropDown-3" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-09" href="../implant/mindImplant">마인드 임플란트</a>
 			<a class="menu_dropDown-text" id="mdt-10" href="../implant/onedayImplant">원데이 임플란트</a>
-			<a class="menu_dropDown-text" id="mdt-11" href="../implant/">네비게이션 임플란트</a>
-			<a class="menu_dropDown-text" id="mdt-12" href="../implant/">인공뼈 이식술</a>
+			<a class="menu_dropDown-text" id="mdt-11" href="../implant/navigationImplant">네비게이션 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-12" href="../implant/artificialImplant">인공뼈 이식술</a>
 			<a class="menu_dropDown-text" id="mdt-13" href="../implant/" style="margin-right:0px;">틀니 임플란트</a>
 		</div>
 		<div id="menu_dropDown-4" class="dropDown_menu">
@@ -165,6 +165,7 @@ $(document).ready(function(){
 	$('#header_wrap').mouseleave(function(){//헤더 벗어날시 공통적용
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_dropDown').css("display", "none");
+		$('.dropDown_menu').css("display", "none");
 		/* $('.dropDown_menu').css("display", "none"); */
 		/* $('#menu_selected_bar').css("display", "none"); */
 	});

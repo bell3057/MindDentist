@@ -25,4 +25,22 @@ public class ImplantController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/implant/navigationImplant", method=RequestMethod.GET)
+	public ModelAndView navigationImplant() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/implant/navigationImplant.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/implant/artificialImplant", method=RequestMethod.GET)
+	public ModelAndView artificailImplant() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/implant/artificialImplant.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }
