@@ -86,7 +86,7 @@
 		<a id="menu_bar-1" href="../inform/information">마인드치과</a>
 		<a id="menu_bar-2" href="../guidance/medicalStaff">병원안내</a>
 		<a id="menu_bar-3" href="../implant/mindImplant">임플란트</a>
-		<a id="menu_bar-4" href="">치아교정</a>
+		<a id="menu_bar-4" href="../braces/protrudingBraces">치아교정</a>
 		<a id="menu_bar-5" href="">심미치아</a>
 		<a id="menu_bar-6" href="">일반진료</a>
 		<a id="menu_bar-7" href="">고객센터</a>		
@@ -112,10 +112,10 @@
 			<a class="menu_dropDown-text" id="mdt-10" href="../implant/onedayImplant">원데이 임플란트</a>
 			<a class="menu_dropDown-text" id="mdt-11" href="../implant/navigationImplant">네비게이션 임플란트</a>
 			<a class="menu_dropDown-text" id="mdt-12" href="../implant/artificialImplant">인공뼈 이식술</a>
-			<a class="menu_dropDown-text" id="mdt-13" href="../implant/" style="margin-right:0px;">틀니 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-13" href="../implant/dentureImplant" style="margin-right:0px;">틀니 임플란트</a>
 		</div>
 		<div id="menu_dropDown-4" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-14" href="">돌출입 교정</a>
+			<a class="menu_dropDown-text" id="mdt-14" href="../braces/protrudingBraces">돌출입 교정</a>
 			<a class="menu_dropDown-text" id="mdt-15" href="">가지런한 치아교정</a>
 			<a class="menu_dropDown-text" id="mdt-16" href="">비발치 교정</a>
 			<a class="menu_dropDown-text" id="mdt-17" href="">설측 & 부분 교정</a>

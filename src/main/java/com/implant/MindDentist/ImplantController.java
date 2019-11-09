@@ -43,4 +43,13 @@ public class ImplantController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/implant/dentureImplant", method=RequestMethod.GET)
+	public ModelAndView dentureImplant() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/implant/dentureImplant.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }
