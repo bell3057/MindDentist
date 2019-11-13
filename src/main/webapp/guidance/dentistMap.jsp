@@ -53,7 +53,7 @@
 	display: inline-block;
 	margin: 80px 0 30px;
 }
-#dentistMap_naverMap{
+#dentistMap_kakaoMap{
 	width: 800px;
 	height: 400px;
 	border: 0.3px solid;
@@ -84,6 +84,13 @@
 .dmtx-4{
 	color: #C8500F;
 }
+#kakaoMap_imformWindow{
+	width: 150px;
+	font-family: 'NanumSquareRound'; 
+	font-weight: bold;
+	padding: 6px 0;
+	text-align: center;
+}
 </style>
 
 <div id="guidance_wrap-4">
@@ -96,7 +103,7 @@
 		</div>
 		<div style="width: 800px; height: 0px; border: 1px solid #B4AAA0; opacity: 1;"></div>
 		<span id="dentistMap-text-3">경기도 안산시 단원구 고잔로 72 센트럴타워 4층</span>
-		<div id="dentistMap_naverMap">
+		<div id="dentistMap_kakaoMap">
 		
 		</div>
 		<div style="width: 800px; height: 60px; margin-top: 50px;">
@@ -141,3 +148,43 @@ $(document).ready(function(){
 	});
 });
 </script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aaad683bbd4db1e614930dc25b981c41&libraries=services"></script>
+<script>
+var container = document.getElementById('dentistMap_kakaoMap'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+//주소-좌표 변환 객체를 생성합니다
+var geocoder = new kakao.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addressSearch('경기도 안산시 단원구 고잔로 72', function(result, status) {
+
+    // 정상적으로 검색이 완료됐으면 
+     if (status === kakao.maps.services.Status.OK) {
+
+        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: coords
+        });
+
+        // 인포윈도우로 장소에 대한 설명을 표시합니다
+        var infowindow = new kakao.maps.InfoWindow({
+            content: '<div id="kakaoMap_imformWindow">마인드치과</div>'
+        });
+        infowindow.open(map, marker);
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+    } 
+});
+</script>
+
+
