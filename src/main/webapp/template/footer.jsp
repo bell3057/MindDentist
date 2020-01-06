@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #footer_logo_img{
-	margin: 54px 0 70px;
+	margin: 54px 0 59px;
 	width: 236px;
 	height: 42px;
 	/* background: transparent url('img/logo.png') 0% 0% no-repeat padding-box; */
@@ -21,7 +21,7 @@
 	display: inline;
 }
 #footer_company{
-	margin: 63px 154px auto 65px;
+	margin: 54px 154px auto 65px;
 	width: 373px;
 	height: 114px;
 	text-align: left;
@@ -32,7 +32,7 @@
 	opacity: 1;
 	float: left;
 	white-space: pre-line; 
-	line-height: 32px;
+	line-height: 35px;
 }
 .logo_png{
 	width: 60px;

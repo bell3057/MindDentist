@@ -124,6 +124,7 @@
 	</div>
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	
@@ -132,7 +133,8 @@ $(document).ready(function(){
 	$('#menu_bar-1').mouseover(function(){//마인드치과
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_bar-1').css("color", "#C8500F");
-		$('#menu_dropDown').css("display", "block");
+		/* $('#menu_dropDown').css("display", "block"); */
+		$('#menu_dropDown').slideDown(200);
 		$('.dropDown_menu').css("display", "none");
 		$('#menu_dropDown-1').css("display", "block");
 		$('#menu_selected_bar').css("display", "block");
@@ -140,7 +142,8 @@ $(document).ready(function(){
 	$('#menu_bar-2').mouseover(function(){//병원안내
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_bar-2').css("color", "#C8500F");
-		$('#menu_dropDown').css("display", "block");
+		/* $('#menu_dropDown').css("display", "block"); */
+		$('#menu_dropDown').slideDown(200);
 		$('.dropDown_menu').css("display", "none");
 		$('#menu_dropDown-2').css("display", "block");
 		$('#menu_selected_bar').css("display", "block");
@@ -148,7 +151,8 @@ $(document).ready(function(){
 	$('#menu_bar-3').mouseover(function(){//임플란트
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_bar-3').css("color", "#C8500F");
-		$('#menu_dropDown').css("display", "block");
+		/* $('#menu_dropDown').css("display", "block"); */
+		$('#menu_dropDown').slideDown(200);
 		$('.dropDown_menu').css("display", "none");
 		$('#menu_dropDown-3').css("display", "block");
 		$('#menu_selected_bar').css("display", "block");
@@ -156,7 +160,8 @@ $(document).ready(function(){
 	$('#menu_bar-4').mouseover(function(){//치아교정
 		$('#menu_bar>a').css("color", "#6E645A");
 		$('#menu_bar-4').css("color", "#C8500F");
-		$('#menu_dropDown').css("display", "block");
+		/* $('#menu_dropDown').css("display", "block"); */
+		$('#menu_dropDown').slideDown(200);
 		$('.dropDown_menu').css("display", "none");
 		$('#menu_dropDown-4').css("display", "block");
 		$('#menu_selected_bar').css("display", "block");
@@ -164,7 +169,8 @@ $(document).ready(function(){
 	
 	$('#header_wrap').mouseleave(function(){//헤더 벗어날시 공통적용
 		$('#menu_bar>a').css("color", "#6E645A");
-		$('#menu_dropDown').css("display", "none");
+		/* $('#menu_dropDown').css("display", "none"); */
+		$('#menu_dropDown').slideUp(200);
 		$('.dropDown_menu').css("display", "none");
 		/* $('.dropDown_menu').css("display", "none"); */
 		/* $('#menu_selected_bar').css("display", "none"); */

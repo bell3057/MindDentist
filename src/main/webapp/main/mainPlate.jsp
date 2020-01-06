@@ -3,17 +3,16 @@
     
 <style>	
 #slider_wrap{
-	top: 186px;
-	left: 0px;
 	width: 1920px;
-	height: 800px;
+	height: 720px;
 	/* background: transparent url('../img/Main-01.png') 0% 0% no-repeat padding-box; */
 	opacity: 1;
+	position: relative;
 }
 #slide-text{
 	display: inline;
-	top: 429px;
-	left: 560px;
+	top: 39.87%; /* 287px; */
+    left: 28.96%; /* 560px; */
 	width: 439px;
 	height: 146px;
 	text-align: left;
@@ -24,48 +23,76 @@
 	color: #C8500F;
 	opacity: 1;
 	position: absolute;
+	white-space: pre-line;
 }
-#slide-link{
-	top: 625px;
-	left: 560px;
-	width: 260px;
-	height: 60px;
-	background: #C8500F 0% 0% no-repeat padding-box;
-	border-radius: 5px;
+#slide_button_box{
+	width: 75px; 
+	height: 15px;	
+	position: absolute;	
+	top: 614px;	
+	left: 923px;
+}
+.slide_button{
+	width: 15px;
+	height: 15px;
+	background: #B4AAA0 0% 0% no-repeat padding-box;
 	opacity: 1;
-	position: absolute;
+	float: left;
 }
-#slide-link-text{
-	top: 644px;
-	left: 585px;
-	width: 165px;
-	height: 22px;
-	text-align: left;
-	/* font: Bold 20px/42px NanumSquareRoundOTF; */
+#accumulate_count_div{
+	width: 1920px;
+	height: 174px;
+	background: #9B948C 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+.accumulate_count-text{
+	margin: 20px 0;
 	font-family: 'NanumSquareRound';
-	font-size: 20px;
-	letter-spacing: -0.6px;
+	font-weight: bold;
+	font-size: 36px;
+	color: #FFFFFF;
+	float: left;
+	line-height: 40px;
+}
+#accumulate_count{
+	margin-left: 154px;
+	margin-right: 13px;
+	text-align: left;
+	/* font: Bold 60px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 60px;
+	/* line-height: 40px; */
+	letter-spacing: 0;
 	color: #FFFFFF;
 	opacity: 1;
-	display: inline-block;
-    margin: 15px auto auto 25px;
+	float: left;
 }
-#slide-link-button{
-	height: 22px;
+#kcsi-text{
+	margin: 23px 0 0 27px;
+	text-align: left;
+	/* font: Bold 32px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: -1.6px;
+	color: #6E645A;
+	float: left;
 	opacity: 1;
 }
-
 #main-content-text-01{
 	width: 295px;
 	height: 40px;
 	text-align: left;
-	font: Bold 36px/40px NanumSquareRoundOTF;
+	/* font: Bold 36px/40px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound';
 	font-weight: bold;
 	font-size: 36px;
 	letter-spacing: -1.8px;
 	color: #C8500F;
 	opacity: 1;
+	line-height: 40px;
 }
 #main-content-text-02{
 	width: 305px;
@@ -78,6 +105,50 @@
 	color: #6E645A;
 	opacity: 1;
 	white-space: pre-line;
+	line-height: 42px;
+}
+.mindIcon-box{
+	width: 80px;
+	height: 123px;
+	float: left;
+}
+.mindIcon-img{
+	width: 80px;
+	height: 68px;
+}
+.mindIcon-text{
+	text-align: center;
+	/* font: Bold 20px/23px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: -0.6px;
+	color: #6E645A;
+	margin: 8px 0;
+	opacity: 1;
+}
+.mindIcon-link{
+	width: 80px;
+	text-align: center;
+	/* font: Bold 15px/17px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound';
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 17px;
+	letter-spacing: -0.45px;
+	color: #C8500F;
+	opacity: 1;
+	text-decoration: none;
+	float: left;
+}
+.mindIcon-border{
+	width: 0px;
+	height: 132px;
+	border: 1px solid #9B948C;
+	opacity: 1;
+	margin: 0 44px;
+	float: left;
 }
 .main-content-text-03{
 	width: 462px;
@@ -249,37 +320,67 @@
 }
 </style>
 <div id="slider_wrap"><!-- slider -->
-	<div>
-		<img src="../img/Main-01.png">
-		<div id="slide-text">
-			<span>안심하세요,</span>
-			<br>
-			<span>마인드치과입니다.</span>
-		</div>
-		<div id="slide-link">
-			<span id="slide-link-text">특별한 마인드</span>
-			<!-- <img id="slide-link-button" src="../img/next.png"> -->
-		</div>
+	<img src="../img/Main-01.png" style="width: 1920px; height: 720px;">
+	<div id="slide-text">안심하세요,
+	마인드치과입니다.
+	</div>
+	<div id="slide_button_box" style="width: 75px; height: 15px;	position: absolute;	top: 614px;	left: 923px;">
+		<div class="slide_button" style="margin-right: 15px;"></div>
+		<div class="slide_button" style="margin-right: 15px;"></div>
+		<div class="slide_button"></div>
 	</div>
 </div><!-- slider -->
-<div style="width:1920px; height: 720px;"><!-- main content-1 -->
-	<div style="width:960px; height: 720px; margin:auto;">
-		<img src="../img/sub-01.png" style="margin-top: 100px; float: left;">
-		<div style="width:315px; height: 300px; float: left; margin: 100px 0 0 85px;">
-			<span id="main-content-text-01">분야별 진료센터 운영</span>
-			<div style="width: 40px; height: 0px; border: 2px solid #C8500F; opacity: 1; margin: 53.5px 0;"></div>
-			<span id="main-content-text-02">임플란트, 심미교정, 일반진료 등
-			분과별 전문센터를 운영, 협진을
-			통해 보다 체계적인 환자 중심
-			맞춤 진료를 제공합니다.</span>
-		</div>
-		<div style="margin-top: 70px; width: 960px; height: 150px; float: left; background-color: #F5F0E8; box-shadow: 2px 5px 6px #0000001F; border-radius: 5px;">
-			<div style="margin: 34px 0 0 80px; width: 150px; height: 74px; float: left;">
-				<b id="main-content-text-12">M I N D</b>
-				<span id="main-content-text-13">Dental Service</span>
+<div id="accumulate_count_div"><!-- 누적 시립건 -->
+	<div style="width: 830px; height: 80px; margin:auto; padding: 47px 0;">
+		<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
+		<span class="accumulate_count-text">임플란트 누적 식립 건</span>
+		<div id="accumulate_count">12,345</div>
+		<span class="accumulate_count-text">건</span>
+	</div>
+</div>
+<div style="width:1920px; height: 820px;"><!-- main content-1 -->
+	<div style="width:960px; height: 820px; margin:auto;">
+		<div style="width: 960px; height: 210px; ">
+			<div style=" width: 675px; height: 80px; margin:auto; padding: 65px 0;">
+				<img src="../img/KCSI.png" style="width: 400px; height: 80px; margin: auto; float: left;">
+				<div id="kcsi-text">(임플란트 부분 1위)</div>
 			</div>
-			<div style="width:570px; height:88px; border: 1px solid; margin: 34px 0 0 85px; float: left;">
-				
+		</div>
+		<img src="../img/Mainimg01.png" style="float: left;">
+		<div style="width:340px; height: 300px; float: left; margin-left: 85px;">
+			<span id="main-content-text-01">분야별 진료센터 운영</span>
+			<div style="width: 40px; height: 0px; border: 1px solid #C8500F; opacity: 1; margin: 53.5px 0;"></div>
+			<span id="main-content-text-02">임플란트, 치아교정, 심미치료, 
+			일반진료 등 분과별 전문센터를 
+			운영, 협진을 통해 보다 체계적인 
+			환자 중심 맞춤 진료를 제공합니다.</span>
+		</div>
+		<div style="margin-top: 70px; width: 960px; height: 180px; float: left; background-color: #F5F0E8; box-shadow: 2px 5px 6px #0000001F; border-radius: 5px;">
+			<img src="../img/mindtitle.png" style="margin: 54px 0 0 80px; width: 150px; height: 74px; float: left;">
+			<div style="width:590px; margin: 25px 0 0 69px; float: left;">
+				<div class="mindIcon-box">
+					<img src="../img/mainicon02.png" class="mindIcon-img">
+					<div class="mindIcon-text">임플란트</div>
+					<a class="mindIcon-link" href="../implant/mindImplant">바로가기 ></a>
+				</div>
+				<div class="mindIcon-border"></div>
+				<div class="mindIcon-box">
+					<img src="../img/mainicon03.png" class="mindIcon-img">
+					<div class="mindIcon-text">치아교정</div>
+					<a class="mindIcon-link" href="../braces/protrudingBraces">바로가기 ></a>
+				</div>
+				<div class="mindIcon-border"></div>
+				<div class="mindIcon-box">
+					<img src="../img/mainicon04.png" class="mindIcon-img">
+					<div class="mindIcon-text">심미치료</div>
+					<a class="mindIcon-link" href="#">바로가기 ></a>
+				</div>
+				<div class="mindIcon-border"></div>
+				<div class="mindIcon-box">
+					<img src="../img/mainicon05.png" class="mindIcon-img">
+					<div class="mindIcon-text">일반진료</div>
+					<a class="mindIcon-link" href="#">바로가기 ></a>
+				</div>
 			</div>
 		</div>
 	</div>
