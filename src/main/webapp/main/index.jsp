@@ -27,8 +27,7 @@ html{
 	top: 0px;
 	left: 0px;
 	width: 1920px;
-	height: 180px;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
+	height: 186px;
 	opacity: 1;
 }
 #footer{

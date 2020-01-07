@@ -5,20 +5,19 @@
 #slider_wrap{
 	width: 1920px;
 	height: 720px;
-	/* background: transparent url('../img/Main-01.png') 0% 0% no-repeat padding-box; */
 	opacity: 1;
-	position: relative;
 }
 #slide-text{
-	display: inline;
-	top: 39.87%; /* 287px; */
-    left: 28.96%; /* 560px; */
+	top: 50.277%; /* top: 473px; */
+    left: 40.92%; /* left: 560px; */
 	width: 439px;
 	height: 146px;
 	text-align: left;
-	font-family: 'NanumSquareRound';
+	/* font: Regular 60px/80px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 60px;
 	font-weight: normal;
+	line-height: 80px;
 	letter-spacing: -3px;
 	color: #C8500F;
 	opacity: 1;
@@ -26,11 +25,11 @@
 	white-space: pre-line;
 }
 #slide_button_box{
+	top: 85.035%;	/* top: 800px; */
+    left: 67.445%;	/* left: 923px; */
 	width: 75px; 
 	height: 15px;	
 	position: absolute;	
-	top: 614px;	
-	left: 923px;
 }
 .slide_button{
 	width: 15px;
@@ -47,7 +46,7 @@
 }
 .accumulate_count-text{
 	margin: 20px 0;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 36px;
 	color: #FFFFFF;
@@ -59,7 +58,7 @@
 	margin-right: 13px;
 	text-align: left;
 	/* font: Bold 60px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 60px;
 	/* line-height: 40px; */
@@ -72,7 +71,7 @@
 	margin: 23px 0 0 27px;
 	text-align: left;
 	/* font: Bold 32px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 40px;
@@ -86,7 +85,7 @@
 	height: 40px;
 	text-align: left;
 	/* font: Bold 36px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 36px;
 	letter-spacing: -1.8px;
@@ -99,7 +98,7 @@
 	height: 153px;
 	text-align: left;
 	font: Regular 25px/42px NanumSquareRoundOTF;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	letter-spacing: -1.25px;
 	font-size: 25px;
 	color: #6E645A;
@@ -119,7 +118,7 @@
 .mindIcon-text{
 	text-align: center;
 	/* font: Bold 20px/23px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 23px;
@@ -132,7 +131,7 @@
 	width: 80px;
 	text-align: center;
 	/* font: Bold 15px/17px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 17px;
@@ -145,7 +144,7 @@
 .mindIcon-border{
 	width: 0px;
 	height: 132px;
-	border: 1px solid #9B948C;
+	border: 0.6px solid #9B948C;
 	opacity: 1;
 	margin: 0 44px;
 	float: left;
@@ -155,7 +154,7 @@
 	height: 44px;
 	text-align: center;
 	font: Bold 40px/30px NanumSquareRoundOTF;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 40px;
 	letter-spacing: -2px;
@@ -186,7 +185,7 @@
 	height: 27px;
 	text-align: left;
 	font: Bold 25px/30px NanumSquareRoundOTF;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 25px;
 	letter-spacing: 0;
@@ -200,7 +199,7 @@
 	height: 17px;
 	text-align: left;
 	letter-spacing: 0;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 15px;
 	color: #6E645A;
 	opacity: 1;
@@ -210,7 +209,7 @@
 	height: 12px;
 	text-align: left;
 	font: Regular 10px/30px NanumSquareRoundOTF;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 10px;
 	letter-spacing: 0;
 	color: #6E645A;
@@ -224,7 +223,7 @@
 	height: 90px;
 	text-align: left;
 	/* font: Bold 36px/50px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 36px;
 	letter-spacing: -1.8px;
@@ -238,7 +237,7 @@
 	height: 74px;
 	text-align: left;
 	/* font: Bold 30px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	letter-spacing: 0;
@@ -251,7 +250,7 @@
 	height: 67px;
 	text-align: left;
 	letter-spacing: -1.25px;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 25px;
 	color: #6E645A;
 	opacity: 1;
@@ -277,7 +276,7 @@
 	height: 76px;
 	text-align: left;
 	/* font: Bold 30px/42px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0;
@@ -292,7 +291,7 @@
 	height: 97px;
 	text-align: left;
 	/* font: Regular 25px/35px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 25px;
 	letter-spacing: -1.25px;
 	color: #6E645A;
@@ -302,7 +301,7 @@
 #main-content-text-12{
 	text-align: left;
 	/* font: Regular 25px/35px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 27px;
 	color: #C8500F;
 	opacity: 1;
@@ -310,7 +309,7 @@
 #main-content-text-13{
 	text-align: left;
 	/* font: Regular 25px/35px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 21px;
 	letter-spacing: -1.2px;
 	color: #C8500F;
@@ -324,7 +323,7 @@
 	<div id="slide-text">안심하세요,
 	마인드치과입니다.
 	</div>
-	<div id="slide_button_box" style="width: 75px; height: 15px;	position: absolute;	top: 614px;	left: 923px;">
+	<div id="slide_button_box">
 		<div class="slide_button" style="margin-right: 15px;"></div>
 		<div class="slide_button" style="margin-right: 15px;"></div>
 		<div class="slide_button"></div>

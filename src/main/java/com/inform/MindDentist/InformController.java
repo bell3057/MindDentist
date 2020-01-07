@@ -34,4 +34,13 @@ public class InformController {
 		
 		return mav;		
 	}
+	
+	@RequestMapping(value="/inform/principleSystem", method=RequestMethod.GET)
+	public ModelAndView principleSystem() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/inform/principleSystem.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;		
+	}
 }

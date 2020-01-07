@@ -10,12 +10,13 @@
 }
 #inform_wrap-2{
 	width: 1920px;
-	height: 1210px;
+	height: 1887px;
 }
 #principle-text-01{
 	font-family: 'NanumSquareRound';
-	font-size: 30px;
+	font-size: 42px;
 	font-weight: bold; 
+	line-height: 30px;
 	/* font: Bold 30px/42px NanumSquareRoundOTF; */
 	letter-spacing: -0.9px;
 	color: #C8500F;
@@ -74,8 +75,8 @@
 }
 </style>
 <div id="inform_wrap-2">
-	<div style="width: 560px; height: 1080px; margin: auto; padding-top: 130px;">
-		<div style="width: 405px; height: 125px; text-align: center; margin:auto;">
+	<div style="width: 960px; height: 100%px; margin: auto; padding-top: 130px;">
+		<div style="text-align: center; margin:auto;">
 			<span id="principle-text-01">안녕하세요.
 			마음을 다하는 마인드 치과입니다.</span>
 			<br>
