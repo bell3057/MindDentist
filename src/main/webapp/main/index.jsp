@@ -9,6 +9,7 @@
 <meta name="viewport"
 	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><!-- 사용자 기기에 맞춰 조절, 확대축소 x -->
 <link rel="shortcut icon" href="" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <style type="text/css">
 html{
 	width: 100%;
@@ -54,4 +55,6 @@ html{
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </html>
+

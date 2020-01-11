@@ -2,12 +2,6 @@
     pageEncoding="UTF-8"%>
 
 <style>
-@font-face { 
-	font-family: 'NanumSquareRound'; 
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); 
-	font-weight: normal; 
-	font-style: normal; 
-}
 #guidance_wrap-1{
 	width: 1920px;
 	height: 1349px;
@@ -15,7 +9,7 @@
 #ms-text-1{
 	width: 300px;
 	height: 44px;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 40px;
 	/* font: Bold 40px/30px NanumSquareRoundOTF; */
@@ -32,7 +26,7 @@
 }
 .ms-text-2{
 	text-align: left;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	/* font: Bold 30px/30px NanumSquareRoundOTF; */
@@ -41,7 +35,7 @@
 	opacity: 1;
 }
 .ms-text-3{
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 20px;
 	text-align: left;
 	letter-spacing: 0;
@@ -50,7 +44,7 @@
 }
 .ms-text-4{
 	height: 251px;
-	font-family: 'NanumSquareRound';
+	font-family: 'NanumSquareRound',sans-serif;
 	font-size: 15px;
 	text-align: left;
 	/* font: Regular 15px/26px NanumSquareRoundOTF; */
@@ -138,16 +132,20 @@
 
 <script>
 $(document).ready(function(){
+	$('#menu_bar-2').css("font-weight", "800");
 	$('#menu_bar-2').css("color", "#C8500F");
+	$('#menu_selected_bar-2').css("background-color", "#B4AAA0");
 	$('#menu_dropDown').css('display', 'block');
 	$('#menu_dropDown-2').css("display", "block");
-	$('#mdt-05').css("font-weight", "bold");
+	$('#mdt-05').css("font-weight", "800");
 	
 	$('#header_wrap').mouseleave(function(){//헤더 벗어나도 유지
+		$('#menu_bar-2').css("font-weight", "800");
 		$('#menu_bar-2').css("color", "#C8500F");
-		$('#menu_dropDown').css('display', 'block');
+		$('#menu_selected_bar-2').css("background-color", "#B4AAA0");
+		$('#menu_dropDown').slideDown(200);
 		$('#menu_dropDown-2').css("display", "block");
-		$('#mdt-05').css("font-weight", "bold");		
+		$('#mdt-05').css("font-weight", "800");		
 	});
 });
 </script>

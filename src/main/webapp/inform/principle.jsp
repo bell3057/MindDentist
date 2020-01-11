@@ -122,16 +122,20 @@
 </div>
 <script>
 $(document).ready(function(){
+	$('#menu_bar-1').css("font-weight", "800");
 	$('#menu_bar-1').css("color", "#C8500F");
+	$('#menu_selected_bar-1').css("background-color", "#B4AAA0");
 	$('#menu_dropDown').css('display', 'block');
 	$('#menu_dropDown-1').css("display", "block");
-	$('#mdt-02').css("font-weight", "bold");
+	$('#mdt-02').css("font-weight", "800");
 	
 	$('#header_wrap').mouseleave(function(){//헤더 벗어나도 유지
+		$('#menu_bar-1').css("font-weight", "800");
 		$('#menu_bar-1').css("color", "#C8500F");
-		$('#menu_dropDown').css('display', 'block');
+		$('#menu_selected_bar-1').css("background-color", "#B4AAA0");
+		$('#menu_dropDown').slideDown(200);
 		$('#menu_dropDown-1').css("display", "block");
-		$('#mdt-02').css("font-weight", "bold");		
+		$('#mdt-02').css("font-weight", "800");		
 	});
 });
 </script>

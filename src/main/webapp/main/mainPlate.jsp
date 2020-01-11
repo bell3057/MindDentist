@@ -8,8 +8,8 @@
 	opacity: 1;
 }
 #slide-text{
-	top: 50.277%; /* top: 473px; */
-    left: 40.92%; /* left: 560px; */
+	top: 473px;
+    left: 560px;
 	width: 439px;
 	height: 146px;
 	text-align: left;
@@ -25,8 +25,8 @@
 	white-space: pre-line;
 }
 #slide_button_box{
-	top: 85.035%;	/* top: 800px; */
-    left: 67.445%;	/* left: 923px; */
+	top: 800px;
+    left: 923px;
 	width: 75px; 
 	height: 15px;	
 	position: absolute;	

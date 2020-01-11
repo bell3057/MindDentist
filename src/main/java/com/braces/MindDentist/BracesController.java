@@ -16,4 +16,40 @@ public class BracesController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/braces/snaggleBraces", method=RequestMethod.GET)
+	public ModelAndView snaggleBraces() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/braces/snaggleBraces.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/braces/nonExtractionBraces", method=RequestMethod.GET)
+	public ModelAndView nonExtractionBraces() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/braces/nonExtractionBraces.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/braces/combiBraces", method=RequestMethod.GET)
+	public ModelAndView combiBraces() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/braces/combiBraces.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/braces/partialBraces", method=RequestMethod.GET)
+	public ModelAndView partialBraces() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/braces/partialBraces.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }

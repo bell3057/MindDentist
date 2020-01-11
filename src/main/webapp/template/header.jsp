@@ -77,7 +77,7 @@
 	text-decoration:none;
 }
 .menu_dropDown-text:hover{ /* 상세메뉴 마우스오버 기능 */
-	font-weight: bold;
+	font-weight: 800;
 }
 </style>
 <div id="header_wrap">
@@ -134,14 +134,31 @@
 			<a class="menu_dropDown-text" id="mdt-10" href="../implant/onedayImplant">원데이 임플란트</a>
 			<a class="menu_dropDown-text" id="mdt-11" href="../implant/navigationImplant">네비게이션 임플란트</a>
 			<a class="menu_dropDown-text" id="mdt-12" href="../implant/artificialImplant">인공뼈 이식술</a>
-			<a class="menu_dropDown-text" id="mdt-13" href="../implant/dentureImplant" style="margin-right:0px;">틀니 임플란트</a>
+			<a class="menu_dropDown-text" id="mdt-13" href="../implant/dentureImplant" style="margin-right:0px;">틀니vs전악임플란트</a>
 		</div>
 		<div id="menu_dropDown-4" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-14" href="../braces/protrudingBraces">돌출입 교정</a>
-			<a class="menu_dropDown-text" id="mdt-15" href="">가지런한 치아교정</a>
-			<a class="menu_dropDown-text" id="mdt-16" href="">비발치 교정</a>
-			<a class="menu_dropDown-text" id="mdt-17" href="">설측 & 부분 교정</a>
-			<a class="menu_dropDown-text" id="mdt-18" href="" style="margin-right:0px;">투명 교정</a>
+			<a class="menu_dropDown-text" id="mdt-15" href="../braces/snaggleBraces">덧니 교정</a>
+			<a class="menu_dropDown-text" id="mdt-16" href="../braces/nonExtractionBraces">비수술/비발치 교정</a>
+			<a class="menu_dropDown-text" id="mdt-17" href="../braces/combiBraces">설측/콤비/투명 교정</a>
+			<a class="menu_dropDown-text" id="mdt-18" href="../braces/partialBraces" style="margin-right:0px;">부분 교정</a>
+		</div>
+		<div id="menu_dropDown-5" class="dropDown_menu">
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../b" style="margin-right:0px;"></a>
+		</div>
+		<div id="menu_dropDown-6" class="dropDown_menu">
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-1" href="../" style="margin-right:0px;"></a>
+		</div>
+		<div id="menu_dropDown-7" class="dropDown_menu">
+			<a class="menu_dropDown-text" id="mdt-" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-" href="../" style="margin-right:0px;"></a>
 		</div>
 	</div>
 </div>
@@ -154,7 +171,9 @@ $(document).ready(function(){
 	
 	$('#menu_bar-1').mouseover(function(){//마인드치과
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-1').css("color", "#C8500F");
+		$('#menu_bar-1').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-1').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -165,7 +184,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-2').mouseover(function(){//병원안내
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-2').css("color", "#C8500F");
+		$('#menu_bar-2').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-2').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -176,7 +197,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-3').mouseover(function(){//임플란트
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-3').css("color", "#C8500F");
+		$('#menu_bar-3').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-3').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -187,7 +210,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-4').mouseover(function(){//치아교정
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-4').css("color", "#C8500F");
+		$('#menu_bar-4').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-4').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -198,7 +223,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-5').mouseover(function(){//치아교정
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-5').css("color", "#C8500F");
+		$('#menu_bar-5').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-5').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -209,7 +236,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-6').mouseover(function(){//치아교정
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-6').css("color", "#C8500F");
+		$('#menu_bar-6').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-6').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -220,7 +249,9 @@ $(document).ready(function(){
 	});
 	$('#menu_bar-7').mouseover(function(){//치아교정
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold");
 		$('#menu_bar-7').css("color", "#C8500F");
+		$('#menu_bar-7').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		$('#menu_selected_bar-7').css("background-color", "#B4AAA0");
 		/* $('#menu_dropDown').css("display", "block"); */
@@ -232,6 +263,7 @@ $(document).ready(function(){
 	
 	$('#header_wrap').mouseleave(function(){//헤더 벗어날시 공통적용
 		$('.menu_bar>a').css("color", "#6E645A");
+		$('.menu_bar>a').css("font-weight", "bold")
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		/* $('#menu_dropDown').css("display", "none"); */
 		$('#menu_dropDown').slideUp(200);
