@@ -101,11 +101,11 @@
 				<div id="menu_selected_bar-4" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-5" href="">심미치료</a>
+				<a id="menu_bar-5" href="../cosmetic/laminateCosmetic">심미치료</a>
 				<div id="menu_selected_bar-5" class="menu_selected_bar"></div>	
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-6" href="">일반진료</a>
+				<a id="menu_bar-6" href="../generalCare/naturalTeeth">일반진료</a>
 				<div id="menu_selected_bar-6" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
@@ -144,21 +144,21 @@
 			<a class="menu_dropDown-text" id="mdt-18" href="../braces/partialBraces" style="margin-right:0px;">부분 교정</a>
 		</div>
 		<div id="menu_dropDown-5" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../b" style="margin-right:0px;"></a>
+			<a class="menu_dropDown-text" id="mdt-19" href="../cosmetic/laminateCosmetic">무삭제 라미네이트</a>
+			<a class="menu_dropDown-text" id="mdt-20" href="../cosmetic/toothMolding">맞춤 치아성형</a>
+			<a class="menu_dropDown-text" id="mdt-21" href="../cosmetic/teethWhitening" style="margin-right:0px;">원데이 치아미백</a>
 		</div>
 		<div id="menu_dropDown-6" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-1" href="../" style="margin-right:0px;"></a>
+			<a class="menu_dropDown-text" id="mdt-22" href="../generalCare/naturalTeeth">자연치아 살리기</a>
+			<a class="menu_dropDown-text" id="mdt-23" href="../generalCare/toothDekay">충치 치료</a>
+			<a class="menu_dropDown-text" id="mdt-24" href="../generalCare/neurotherapy">신경 치료</a>
+			<a class="menu_dropDown-text" id="mdt-25" href="../generalCare/gumTreatment">잇몸 치료</a>
+			<a class="menu_dropDown-text" id="mdt-26" href="../generalCare/temporomandibular" style="margin-right:0px;">턱관절 질환</a>
 		</div>
 		<div id="menu_dropDown-7" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-" href="../" style="margin-right:0px;"></a>
+			<a class="menu_dropDown-text" id="mdt-27" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-28" href="../"></a>
+			<a class="menu_dropDown-text" id="mdt-29" href="../" style="margin-right:0px;"></a>
 		</div>
 	</div>
 </div>
