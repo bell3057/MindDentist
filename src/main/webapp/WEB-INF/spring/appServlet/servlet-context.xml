@@ -33,7 +33,11 @@
 		<beans:property name="order" value="0"/>
 	</beans:bean>
 	
-	
+	<!-- 파일 업로드 리졸버 추가-->
+	<beans:bean id="multipartResolver"
+				class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="5000000"/>
+	</beans:bean>
 	
 	<!-- Controller -->
 	<context:component-scan base-package="com.controller.MindDentist" />
@@ -44,5 +48,8 @@
 	<context:component-scan base-package="com.braces.MindDentist"/>
 	<context:component-scan base-package="com.cosmetic.MindDentist"/>
 	<context:component-scan base-package="com.generalCare.MindDentist"/>
+	
+	<!-- admin -->
+	<context:component-scan base-package="com.admin.MindDentist"/>
 	
 </beans:beans>

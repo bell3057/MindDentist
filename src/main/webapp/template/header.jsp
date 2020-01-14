@@ -156,9 +156,9 @@
 			<a class="menu_dropDown-text" id="mdt-26" href="../generalCare/temporomandibular" style="margin-right:0px;">턱관절 질환</a>
 		</div>
 		<div id="menu_dropDown-7" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-27" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-28" href="../"></a>
-			<a class="menu_dropDown-text" id="mdt-29" href="../" style="margin-right:0px;"></a>
+			<a class="menu_dropDown-text" id="mdt-27" href="../">공지사항</a>
+			<a class="menu_dropDown-text" id="mdt-28" href="../">치료전후</a>
+			<a class="menu_dropDown-text" id="mdt-29" href="../" style="margin-right:0px;">마인드 후기</a>
 		</div>
 	</div>
 </div>
