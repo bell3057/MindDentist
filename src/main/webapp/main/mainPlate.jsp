@@ -7,6 +7,10 @@
 	height: 720px;
 	opacity: 1;
 }
+.slider-img{
+	width: 1920px;
+	height: 720px;
+}
 #slide-text{
 	top: 473px;
     left: 560px;
@@ -23,6 +27,34 @@
 	opacity: 1;
 	position: absolute;
 	white-space: pre-line;
+}
+.slick-dots{
+	top: 600px;
+    left: 923px;
+	width: 90px; 
+	height: 15px;	
+	position: absolute;	
+}
+.slick-dots li{
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 15px;
+}
+.slick-dots li button{
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	color: transparent;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    background: #B4AAA0;
+}
+.slick-dots li.slick-active button{
+	background: #C8500F;
 }
 #slide_button_box{
 	top: 800px;
@@ -318,16 +350,20 @@
 	padding-top: 19.5px;
 }
 </style>
-<div id="slider_wrap"><!-- slider -->
-	<img src="../img/Main-01.png" style="width: 1920px; height: 720px;">
+<div style="width: 1920px; height: 720px;"><!-- slider -->
+	<div id="slider_wrap">
+		<img class="slider-img" src="../img/Main-01.png">
+		<img class="slider-img" src="">
+		<img class="slider-img" src="">
+	</div>
 	<div id="slide-text">안심하세요,
 	마인드치과입니다.
 	</div>
-	<div id="slide_button_box">
+	<!-- <div id="slide_button_box">
 		<div class="slide_button" style="margin-right: 15px;"></div>
 		<div class="slide_button" style="margin-right: 15px;"></div>
 		<div class="slide_button"></div>
-	</div>
+	</div> -->
 </div><!-- slider -->
 <div id="accumulate_count_div"><!-- 누적 시립건 -->
 	<div style="width: 830px; height: 80px; margin:auto; padding: 47px 0;">
@@ -450,4 +486,19 @@
 	</div>
 </div>
 
-
+<script>
+$(document).ready(function(){
+	$("#slider_wrap").slick({
+		infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+		slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/
+		slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
+		autoplay: true, /* 자동으로 다음이미지 보여주기 */
+		arrows: false, /* 화살표 */
+		dots: true, /* 아래점 */
+		autoplaySpeed: 3000,/* 다음이미지로 넘어갈 시간 */
+		speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */
+		pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
+		//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
+	});
+});
+</script>

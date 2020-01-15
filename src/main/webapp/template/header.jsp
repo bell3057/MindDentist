@@ -54,6 +54,7 @@
 	position: relative;
 	margin: auto;
 	display: none;
+	z-index: 100;
 }
 .dropDown_menu{
 	width:960px; 
@@ -109,7 +110,7 @@
 				<div id="menu_selected_bar-6" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-7" href="">고객센터</a>
+				<a id="menu_bar-7" href="../serviceCenter/notice">고객센터</a>
 				<div id="menu_selected_bar-7" class="menu_selected_bar"></div>
 			</div>
 		</div>
@@ -156,9 +157,9 @@
 			<a class="menu_dropDown-text" id="mdt-26" href="../generalCare/temporomandibular" style="margin-right:0px;">턱관절 질환</a>
 		</div>
 		<div id="menu_dropDown-7" class="dropDown_menu">
-			<a class="menu_dropDown-text" id="mdt-27" href="../">공지사항</a>
-			<a class="menu_dropDown-text" id="mdt-28" href="../">치료전후</a>
-			<a class="menu_dropDown-text" id="mdt-29" href="../" style="margin-right:0px;">마인드 후기</a>
+			<a class="menu_dropDown-text" id="mdt-27" href="../serviceCenter/notice">공지사항</a>
+			<a class="menu_dropDown-text" id="mdt-28" href="../serviceCenter/before_n_after">치료전후</a>
+			<a class="menu_dropDown-text" id="mdt-29" href="../serviceCenter/review" style="margin-right:0px;">마인드 후기</a>
 		</div>
 	</div>
 </div>

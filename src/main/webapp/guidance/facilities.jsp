@@ -24,12 +24,39 @@
 	width: 960px;
 	height: 600px;
 }
-.facilities-slide-btn{
+/* .facilities-slide-btn{
 	width: 15px;
 	height: 15px;
 	background: #B4AAA0 0% 0% no-repeat padding-box;
 	opacity: 1;
 	float: left;
+}
+.facilities-slide-on{
+	background-color: #C8500F;
+} */
+.slick-dots{
+width: 105px; height: 15px; margin: 65px auto 0;
+}
+.slick-dots li{
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 15px;
+}
+.slick-dots li button{
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 10px 10px 0 0;
+    background: #B4AAA0;
+}
+.slick-dots li.slick-active button{
+	background: #C8500F;
 }
 #facilities-text-2{
 	margin: 70px auto 0;
@@ -54,11 +81,11 @@
 				<img class="facilities-img" src="">
 				<img class="facilities-img" src="">
 			</div>		
-			<div style="width: 75px; height: 15px; margin: 70px auto 0;">
+			<!-- <div style="width: 75px; height: 15px; margin: 70px auto 0;">
 				<div class="facilities-slide-btn"></div>
 				<div class="facilities-slide-btn" style="margin: 0 15px;"></div>
 				<div class="facilities-slide-btn"></div>
-			</div>
+			</div> -->
 		</div>
 		<div id="facilities-text-2">안산최대 치과시설 (300평 규모)</div>
 	</div>
@@ -72,7 +99,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
 		autoplay: true, /* 자동으로 다음이미지 보여주기 */
 		arrows: false, /* 화살표 */
-		dots: false, /* 아래점 */
+		dots: true, /* 아래점 */
 		autoplaySpeed: 3000,/* 다음이미지로 넘어갈 시간 */
 		speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */
 		pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
