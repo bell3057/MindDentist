@@ -42,7 +42,7 @@
 	height: 4px;
 	/* background: #B4AAA0 0% 0% no-repeat padding-box; */
 	opacity: 1;
-	margin: 21px auto 0;
+	margin: 20px auto 0;
 }
 #menu_dropDown{
 	width: 960px;
@@ -52,6 +52,7 @@
 	border-radius: 0px 0px 15px 15px;
 	opacity: 1;
 	position: relative;
+	top: -1px;
 	margin: auto;
 	display: none;
 	z-index: 100;
@@ -115,7 +116,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="width:100%; height: 6px; background: transparent linear-gradient(90deg, #C8500F 0%, #FCA876 100%) 0% 0% no-repeat padding-box;
+	<div style="width:100%; height: 7px; background: transparent linear-gradient(90deg, #C8500F 0%, #FCA876 100%) 0% 0% no-repeat padding-box;
 	 opacity: 1;"></div>
 	<div id="menu_dropDown">
 		<div id="menu_dropDown-1" class="dropDown_menu">

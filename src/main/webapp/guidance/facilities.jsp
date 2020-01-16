@@ -74,7 +74,7 @@ width: 105px; height: 15px; margin: 65px auto 0;
 <div id="guidance_wrap-2">
 	<div style="width: 960px; height: 100%;  margin: auto;">
 		<div id="facilities-text-1">마인드 치과 시설안내</div>
-		<div style="width: 40px; height: 0px; border: 1px solid #C8500F; opacity: 1; margin: 70px auto;"></div>
+		<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 70px auto;"></div>
 		<div style="width: 960px; height: 685px; margin: auto;">
 			<div id="facilities-slide-wrap">
 				<img class="facilities-img" src="../img/2-2/H01.png">

@@ -17,10 +17,10 @@ public class MybatisConfig {
 	@Bean(name="dataSource")
 	public BasicDataSource getBasicDataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
-		basicDataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-		basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		basicDataSource.setUsername("java");
-		basicDataSource.setPassword("itbank");
+		basicDataSource.setDriverClassName("org.mariadb.jdbc.Driver");
+		basicDataSource.setUrl("jdbc:mariadb://localhost:3306/test");
+		basicDataSource.setUsername("root");
+		basicDataSource.setPassword("rktwnsd02");
 		basicDataSource.setMaxTotal(20);
 		basicDataSource.setMaxIdle(3);
 		return basicDataSource;

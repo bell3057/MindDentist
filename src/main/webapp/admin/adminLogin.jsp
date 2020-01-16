@@ -56,6 +56,7 @@ div.admin_Btn{
 	height: 30px; 
 	float: left; 
 	border: 2px solid #bdbdbd; 
+	font-weight: bold;
 	text-align: center; 
 	padding-top: 15px; 
 	margin-top: 20px;
@@ -63,7 +64,8 @@ div.admin_Btn{
 	border-radius: 10px;
 }
 div.admin_Btn:hover{
-	background:#444444;
+	color: #FFF;
+	background: #C8500F;
 }
 .checkDiv{
 	width:150px; 
