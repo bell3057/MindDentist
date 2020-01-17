@@ -33,8 +33,8 @@
 	white-space: pre-line;
 }
 .slick-dots{
-	top: 83.335%;
-    left: 45.567%;
+	top: 85.28%;
+    left: 47.567%;
 	width: 90px; 
 	height: 15px;	
 	position: absolute;	

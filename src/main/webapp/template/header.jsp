@@ -85,7 +85,7 @@
 </style>
 <div id="header_wrap">
 	<a href="../main/index"><img id="logo_img" src="../img/logo.png"></a>
-	<div style="width: 1920px; height: 50px; text-align: center;">
+	<div style="width: 100%; height: 50px; text-align: center;">
 		<div style="display: inline-block; height: 50px;">
 			<div class="menu_bar">
 				<a id="menu_bar-1" href="../inform/information">마인드치과</a>
