@@ -13,15 +13,15 @@
 }
 #mImplant-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #mImplant-text-1{
 	position: absolute;
-	top: 450px;
-	left: 560px;
+	top: 134px;
+	left: 80px;
 	width: 283px;
 	height: 115px;
 	text-align: left;
@@ -64,8 +64,8 @@
 	height: 500px;
 }
 #mImplant-img-4{
-	top: 935px;
-	left: 518px;
+	top: 52px;
+	left: 38px;
 	width: 885px;
 	height: 396px;
 	position: absolute;
@@ -98,8 +98,8 @@
 	height: 420px;
 }
 #mImplnat-img-7{
-	top: 2760px;
-	left: 514px;
+	top: 240px;
+	left: 34px;
 	width: 174px;
 	height: 147px;
 	position: absolute;
@@ -108,13 +108,13 @@
 
 <div id="implant_wrap-1">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="mImplant-img-1" src="../img/3-1/31_main.png">
 			<img id="mImplant-img-2" src="../img/3-1/31_m_icon.png">
 			<div id="mImplant-text-1">왜 마인드 임플란트 일까?</div>
 		</div>
 		<div id="mImplant-text-2">'임플란트, 정확한 진단과 유지가 중요합니다.'</div>
-		<div>
+		<div style="position: relative;">
 			<img id="mImplant-img-3" src="../img/3-1/3101.png">
 			<img id="mImplant-img-4" src="../img/3-1/3102.png">
 		</div>
@@ -130,7 +130,7 @@
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto 100px;"></div>
 		<div id="mImplant-text-4">한 번 식립한 임플란트는 최대한 오래 사용할 수 있도록 
 		<span id="mImplant-text-5">‘임플란트 보증제 시행’</span></div>
-		<div style="width: 960px; height: 460px; margin-top: 42px;">
+		<div style="width: 960px; height: 460px; margin-top: 42px; position: relative;">
 			<img id="mImplant-img-6" src="../img/3-1/3105.png">
 			<img id="mImplnat-img-7" src="../img/3-1/WMark.png">
 		</div>

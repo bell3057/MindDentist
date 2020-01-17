@@ -16,7 +16,7 @@ html{
 	height: 100%;
 }
 * {
-	margin:0; padding:0;
+	margin: auto; padding:0;
 	list-style-type:none;
 }
 
@@ -27,12 +27,12 @@ html{
 #header{
 	top: 0px;
 	left: 0px;
-	width: 1920px;
+	width: 100%;
 	height: 186px;
 	opacity: 1;
 }
 #footer{
-	width: 1920px;
+	width: 100%;
 	height: 240px;
 	background: #FAFAF5 0% 0% no-repeat padding-box;
 	opacity: 1;

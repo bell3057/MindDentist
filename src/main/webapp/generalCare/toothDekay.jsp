@@ -11,15 +11,15 @@
 }
 #tdGeneral-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #tdGeneral-text-1{
 	position: absolute;
-	top: 449px;
-	left: 560px;
+	top: 134px;
+	left: 80px;
 	width: 517px;
 	height: 115px;
 	text-align: left;
@@ -68,7 +68,7 @@
 
 <div id="generalCare_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="tdGeneral-img-1" src="../img/6-2/62_main.png">
 			<img id="tdGeneral-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="tdGeneral-text-1">마인드

@@ -5,8 +5,8 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
 <style>
 #header_wrap{
-	width: 1920px;
-	height: 186px;
+	width: 100%;
+	height: 100%;
 }
 #logo_img{
 	display: block;
@@ -43,6 +43,7 @@
 	/* background: #B4AAA0 0% 0% no-repeat padding-box; */
 	opacity: 1;
 	margin: 20px auto 0;
+	display: none;
 }
 #menu_dropDown{
 	width: 960px;

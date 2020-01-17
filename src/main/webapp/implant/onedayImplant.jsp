@@ -13,15 +13,15 @@
 }
 #oImplant-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #oImplant-text-1{
 	position: absolute;
-	top: 449px;
-	left: 560px;
+	top: 134px;
+	left: 80px;;
 	width: 269px;
 	height: 115px;
 	text-align: left;
@@ -109,7 +109,7 @@
 
 <div id="implant_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="oImplant-img-1" src="../img/3-2/32_main.png">
 			<img id="oImplant-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="oImplant-text-1">마인드 원데이

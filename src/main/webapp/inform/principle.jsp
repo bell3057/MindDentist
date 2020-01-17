@@ -2,122 +2,116 @@
     pageEncoding="UTF-8"%>
     
 <style>
-@font-face { 
-	font-family: 'NanumSquareRound'; 
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); 
-	font-weight: normal; 
-	font-style: normal; 
-}
 #inform_wrap-2{
 	width: 1920px;
-	height: 1887px;
+	height: 1947px;
+	font-family: 'NanumSquareRound';
 }
 #principle-text-01{
-	font-family: 'NanumSquareRound';
+	text-align: center;
+	/* font: Bold 30px/42px NanumSquareRoundOTF; */
 	font-size: 42px;
 	font-weight: bold; 
-	line-height: 30px;
-	/* font: Bold 30px/42px NanumSquareRoundOTF; */
-	letter-spacing: -0.9px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
 	color: #C8500F;
 	opacity: 1;
 	white-space: pre-line;
 }
 #principle-text-02{
-	font-family: 'NanumSquareRound';
-	font-size: 20px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 27px;
 	/* font: Regular 20px/23px NanumSquareRoundOTF; */
-	letter-spacing: -0.6px;
+	letter-spacing: -0.72px;
 	color: #6E645A;
 	opacity: 1;
-	margin-top: 17px;
-	display: inline-block;
+	margin-top: 28px;
+}
+.principle-text-div{
+	margin-left: 40px;
+	height: 280px;
+	float: left;
+	vertical-align: middle;
 }
 .principle-text-03{
+	margin-top: 64.5px;
 	text-align: left;
-/* 	font: Bold 25px/30px NanumSquareRoundOTF;*/	
-	font-family: 'NanumSquareRound';
+	/* font: Bold 32px/30px NanumSquareRoundOTF; */
 	font-weight: bold;
-	font-size: 25px;
-	letter-spacing: -0.75px;
+	font-size: 32px;
+	line-height: 30px;
+	letter-spacing: -0.96px;
 	color: #C8500F;
 	opacity: 1;
 }
 .principle-text-04{
 	text-align: left;
-	/* font: Regular 16px/32px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound';
-	font-size: 16px;
-	letter-spacing: -0.48px;
+	/* font: Regular 24px/36px NanumSquareRoundOTF; */
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.72px;
 	color: #6E645A;
 	opacity: 1;
 	white-space: pre-line;
-	margin-top: 24px;
-    display: inline-block;
+	margin-top: 18px;
 }
 #principle-text-05{
+	margin-top: 60px;
 	text-align: center;
-	font-family: 'NanumSquareRound';
-	font-size: 20px;
-	/* font: Regular 20px/36px NanumSquareRoundOTF; */
-	letter-spacing: -0.6px;
-	color: #6E645A;
+	/* font: Bold 36px/56px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 56px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
 	opacity: 1;
-	white-space: pre-line;
-	margin-top: 85px;	
 }
 .principle_img{
-	width: 280px;
-	height: 150px;
+	width: 480px;
+	height: 280px;
 	opacity: 1;
 	float: left;
-	border: 1px solid yellow;
 }
 </style>
 <div id="inform_wrap-2">
-	<div style="width: 960px; height: 100%px; margin: auto; padding-top: 130px;">
-		<div style="text-align: center; margin:auto;">
-			<span id="principle-text-01">안녕하세요.
-			마음을 다하는 마인드 치과입니다.</span>
-			<br>
-			<span id="principle-text-02">마인드 치과와 그 구성원들이 약속 드립니다.</span>
-			<br>
-		</div>
-		<div style="width: 40px; height: 0px; border: 2px solid #D1550A; opacity: 1; margin: 31px auto 70px;"></div>
-		<div style="width: 560px; height: 590px;">
-			<div style="width: 560px; height: 150px;">
-				<img class="principle_img" src="">
-				<div style="margin-left: 21px; width: 255px; height: 150px; float: left;">
-					<span class="principle-text-03">첫째, 의료인의 마음으로</span>
-					<br>
-					<span class="principle-text-04">정확한 진단과 확실한 실력으로 끝까지 
-					책임있는 진료를 제공하겠습니다.</span>
-				</div>
-			</div>
-			<div style="width: 560px; height: 150px; margin-top: 70px;">
-				<div style="width: 255px; height: 150px;; float: left;">
-					<span class="principle-text-03">둘째, 정직한 마음으로</span>
-					<br>
-					<span class="principle-text-04">꼭 필요한 부분만 진료하고, 그 과정을 
-					환자의 눈높이에서 쉽고 자세하게 
-					설명하겠습니다.</span>
-				</div>
-				<img class="principle_img" src="" style="margin-left: 21px;">
-			</div>
-			<div style="width: 560px; height: 150px; margin-top: 70px;">
-				<img class="principle_img" src="">
-				<div style="margin-left: 21px; width: 255px; height: 150px; ; float: left;">
-					<span class="principle-text-03">셋째, 환자의 마음으로</span>
-					<br>
-					<span class="principle-text-04" style="letter-spacing: -1.06px;">깨끗한 환경에서 아프지 않게진료할 것을 
-					약속 드리며, 늘 환자의 입장에서 생각하고 
-					소통하며 그 마음을 헤아리겠습니다.</span>
-				</div>
+	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px;">
+		<div id="principle-text-01">안녕하세요.
+		마음을 다하는 마인드 치과입니다.</div>
+		<div id="principle-text-02">마인드 치과와 그 구성원들이 약속 드립니다.</div>
+		<div style="width: 40px; height: 2px; background: #D1550A; opacity: 1; margin: 60px auto;"></div>
+		<div style="width: 960px; height: 280px;">
+			<img class="principle_img" src="../img/1-2/mind-01.png">
+			<div class="principle-text-div">
+				<div class="principle-text-03" style="margin-top: 82.5px;">첫째, 의료인의 마음으로</div>
+				<div class="principle-text-04">정확한 진단과 확실한 실력으로 끝까지 
+				책임있는 진료를 제공하겠습니다.</div>
 			</div>
 		</div>
-		<div id="principle-text-05">내원해주시는 모든 환자분들과 보호자들의 건강과 기쁨을 위해, 
-		언제나 진심을 다하겠습니다. 
-		안심하세요. 이 곳은 마인드치과입니다.</div>
+		<div style="width: 40px; height: 2px; background: #D1550A; opacity: 1; margin: 60px auto;"></div>
+		<div style="width: 960px; height: 280px;">
+			<div class="principle-text-div" style="margin: 0; width: 480px;">
+				<div class="principle-text-03">둘째, 정직한 마음으로</div>
+				<div class="principle-text-04">꼭 필요한 부분만 진료하고, 
+				그 과정을 환자의 눈높이에서 쉽고 
+				자세하게 설명하겠습니다.</div>
+			</div>
+			<img class="principle_img" src="../img/1-2/mind-02.png">
+		</div>
+		<div style="width: 40px; height: 2px; background: #D1550A; opacity: 1; margin: 60px auto;"></div>
+		<div style="width: 960px; height: 280px;">
+			<img class="principle_img" src="../img/1-2/mind-03.png">
+			<div class="principle-text-div">
+				<div class="principle-text-03">셋째, 환자의 마음으로</div>
+				<div class="principle-text-04" style="letter-spacing: -1.06px;">깨끗한 환경에서 아프지 않게진료할 것을 
+				약속 드리며, 늘 환자의 입장에서 생각하고 
+				소통하며 그 마음을 헤아리겠습니다.</div>
+			</div>
+		</div>
+		<div style="width: 40px; height: 2px; background: #D1550A; opacity: 1; margin: 60px auto;"></div>
+		<div class="principle-text-04" style="text-align: center;">내원해주시는 모든 환자분들과 보호자들의 건강과 기쁨을 위해,
+		언제나 진심을 다하겠습니다.</div>
+		<div id="principle-text-05">“안심하세요. 이 곳은 마인드 치과입니다.”</div>
 	</div>
 </div>
 <script>

@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <style>
+#footer_wrap{
+	width: 100%;
+	height: 100%;
+}
 #footer_logo_img{
 	margin: 54px 0 59px;
 	width: 236px;
@@ -40,7 +45,7 @@
 	cursor: pointer;
 }
 </style>
-<div id="footer_wrap" style="width: 100%; height: 100%;">
+<div id="footer_wrap">
 	<div style="margin: auto; width: 960px; height: 100%">
 		<div style="width: 236px; float: left;">
 			<img id="footer_logo_img" src="../img/logo.png">
@@ -52,8 +57,8 @@
 		Tel : 031-401-9375 l Fax : 031-411-9375
 		</div>
 		<div style="width: 132px; height: 60px; float:left; margin-top: 66px;">
-		<img id="inst_logo" class="logo_png" src="../img/insta.png" style="margin-right:6px;">
-		<img class="logo_png" src="../img/NB.png">
+		<img id="inst_logo" class="logo_png" src="../img/Main/insta.png" style="margin-right:6px;">
+		<img class="logo_png" src="../img/Main/blog.png">
 		</div>
 	</div>
 </div>

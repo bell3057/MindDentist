@@ -11,15 +11,15 @@
 }
 #lCosmetic-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #lCosmetic-text-1{
 	position: absolute;
-	top: 449px;
-	left: 560px;
+	top: 134px;
+	left: 80px;
 	width: 260px;
 	height: 115px;
 	text-align: left;
@@ -89,7 +89,7 @@
 
 <div id="cosmetic_wrap-1">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="lCosmetic-img-1" src="../img/5-1/51_main.png">
 			<img id="lCosmetic-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="lCosmetic-text-1">마인드
@@ -125,7 +125,7 @@ $(document).ready(function(){
 		$('#menu_bar-5').css("color", "#C8500F");
 		$('#menu_selected_bar-5').css("background-color", "#B4AAA0");
 		$('#menu_dropDown').slideDown(200);
-		$('#menu_dropDown-4').css("display", "block");
+		$('#menu_dropDown-5').css("display", "block");
 		$('#mdt-19').css("font-weight", "800");		
 	});
 });

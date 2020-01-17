@@ -11,15 +11,15 @@
 }
 #paBraces-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #paBraces-text-1{
 	position: absolute;
-	top: 449px;
-	left: 560px;
+	top: 134px;
+	left: 80px;
 	width: 177px;
 	height: 115px;
 	text-align: left;
@@ -86,7 +86,7 @@
 
 <div id="braces_wrap-5">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="paBraces-img-1" src="../img/4-5/45_main.png">
 			<img id="paBraces-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="paBraces-text-1">마인드

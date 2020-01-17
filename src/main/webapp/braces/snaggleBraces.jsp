@@ -11,15 +11,15 @@
 }
 #sBraces-img-2{
 	position: absolute;
-	top: 377px;
-	left: 560px;
+	top: 61px;
+	left: 80px;
 	width: 42px;
 	height: 42px;
 }
 #sBraces-text-1{
 	position: absolute;
-	top: 449px;
-	left: 560px;
+	top: 134px;
+	left: 80px;
 	width: 444px;
 	height: 115px;
 	text-align: left;
@@ -99,7 +99,7 @@
 
 <div id="braces_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
-		<div style="width: 960px; height: 320px;">
+		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="sBraces-img-1" src="../img/4-2/42_main.png">
 			<img id="sBraces-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="sBraces-text-1">삐뚤빼뚤 덧니,
