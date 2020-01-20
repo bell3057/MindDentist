@@ -1,16 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-    
 <style>
-@font-face { 
-	font-family: 'NanumSquareRound'; 
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); 
-	font-weight: normal; 
-	font-style: normal; 
-}
 #inform_wrap-3{
-	width: 1920px;
+	width: 100%;
 	height: 2631px;
 }
 .special_mind_div{

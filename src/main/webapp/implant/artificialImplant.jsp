@@ -3,7 +3,7 @@
 
 <style>
 #implant_wrap-4{
-	width: 1920px;
+	width: 100%;
 	height: 2874px;
 	text-align: center;
 }

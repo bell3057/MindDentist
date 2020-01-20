@@ -3,7 +3,7 @@
 
 <style>
 #guidance_wrap-4{
-	width: 1920px;
+	width: 100%;
 	height: 2324px;
 }
 #dentistMap-text-1{

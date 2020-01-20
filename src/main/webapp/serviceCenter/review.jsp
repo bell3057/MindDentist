@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #service_wrap-3{
-	width: 1920px;
+	width: 100%;
 	height: 1446px;
 	font-family: 'NanumSquareRound',sans-serif;
 }

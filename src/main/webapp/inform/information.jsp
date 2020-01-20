@@ -3,15 +3,10 @@
 
 
 <style>
-/* @font-face { 
-	font-family: 'NanumSquareRound'; 
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); 
-	font-weight: normal; 
-	font-style: normal; 
-} */
 #inform_wrap-1{
-	width: 1920px;
+	width: 100%;
 	height: 1937px;
+	font-family: 'NanumSquareRound'; 
 }
 #inform-img{
 	width: 960px;
@@ -21,7 +16,6 @@
 .inform-text-01{
 	text-align: center;
 	/* font: Bold 42px/42px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound'; 
 	font-weight: bold;
 	font-size: 42px;
 	line-height: 42px;
@@ -32,7 +26,6 @@
 #inform-text-02{
 	text-align: center;
 	/* font: Bold 32px/46px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound'; 
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 46px;
@@ -43,7 +36,6 @@
 .inform-text-03{
 	text-align: center;
 	/* font: Regular 24px/36px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound'; 
 	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: -1.26px;

@@ -3,7 +3,7 @@
 
 <style>
 #guidance_wrap-2{
-	width: 1920px;
+	width: 100%;
 	height: 100%;
 }
 #equipment-text-1{
@@ -74,7 +74,7 @@
 </style>
 
 <div id="guidance_wrap-2">
-	<div style="width: 960px; height:100%; margin: auto; padding-top: 150px;">
+	<div style="width: 960px; height:; margin: auto; padding-top: 150px;">
 		<div id="equipment-text-1">마인드 치과 보유장비</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; margin: 70px auto;"></div>
 		<div style="width: 960px; height: 960px; margin-bottom: 100px;">

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #generalCare_wrap-3{
-	width: 1920px;
+	width: 100%;
 	height: 3364px;
 }
 #neGeneral-img-1{

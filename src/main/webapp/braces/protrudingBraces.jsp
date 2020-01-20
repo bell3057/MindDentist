@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #braces_wrap-1{
-	width: 1920px;
+	width: 100%;
 	height: 4188px;
 }
 #pBraces-img-1{

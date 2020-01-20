@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.admin.bean.AdminDTO;
 import com.admin.dao.AdminDAO;
@@ -37,9 +38,46 @@ public class AdminController {
 		}
 	}
 	
+	//관리자 로그아웃
+	@RequestMapping(value="/admin/adminLogout", method=RequestMethod.GET)
+	public ModelAndView adminLogout(HttpSession session) {
+		session.invalidate();
+		return new ModelAndView("redirect:/admin/adminLogin");
+	}
+	
 	//관리자 메인
-		@RequestMapping(value="/admin/adminMain", method=RequestMethod.GET)
-		public String adminMain() {
-			return "/admin/adminMain";
+	@RequestMapping(value="/admin/adminMain", method=RequestMethod.GET)
+	public ModelAndView adminMain(HttpSession session) {
+		ModelAndView mav = new ModelAndView();
+		String adId = (String) session.getAttribute("adId"); 
+		if(adId==null) {
+			return new ModelAndView("redirect:/admin/adminLogin");
+		}else {	
+			mav.addObject("display", "/admin/adminMain.jsp");
+			mav.setViewName("/admin/adminIndex");
+			return mav;
 		}
+	}
+	
+	//임플란트 식립 건수 불러오기
+	@RequestMapping(value="/admin/accumulateLoader", method=RequestMethod.POST)
+	@ResponseBody
+	public int accumulateLoader() {
+		int accumulateLoader = adminDAO.accumulateLoader();
+		return accumulateLoader;
+	}
+	
+	//임플란트 식립건수 입력
+	@RequestMapping(value="/admin/accumulateCounting", method=RequestMethod.POST)
+	@ResponseBody
+	public ModelAndView accumulateCounting(int implant_count) {
+		ModelAndView mav = new ModelAndView();
+		
+		adminDAO.implant_count(implant_count);
+		
+		mav.addObject("display", "/admin/adminMain.jsp");
+		mav.setViewName("/admin/adminIndex");
+		
+		return mav;
+	}
 }

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #cosmetic_wrap-1{
-	width: 1920px;
+	width: 100%;
 	height: 3074px;
 }
 #mCosmetic-img-1{

@@ -3,7 +3,7 @@
     
 <style>
 #inform_wrap-2{
-	width: 1920px;
+	width: 100%;
 	height: 1947px;
 	font-family: 'NanumSquareRound';
 }

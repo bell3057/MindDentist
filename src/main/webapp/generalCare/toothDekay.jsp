@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <style>
 #generalCare_wrap-2{
-	width: 1920px;
+	width: 100%;
 	height: 2599px;
 }
 #tdGeneral-img-1{

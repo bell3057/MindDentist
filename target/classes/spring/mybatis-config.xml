@@ -6,6 +6,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.admin.bean.AdminDTO" alias="admin"/>
+		<typeAlias type="com.admin.bean.AsDTO" alias="asDTO"/>
 	</typeAliases>
 
 </configuration>

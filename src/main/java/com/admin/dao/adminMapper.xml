@@ -9,4 +9,47 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="loginProcess" resultType="admin" parameterType="java.util.Map">
 		select * from MIND_ADMIN where id=#{id} and password=#{password}
 	</select>
+	
+	<!-- accumulateLoader -->
+	<select id="accumulateLoader" resultType="Integer">
+		select * from MIND_IMPLANT
+	</select>
+	
+	<!-- implant_count -->
+	<update id="implant_count" parameterType="Integer">
+		update mind_implant SET implant_count=#{implant_count}; 
+	</update>
+	
+	<!-- add_staff_exe -->
+	<insert id="add_staff_exe" parameterType="asDTO">
+		insert into MIND_STAFF
+			(asName, asPosition, asCareer1, asCareer2, asMainCareer, mainImgName, pageImgName) 
+			values("${asName}", "${asPosition}", "${asCareer1}", "${asCareer2}", "${asMainCareer}", "${mainImgName}", "${pageImgName}")
+	</insert>
+	
+	<!-- staff list -->
+	<select id="adminStaffList" resultType="asDTO">
+		select asIndex, asName, asPosition, asMainCareer, mainImgName from MiND_STAFF
+	</select>
+	
+	<!-- staff loder -->
+	<select id="adminStaffLoader" parameterType="Integer" resultType="asDTO">
+		select * from MIND_STAFF where asIndex=#{asIndex}
+	</select>
+	
+	<!-- modify_staff_exe -->
+	<update id="modify_staff_exe" parameterType="asDTO">
+		update MIND_STAFF set asName="${asName}", asPosition="${asPosition}", asCareer1="${asCareer1}", asCareer2="${asCareer2}", asMainCareer="${asMainCareer}", mainImgName="${mainImgName}", pageImgName="${pageImgName}"
+		where asIndex=${asIndex} 
+	</update>
+	
+	<!-- delete staff -->
+	<delete id="delete_staff" parameterType="Integer">
+		delete from MIND_STAFF where asIndex=#{asIndex}
+	</delete>
+	
+	<!-- allStaffList -->
+	<select id="allStaffList" resultType="asDTO">
+		select * from MIND_STAFF
+	</select>
 </mapper>

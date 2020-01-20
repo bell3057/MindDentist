@@ -4,7 +4,7 @@
 
 <style>
 #implant_wrap-1{
-	width: 1920px;
+	width: 100%;
 	height: 2874px;
 }
 #mImplant-img-1{

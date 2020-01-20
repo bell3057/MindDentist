@@ -43,7 +43,7 @@
 	/* background: #B4AAA0 0% 0% no-repeat padding-box; */
 	opacity: 1;
 	margin: 20px auto 0;
-	display: none;
+	/* display: none; */
 }
 #menu_dropDown{
 	width: 960px;

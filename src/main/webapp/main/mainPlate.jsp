@@ -90,9 +90,8 @@
 	line-height: 40px;
 }
 #accumulate_count{
-	margin-left: 154px;
 	margin-right: 13px;
-	text-align: left;
+	text-align: right;
 	/* font: Bold 60px/40px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
@@ -100,8 +99,8 @@
 	/* line-height: 40px; */
 	letter-spacing: 0;
 	color: #FFFFFF;
+	display: inline;
 	opacity: 1;
-	float: left;
 }
 #kcsi-text{
 	margin: 23px 0 0 27px;
@@ -189,7 +188,7 @@
 	width:100%; 
 	height: 1160px; 
 	background: transparent url('../img/Main/D-back.png') 0% 0% no-repeat padding-box; 
-	background-size: contain;
+	/* background-size: contain; */
 	background-position: center;
 }
 .main-content-text-03{
@@ -348,7 +347,7 @@
 	width:100%; 
 	height: 845px; 
 	background: transparent url('../img/Main/WR-back.png') 0% 0% no-repeat padding-box; 
-	background-size: contain; 
+	/* background-size: contain;  */
 	background-position: center;
 }
 #main-content-text-10{
@@ -396,8 +395,10 @@
 		<div style="width: 830px; height: 80px; margin:auto; padding: 47px 0;">
 			<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
 			<span class="accumulate_count-text">임플란트 누적 식립 건</span>
-			<div id="accumulate_count">12,345</div>
-			<span class="accumulate_count-text">건</span>
+			<div style="width: 400px; text-align: right; float: right;">
+				<div id="accumulate_count">0</div>
+				<span class="accumulate_count-text" style="float: none;">건</span>
+			</div>
 		</div>
 	</div>
 	<div style="width:100%; height: 830px;"><!-- main content-1 -->
@@ -411,7 +412,7 @@
 			<img src="../img/Mainimg01.png" style="float: left;">
 			<div style="width:340px; height: 300px; float: left; margin-left: 85px;">
 				<span id="main-content-text-01">분야별 진료센터 운영</span>
-				<div style="width: 40px; height: 0px; border: 1px solid #C8500F; opacity: 1; margin: 53.5px 0;"></div>
+				<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 53.5px 0;"></div>
 				<span id="main-content-text-02">임플란트, 치아교정, 심미치료, 
 				일반진료 등 분과별 전문센터를 
 				운영, 협진을 통해 보다 체계적인 
@@ -451,70 +452,7 @@
 		<div style="width:960px; height: 1160px; margin:auto; position: relative;">
 			<div class="main-content-text-03">전문의 및 석박사 출신 의료진</div>
 			<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 50.5px auto 49.5px;"></div>
-			<div class="main-content-D-div" style="background: transparent url('../img/Main/D-01.png') 0% 0% no-repeat padding-box; background-size: contain;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">양재민</div>
-					<div class="main-content-text-05">ㅣ 대표원장</div>
-					<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent url('../img/Main/D-02.png') 0% 0% no-repeat padding-box; background-size: contain;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">김인석</div>
-					<div class="main-content-text-05">ㅣ 대표원장</div>
-					<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사 </div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent url('../img/Main/D-03.png') 0% 0% no-repeat padding-box; background-size: contain;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">박상우</div>
-					<div class="main-content-text-05">ㅣ 수석원장</div>
-					<div class="main-content-arrow" href="../guidance/medicalStaff">〉</div>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent #DDDDDD 0% 0% no-repeat padding-box; background-size: contain; margin: 0;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">OOO</div>
-					<div class="main-content-text-05">ㅣ OO원장</div>
-					<a class="main-content-arrow" href="">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent #DDDDDD 0% 0% no-repeat padding-box; background-size: contain; margin-top: 40px;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">OOO</div>
-					<div class="main-content-text-05">ㅣ OO원장</div>
-					<a class="main-content-arrow" href="">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent #DDDDDD 0% 0% no-repeat padding-box; background-size: contain; margin-top: 40px;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">OOO</div>
-					<div class="main-content-text-05">ㅣ OO원장</div>
-					<a class="main-content-arrow" href="">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent #DDDDDD 0% 0% no-repeat padding-box; background-size: contain; margin-top: 40px;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">OOO</div>
-					<div class="main-content-text-05">ㅣ OO원장</div>
-					<a class="main-content-arrow" href="">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
-			<div class="main-content-D-div" style="background: transparent #DDDDDD 0% 0% no-repeat padding-box; background-size: contain; margin: 40px 0 0;">
-				<div class="main-content-D-inform">
-					<div class="main-content-text-04">OOO</div>
-					<div class="main-content-text-05">ㅣ OO원장</div>
-					<a class="main-content-arrow" href="">〉</a>
-					<div class="main-content-text-06">경희대학교 치의학 석사</div>
-				</div>
-			</div>
+			<div id="main-content-staff"></div>
 		</div>
 	</div>
 	<div style="width:100%; height: 550px;"><!-- main content-3 -->
@@ -554,6 +492,57 @@
 </div>
 <script>
 $(document).ready(function(){
+	// 식립 건 수 불러오기
+	$.ajax({
+		type: 'post',
+		url : '/MindDentist/admin/accumulateLoader',
+		datatype : 'text',
+		success : function(data){
+			$('#accumulate_count').text(numberWithCommas(data));
+			
+			function numberWithCommas(data) {
+			    return data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			}	
+		}		
+	});
+	
+	//의료진 목록 불러오기
+	$.ajax({
+		type: 'POST',
+		url : '/MindDentist/admin/adminStaffList',
+		dataType : 'json',
+		success : function(data){
+			$.each(data.list, function(index, items){
+				$('#main-content-staff').append($('<div/>', {
+					id : 'main-content-D-div-'+index,
+					class : 'main-content-D-div'
+					}).css('background'
+						, 'url("../upload/'+items.mainImgName+'") no-repeat')
+					.css('background-size', 'contain')
+						.append($('<div/>',{
+							class : 'main-content-D-inform'
+							}).append($('<div/>', {
+								class : 'main-content-text-04',
+								text : items.asName
+							})).append($('<div/>',{
+								class : 'main-content-text-05',
+								text : 'ㅣ ' + items.asPosition
+							})).append($('<a/>',{
+								class : 'main-content-arrow',
+								href : '../guidance/medicalStaff',
+								text : '〉'
+							})).append($('<div/>',{
+								class : 'main-content-text-06',
+								text : items.asMainCareer
+							}))));
+				if((index+1)%4==0){
+					$('#main-content-D-div-'+index).css('margin-right', '0');
+				}if(index>3){//줄바꿧을때 윗 들여쓰기
+					$('#main-content-D-div-'+index).css('margin-top', '40px');
+				}
+			});
+		}
+	});
 	$("#slider_wrap").slick({
 		infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
 		slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/

@@ -14,6 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class MybatisConfig {
 	
+	//개발자
+	/*
 	@Bean(name="dataSource")
 	public BasicDataSource getBasicDataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
@@ -21,6 +23,19 @@ public class MybatisConfig {
 		basicDataSource.setUrl("jdbc:mariadb://localhost:3306/test");
 		basicDataSource.setUsername("root");
 		basicDataSource.setPassword("rktwnsd02");
+		basicDataSource.setMaxTotal(20);
+		basicDataSource.setMaxIdle(3);
+		return basicDataSource;
+	}
+	*/
+	//서버
+	@Bean(name="dataSource")
+	public BasicDataSource getBasicDataSource() {
+		BasicDataSource basicDataSource = new BasicDataSource();
+		basicDataSource.setDriverClassName("org.mariadb.jdbc.Driver");
+		basicDataSource.setUrl("jdbc:mariadb://minddental.cafe24.com:3306/minddental");
+		basicDataSource.setUsername("minddental");
+		basicDataSource.setPassword("mind8386*11");
 		basicDataSource.setMaxTotal(20);
 		basicDataSource.setMaxIdle(3);
 		return basicDataSource;
