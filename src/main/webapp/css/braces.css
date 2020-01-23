@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+
+/* 4-1 */
+
+
+#braces_wrap-1{
+	width: 1920px;
+	height: 4188px;
+}
+#pBraces-img-1{
+	width: 960px;
+	height: 320px;
+}
+#pBraces-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#pBraces-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 301px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.pBraces-text-box{
+	width: 240px;
+	height: 60px;
+	background: #B47D54 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	float: left;
+}
+.pBraces-text-2{
+	margin: 13px auto;
+	text-align: center;
+	/* font: Bold 30px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 44px;
+	letter-spacing: -0.9px;
+	color: #FAFAF5;
+	opacity: 1;
+}
+#pBraces-text-3{
+	text-align: center;
+	/* font: Bold 32px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	letter-spacing: -0.96px;
+	color: #C8500F;
+	opacity: 1;
+}
+.pBraces-text-4{
+	margin-top: 40px;
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+.pBraces-text-5{
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.pBraces-img-3{
+	width: 472px;
+	height: 520px;
+}
+#pBraces-text-6{
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+#pBraces-img-4{
+	width: 720px;
+	height: 516px;
+	margin: 80px auto 68px;
+}
+.pBarces-img-5{
+	width: 472px;
+	height: 520px;
+}
+
+
+/* 4-2  덧니 교정*/
+
+#braces_wrap-2{
+	width: 1920px;
+	height: 3374px;
+}
+#sBraces-img-1{
+	width: 960px;
+	height: 320px;
+}
+#sBraces-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#sBraces-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 444px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#sBraces-text-2{
+	margin: 100px auto 75px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.sBraces-text-3{
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -1.4px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#sBraces-text-4{
+	text-align: center;
+	/* font: Regular 38px/60px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 38px;
+	line-height: 60px;
+	letter-spacing: 0;
+	color: #C8500F;
+}
+#sBraces-img-4{
+	margin: 69px auto 100px;
+	width: 800px;
+	height: 90px;
+}
+#sBraces-img-5{
+	width: 800px;
+	height: 400px;
+}
+.sBraces-img-6{
+	width: 312px;
+	height: 144px;
+}
+#sBraces-text-5{
+	text-align: center;
+	/* font: Bold 36px/60px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 60px;
+	letter-spacing: 0;
+	color: #C8500F;
+	opacity: 1;
+}
+#sBraces-img-7{
+	margin: 60px auto auto;
+	width: 959px;
+	height: 174px;
+}
+
+/* 4-3 비수술 */
+
+#braces_wrap-3{
+	width: 1920px;
+	height: 3980px;
+}
+#nBraces-img-1{
+	width: 960px;
+	height: 320px;
+}
+#nBraces-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#nBraces-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 485px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.nBraces-text-2{
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#nBraces-text-3{
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+.nBraces-img-3{
+	width: 959px;
+	height: 510px;
+}
+#nBraces-img-4{
+	margin: 56px auto 95px;
+	width: 960px;
+	height: 174px;
+}
+#nBraces-text-4{
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -0.72px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+.nBraces-img-5{
+	width: 960px;
+	height: 420px;
+}
+
+/* 4-4 설측/콤비/투명 */
+
+
+#braces_wrap-4{
+	width: 1920px;
+	height: 4181px;
+}
+#cBraces-img-1{
+	width: 960px;
+	height: 320px;
+}
+#cBraces-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#cBraces-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.cBraces-img-3{
+	width: 960px;
+	height: 460px;
+}
+#cBraces-img-4{
+	width: 648px;
+	height: 72px;
+}
+.cBraces-text-2{
+	text-align: center;
+	/* font: Bold 42px/48px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 48px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#cBraces-img-5{
+	margin: auto;
+	width: 800px;
+	height: 400px;
+}
+.cBraces-text-3{
+	margin-top: 30px;
+	text-align: center;
+	/* font: Regular 24px/36px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#cBraces-img-6{
+	margin-top: 50px;
+	width: 800px;
+	height: 600px;
+}
+
+/* 4-5 부분교정 */
+
+#braces_wrap-5{
+	width: 1920px;
+	height: 3699px;
+}
+#paBraces-img-1{
+	width: 960px;
+	height: 320px;
+}
+#paBraces-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#paBraces-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 177px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#paBraces-text-2{
+	margin-top: 100px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-hegith: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#paBraces-img-3{
+	margin: auto;
+	width: 800px;
+	height: 600px;
+}
+#paBraces-text-3{
+	margin-top: 60px;
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -1.4px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#paBraces-text-4{
+	text-align: center;
+	/* font: Regular 28px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 44px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	white-space: pre-line;
+}
+#paBraces-img-4{
+	margin: 100px auto 48px;
+	width: 960px;
+	height: 730px;
+}
+#paBraces-img-5{
+	width: 960px;
+	height: 510px;
+}

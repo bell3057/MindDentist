@@ -1,88 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>
-#cosmetic_wrap-1{
-	width: 100%;
-	height: 3074px;
-}
-#mCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#mCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#mCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 384px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#mCosmetic-img-3{
-	margin-top: 100px;
-	width: 800px;
-	height: 340px;
-}
-#mCosmetic-text-2{
-	text-align: center;
-	/* font: Regular 32px/48px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 32px;
-	line-height: 48px;
-	letter-spacing: -0.96px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#mCosmetic-text-3{
-	margin: 36px auto 96px;
-	text-align: center;
-	/* font: Bold 42px/56px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 56px;
-	letter-spacing: -1.26px;
-	color: #C8500F;
-	opacity: 1;
-}
-#mCosmetic-img-4{
-	width: 800px;
-	height: 495px;
-}
-.mCosmetic-text-4{
-	text-align: center;
-	/* font: Regular 28px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 28px;
-	line-height: 40px;
-	letter-spacing: -0.84px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#mCosmetic-img-5{
-	width: 960px;
-	height: 456px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/cosmetic.css">
 
-<div id="cosmetic_wrap-1">
+<div id="cosmetic_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
 		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="mCosmetic-img-1" src="../img/5-2/52_main.png">
@@ -120,7 +40,7 @@ $(document).ready(function(){
 		$('#menu_bar-5').css("color", "#C8500F");
 		$('#menu_selected_bar-5').css("background-color", "#B4AAA0");
 		$('#menu_dropDown').slideDown(200);
-		$('#menu_dropDown-4').css("display", "block");
+		$('#menu_dropDown-5').css("display", "block");
 		$('#mdt-20').css("font-weight", "800");		
 	});
 });

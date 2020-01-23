@@ -1,92 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>
-#service_wrap-1{
-	width: 100%;
-	height: 1132px;
-	font-family: 'NanumSquareRound',sans-serif;
-}
-#notice-text-1{
-height: 44px;
-text-align: center;
-/* font: Bold 40px/30px NanumSquareRoundOTF; */
-font-weight: bold;
-font-size: 40px;
-line-height: 30px;
-letter-spacing: -2px;
-color: #C8500F;
-opacity: 1;
-}
-#notice-text-2{
-margin: 20px auto 60px;
-text-align: center;
-/* font: Regular 20px/23px NanumSquareRoundOTF; */
-font-size: 20px;
-line-height: 23px;
-letter-spacing: -0.6px;
-color: #6E645A;
-opacity: 1;
-}
-.notice_table-div{
-	width: 960px;
-	border-top: 2px solid #9B948C;
-	border-bottom: 2px solid #9B948C;
-}
-.notice_table{
-	width: 960px;
-	border: 0;
-}
-.notice_append_table{
-	width: 960px;
-	border-top: 1px solid #9B948C;
-}
-.notice_table th{
-	/* font: Bold 16px/18px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	letter-spacing: -0.48px;
-	color: #6E645A;
-	opacity: 1;
-}
-.notice_table_font{
-	/* font: Bold 12px/13px NanumSquareRoundOTF; */
-	font-size: 12px;
-	line-height: 13px;
-	letter-spacing: -0.36px;
-	color: #6E645A;
-	opacity: 1;
-}
-.notice_table-num{
-width: 32px; padding-left: 24px;
-}
-.notice_table-subject{
-padding-left: 74px;
-}
-.notice_table-date{
-width: 62px; padding-right: 45px;
-}
-.notice_table-view{
-width: 32px; padding-right: 24px;
-}
-.notice_table-text-tr{
-	height: 40px;
-	text-align: center;
-}
-.notice_table_iSubject{
-	text-align: left;
-	/* font: Bold 16px/18px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	letter-spacing: -0.48px;
-	color: #C8500F;
-	opacity: 1;
-}
-.notice_table_nSubject{
-	text-align: left;
-}
-</style>
+    
+<link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 
 <div id="service_wrap-1">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
@@ -103,10 +18,26 @@ width: 32px; padding-right: 24px;
 			</table>
 			<table class="notice_append_table">
 				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">1</td>
-					<td class="notice_table-subject notice_table_iSubject">시험용</td>
-					<td class="notice_table-date notice_table_font">2020.01.15</td>
+					<td class="notice_table-num notice_table_font">3</td>
+					<td class="notice_table-subject notice_table_iSubject">담당의 별 진료 스케줄 안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.31</td>
 					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">2</td>
+					<td class="notice_table-subject notice_table_iSubject">진료 전 / 후 주의사항 안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.28</td>
+					<td class="notice_table-view notice_table_font">21</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">1</td>
+					<td class="notice_table-subject notice_table_iSubject">마인드 3주년 이벤트 안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.27</td>
+					<td class="notice_table-view notice_table_font">93</td>
 				<tr>
 			</table>
 		</div>
@@ -121,16 +52,95 @@ width: 32px; padding-right: 24px;
 			</table>
 			<table class="notice_append_table">
 				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">10</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.31</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">9</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.28</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">8</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.27</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">7</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.26</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">6</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.25</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">5</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.24</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">4</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.23</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">3</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.22</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
+					<td class="notice_table-num notice_table_font">2</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.21</td>
+					<td class="notice_table-view notice_table_font">23</td>
+				<tr>
+			</table>
+			<table class="notice_append_table">
+				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">1</td>
-					<td class="notice_table-subject notice_table_nSubject">시험용</td>
-					<td class="notice_table-date notice_table_font">2020.01.15</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
+					<td class="notice_table-date notice_table_font">2019.12.20</td>
 					<td class="notice_table-view notice_table_font">23</td>
 				<tr>
 			</table>
 		</div>
+		<div style="width: 280px; height: 40px; margin: 40px auto 100px;">
+			<div class="paging-box"><span>〈</span></div>
+			<div class="paging-box"><span>1</span></div>
+			<div class="paging-box" style="color: #9B948C;"><span>2</span></div>
+			<div class="paging-box" style="color: #9B948C;"><span>3</span></div>
+			<div class="paging-box" style="margin-right:0;"><span>〉</span></div>
+		</div>
 	</div>
 </div>
-
+<script src="../js/serviceCenter.js"></script>
 <script>
 $(document).ready(function(){
 	$('#menu_bar-7').css("font-weight", "800");

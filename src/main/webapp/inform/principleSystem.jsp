@@ -1,201 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-<style>
-#inform_wrap-4{
-	width: 100%;
-	height: 100%;
-}
-.pSystem-text-1{
-	text-align: center;
-	/* font: Bold 25px/30px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 30px;
-	letter-spacing: 0;
-	color: #9B948C;
-	opacity: 1;
-	margin-bottom: 20px;
-}
-#pSystem_Detail-1{
-	margin-top: 100px;
-	width: 960px;
-	height: 1767px;
-	text-align: center;
-}
-#pSystem-text-2{
-	text-align: center;
-	/* font: Bold 42px/30px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 30px;
-	letter-spacing: 0;
-	color: #C8500F;
-	opacity: 1;
-}
-#pSystem-img-1{
-	margin: 100px auto 80px;
-	width: 310px;
-	height: 310px;
-}
-.pSystem-text-3{
-	text-align: center;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 32px;
-	line-height: 46px;
-	letter-spacing: -0.96px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-.pSystem-bold{
-	font-weight: 800;
-}
-#pSystem-img-2{
-	width: 210px;
-	height: 118px;
-}
-#pSystem-text-4{
-	text-align: center;
-	/* font: Regular 30px/46px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 30px;
-	line-height: 46px;
-	letter-spacing: -1.5px;
-	color: #6E645A;
-	opacity: 1;
-	margin: 28px auto 79px;
-}
-.pSystem-border{
-	width: 258px;
-	height: 380px;
-	border: 1px solid #C8500F;
-	border-radius: 10px;
-	opacity: 1;
-	float: left;
-	text-align: center;
-}
-.pSystem-text-5{
-	text-align: center;
-	/* font: Bold 32px/28px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 28px;
-	letter-spacing: -1.6px;
-	color: #C8500F;
-	opacity: 1;
-	margin: 27px 0 22px;
-}
-.pSystem-text-6{
-	text-align: center;
-	/* font: Regular 20px/28px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 20px;
-	line-height: 28px;
-	letter-spacing: -1px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-.pSystem-img-3{
-	width: 228px;
-	height: 180px;
-	border-radius: 10px;
-	margin: 24px 0 14px;
-}
-#pSystem_Detail-2{
-	margin-top: 80px;
-	display: none;
-	width: 960px;
-	height: 2249px;
-	text-align: center;
-}
-
-
-#pSystem_Detail-3{
-	margin-top: 80px;
-	display: none;
-	width: 960px;
-	height: 2369px;
-	text-align: center;
-}
-#pSystem_text-8{
-	text-align: center;
-	/* font: Bold 36px/56px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 56px;
-	letter-spacing: -1.08px;
-	color: #6E645A;
-}
-#pSystem_text-9{
-	text-align: center;
-	/* font: Bold 42px/56px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 56px;
-	letter-spacing: -1.26px;
-	color: #C8500F;
-}
-#pSystem-img-7{
-	margin-top: 60px;
-	width: 720px;
-	height: 500px;
-	border-radius: 10px;
-	opacity: 1;
-}
-.pSystem-text-10{
-	/* font: Bold 36px/44px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 44px;
-	text-align: center;	
-	letter-spacing: -1.08px;
-	color: #C8500F;
-	opacity: 1;
-}
-.pSystem-text-11{
-	margin: 40px auto 80px;
-	text-align: center;
-	/* font: Regular 24px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size:	24px;
-	line-height: 40px;
-	letter-spacing: -1.2px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#pSystem-img-8{
-	width: 584px;
-	height: 225px;
-	opacity: 1;
-}
-#pSystem-text-12{
-	margin-top: 44px;
-	text-align: center;
-	/* font: Regular 23px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size:	23px;
-	line-height: 40px;
-	letter-spacing: -1.15px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#pSystem-img-9{
-	width: 800px;
-	height: 400px;
-	border-radius: 10px;
-	opacity: 1;
-}
-</style>
+    
+<link rel="stylesheet" type="text/css" href="../css/inform.css"/>
 
 <div id="inform_wrap-4">
 	<div style="width:960px; height: 100%; margin: auto;">
@@ -248,7 +54,22 @@
 				</div>
 			</div>
 		</div>
-		<div id="pSystem_Detail-2" class="detail_page"></div>
+		<div id="pSystem_Detail-2" class="detail_page">
+			<div id="pSystem-text-7">'대학병원과 동일한 교과서적 소독 멸균 시스템'</div>
+			<img id="pSystem-img-4" src="../img/1-4/02/1404.png">
+			<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 80px auto;"></div>
+			<div class="pSystem-text-7">사용된 기구는 수거 즉시
+			FDA의 가이드라인에 따라 소독, 멸균됩니다.</div>
+			<div style="width: 800px; height: 600px; margin: 80px auto 100px;">
+				<img class="pSystem-img-5" src="../img/1-4/02/1405.png">
+				<img class="pSystem-img-5" src="../img/1-4/02/1406.png">
+				<img class="pSystem-img-5" src="../img/1-4/02/1407.png">
+				<img class="pSystem-img-5" src="../img/1-4/02/1408.png">
+			</div>
+			<img id="pSystem-img-6" src="../img/1-4/02/graph02.png">
+			<div class="pSystem-text-7" style="margin-top: 99px;">마인드 치과에서는 환자분의 구강 내외는 물론,
+			진료 환경까지 청결한 상태로 유지합니다.</div>
+		</div>
 		<div id="pSystem_Detail-3" class="detail_page">
 			<div style="text-align: center; white-space: pre-line;"><span id="pSystem_text-8">MIND WARRANTY</span>
 			<span id="pSystem_text-9">“마인드 치과만의 책임보증 프로그램”</span>
@@ -271,43 +92,10 @@
 	</div>
 </div>
 
+<script type="text/javascript" src="../js/inform.js"></script>
+
 <script>
 $(document).ready(function(){
-	$('#pSystem_menu-1').mouseover(function(){//상세페이지 hover
-		$('.pSystem-text-1').css("color", "#9B948C").css("font-weight", "bold");
-		$('.pSystem_selected').css("background-color", "#FFFFFF");
-		$('.detail_page').css("display", "none");
-		$('#pSystem_menu_text-1').css("color", "#C8500F").css("font-weight","800");
-		$('#pSystem_menu_selected-1').css("background-color", "#B4AAA0");
-		$('#pSystem_Detail-1').show();
-	});
-	$('#pSystem_menu-2').mouseover(function(){
-		$('.pSystem-text-1').css("color", "#9B948C").css("font-weight", "bold");
-		$('.pSystem_selected').css("background-color", "#FFFFFF");
-		$('.detail_page').css("display", "none");
-		$('#pSystem_menu_text-2').css("color", "#C8500F").css("font-weight","800");
-		$('#pSystem_menu_selected-2').css("background-color", "#B4AAA0");
-		$('#pSystem_Detail-2').show();
-	});
-	$('#pSystem_menu-3').mouseover(function(){
-		$('.pSystem-text-1').css("color", "#9B948C").css("font-weight", "bold");
-		$('.pSystem_selected').css("background-color", "#FFFFFF");
-		$('.detail_page').css("display", "none");
-		$('#pSystem_menu_text-3').css("color", "#C8500F").css("font-weight","800");
-		$('#pSystem_menu_selected-3').css("background-color", "#B4AAA0");
-		$('#pSystem_Detail-3').show();
-	});
-	$('#inform_wrap-4').mouseleave(function(){
-		$('.pSystem-text-1').css("color", "#9B948C").css("font-weight", "bold");
-		$('.pSystem_selected').css("background-color", "#FFFFFF");
-		$('.detail_page').css("display", "none");
-		$('#pSystem_menu_text-1').css("color", "#C8500F").css("font-weight","800");
-		$('#pSystem_menu_selected-1').css("background-color", "#B4AAA0");
-		$('#pSystem_Detail-1').show();
-	});
-	
-	
-	//헤더 애니메이션
 	$('#menu_bar-1').css("font-weight", "800");
 	$('#menu_bar-1').css("color", "#C8500F");
 	$('#menu_selected_bar-1').css("background-color", "#B4AAA0");

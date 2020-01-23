@@ -1,86 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>
-#cosmetic_wrap-3{
-	width: 100%;
-	height: 2983px;
-}
-#wCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#wCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#wCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;;
-	width: 301px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#wCosmetic-text-2{
-	margin: 100px auto 51px;
-	text-align: center;
-	/* font: Bold 42px/56px NanumSquareRoundOTF; */
-	letter-spacing: -1.26px;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 56px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-.wCosmetic-text-3{
-	text-align: center;
-	/* font: Regular 28px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 28px;
-	line-height: 40px;
-	letter-spacing: -0.84px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#wCosmetic-text-4{
-	margin: 70px auto 60px;
-	text-align: center;
-	/* font: Bold 36px/44px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 44px;
-	letter-spacing: -1.08px;
-	color: #C8500F;
-	opacity: 1;
-}
-#wCosmetic-img-3{
-	margin: auto;
-	width: 800px;
-	height: 915px;
-}
-#wCosmetic-img-4{
-	margin-bottom: 91px;
-	width: 960px;
-	height: 300px;
-}
-</style>
 
+<link rel="stylesheet" type="text/css" href="../css/cosmetic.css">
+   
 <div id="cosmetic_wrap-3">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
 		<div style="width: 960px; height: 320px; position: relative;">
@@ -120,7 +42,7 @@ $(document).ready(function(){
 		$('#menu_bar-5').css("color", "#C8500F");
 		$('#menu_selected_bar-5').css("background-color", "#B4AAA0");
 		$('#menu_dropDown').slideDown(200);
-		$('#menu_dropDown-4').css("display", "block");
+		$('#menu_dropDown-5').css("display", "block");
 		$('#mdt-21').css("font-weight", "800");		
 	});
 });

@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+/* 6-1 자연치아*/
+#generalCare_wrap-1{
+	width: 1920px;
+	height: 3100px;
+}
+#ntGeneral-img-1{
+	width: 960px;
+	height: 320px;
+}
+#ntGeneral-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#ntGeneral-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#ntGeneral-text-2{
+	margin: 100px auto 50px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.ntGeneral-text-3{
+	margin: 38px auto 96px;
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+.ntGeneral-text-4{
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+#ntGeneral-img-3{
+	margin-top: 38px;
+	width: 960px;
+	height: 390px;
+}
+.ntGeneral-img-4{
+	width: 473px;
+	height: 312px;
+}
+#ntGeneral-text-5{
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+
+/* 6-2 충치*/
+
+#generalCare_wrap-2{
+	width: 1920px;
+	height: 2599px;
+}
+#tdGeneral-img-1{
+	width: 960px;
+	height: 320px;
+}
+#tdGeneral-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#tdGeneral-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#tdGeneral-text-2{
+	margin: 71px auto 50px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#tdGeneral-text-3{
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	white-space: pre-line;
+}
+#tdGeneral-img-3{
+	margin-top: 86px;
+	width: 800px;
+	height: 213px;
+}
+.tdGeneral-img-4{
+	width: 960px;
+	height: 360px;
+}
+
+/* 6-3 신경*/
+
+#generalCare_wrap-3{
+	width: 1920px;
+	height: 3364px;
+}
+#neGeneral-img-1{
+	width: 960px;
+	height: 320px;
+}
+#neGeneral-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#neGeneral-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#neGeneral-text-2{
+	margin: 71px auto 50px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+.neGeneral-text-3{
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+.neGeneral-text-4{
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+.neGeneral-img-3{
+	width: 456px;
+	height: 149px;
+}
+.neGeneral-img-4{
+	width: 478px;
+	height: 352px;
+}
+#neGeneral-img-5{
+	width: 960px;
+	height: 342px;
+}
+#neGeneral-img-6{
+	margin-top: 80px;
+	width: 960px;
+	height: 400px;
+}
+
+/* 6-4 잇몸*/
+
+#generalCare_wrap-4{
+	width: 1920px;
+	height: 3404px;
+}
+#gtGeneral-img-1{
+	width: 960px;
+	height: 320px;
+}
+#gtGeneral-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#gtGeneral-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#gtGeneral-text-2{
+	margin: 71px auto 50px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+}
+.gtGeneral-text-3{
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -1.4px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#gtGeneral-img-3{
+	width: 800px;
+	height: 520px;
+}
+.gtGeneral-text-4{
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+#gtGeneral-img-4{
+	width: 800px;
+	height: 368px;
+}
+.gtGeneral-img-5{
+	width: 478px;
+	height: 352px;
+
+}
+
+/* 6-5 턱관절*/
+
+#generalCare_wrap-5{
+	width: 1920px;
+	height: 3124px;
+}
+#tpGeneral-img-1{
+	width: 960px;
+	height: 320px;
+}
+#tpGeneral-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#tpGeneral-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	width: 517px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#tpGeneral-text-2{
+	margin: 100px auto 53px;
+	text-align: center;
+	/* font: Bold 42px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 44px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	opacity: 1;
+}
+.tpGeneral-text-3{
+	text-align: center;
+	/* font: Regular 24px/40px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.2px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#tpGeneral-img-3{
+	margin-top: 60px;
+	width: 800px;
+	height: 400px;
+}
+.tpGeneral-text-4{
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+#tpGeneral-img-4{
+	width: 800px;
+	height: 400px;
+	background: #8D8D8D 0% 0% no-repeat padding-box;
+}
+#tpGeneral-img-5{
+	margin-top: 60px;
+	width: 800px;
+	height: 280px;
+}

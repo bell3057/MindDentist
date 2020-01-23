@@ -33,7 +33,7 @@ public class MybatisConfig {
 	public BasicDataSource getBasicDataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
 		basicDataSource.setDriverClassName("org.mariadb.jdbc.Driver");
-		basicDataSource.setUrl("jdbc:mariadb://minddental.cafe24.com:3306/minddental");
+		basicDataSource.setUrl("jdbc:mariadb://localhost:3306/minddental");
 		basicDataSource.setUsername("minddental");
 		basicDataSource.setPassword("mind8386*11");
 		basicDataSource.setMaxTotal(20);

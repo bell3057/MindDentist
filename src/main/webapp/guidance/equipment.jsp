@@ -1,79 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<style>
-#guidance_wrap-2{
-	width: 100%;
-	height: 100%;
-}
-#equipment-text-1{
-	text-align: center;
-	/* font: Bold 42px/30px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;	
-	line-height: 30px;
-	letter-spacing: -2.1px;
-	color: #C8500F;
-	opacity: 1;
-}
-.equipment-img{
-	width: 308px;
-	height: 308px;
-	background-color: #6E645A66;
-	border-radius: 10px;
-	float: left;
-	filter: brightness(0.75);
-	cursor: pointer;
-}
-.equipment-img:hover{
-	filter: brightness(1);
-	border: 3px solid #C8500F;
-	box-sizing: border-box;
-}
-.eq-img{
-	filter: brightness(1);
-	border: 3px solid #C8500F;
-	box-sizing: border-box;
-}
-.eq_details{
-	width: 960px;
-	height: 925px;
-	text-align: center;
-	display: none;
-}
-.equipment-text-2{
-	text-align: center;
-	/* font: Bold 42px/56px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 42px;	
-	line-height: 56px;
-	letter-spacing: -1.26px;
-	color: #95682B;
-	opacity: 1;
-}
-.equipment-text-3{
-	margin: 49px auto 60px;
-	height: 100px;
-	text-align: center;
-	/* font: Regular 20px/32px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 20px;	
-	line-height: 32px;
-	letter-spacing: -0.6px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-.equipment-img-L{
-	width: 800px;
-	height: 500px;
-	border-radius: 10px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/guidance.css">
 
-<div id="guidance_wrap-2">
+<div id="guidance_wrap-3">
 	<div style="width: 960px; height:; margin: auto; padding-top: 150px;">
 		<div id="equipment-text-1">마인드 치과 보유장비</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; margin: 70px auto;"></div>
@@ -96,7 +26,7 @@
 		</div>
 		<div id="eq_detail-2" class="eq_details">
 			<div class="equipment-text-2">PRF 원심분리장치</div>
-			<div class="equipment-text-3">우리 혈액의 성분인 혈소판 내에는 인체조직의 치유를 담당하는 세포들이 모여 있습니다. PRF 원심분리장치로 이 성장인자 성분
+			<div class="equipment-text-3" style="letter-spacing: -1px;">우리 혈액의 성분인 혈소판 내에는 인체조직의 치유를 담당하는 세포들이 모여 있습니다. PRF 원심분리장치로 이 성장인자 성분
 			들을 혈액 속에서 추출해 내어 뼈 이식과 함께 적용하면 뼈와 잇몸의 치유를 돕고 뼈 이식 결과를 우수하게 만들어 줍니다.</div>
 			<img class="equipment-img-L" src="../img/2-3/g02_L.png" style="width: 960px;">
 		</div>
@@ -143,126 +73,10 @@
 		</div>
 	</div>
 </div>
-
+<script src="../js/guidance.js"></script>
 <script>
 $(document).ready(function(){
-	//보유장비 click이벤트
-	$('#eq-img-1').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-1').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-		
-	$('#eq-img-2').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-2').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
 	
-	$('#eq-img-3').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-3').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-4').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-4').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-5').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-5').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-6').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-6').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-7').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-7').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-8').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-8').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
-	
-	$('#eq-img-9').on({"click" : function(){		
-		$('.equipment-img').removeClass('eq-img');
-		$(this).addClass('eq-img');
-		
-		$('.eq_details').css("display", "none");
-		$('#eq_detail-9').show();
-		
-		} ,"mouseenter" : function(){
-			$(this).addClass('hover');
-		}, "mouseleave" : function(){
-			$(this).removeClass('hover');
-	}});
 	//헤더 애니메이션
 	$('#menu_bar-2').css("font-weight", "800");
 	$('#menu_bar-2').css("color", "#C8500F");

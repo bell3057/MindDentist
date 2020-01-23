@@ -1,33 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>
-#service_wrap-2{
-	width: 100%;
-	height: 1446px;
-	font-family: 'NanumSquareRound',sans-serif;
-}
-#bna-text-1{
-height: 44px;
-text-align: center;
-/* font: Bold 40px/30px NanumSquareRoundOTF; */
-font-weight: bold;
-font-size: 40px;
-line-height: 30px;
-letter-spacing: -2px;
-color: #C8500F;
-opacity: 1;
-}
-#bna-text-2{
-margin: 20px auto 60px;
-text-align: center;
-/* font: Regular 20px/23px NanumSquareRoundOTF; */
-font-size: 20px;
-line-height: 23px;
-letter-spacing: -0.6px;
-color: #6E645A;
-opacity: 1;
-}
-</style>
+
+<link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 
 <div id="service_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">

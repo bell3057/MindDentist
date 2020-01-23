@@ -1,50 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<link rel="stylesheet" type="text/css" href="../css/inform.css"/>
 
-<style>
-#inform_wrap-1{
-	width: 100%;
-	height: 1937px;
-	font-family: 'NanumSquareRound'; 
-}
-#inform-img{
-	width: 960px;
-	height: 480px;
-	margin: 150px 0 80px;
-}
-.inform-text-01{
-	text-align: center;
-	/* font: Bold 42px/42px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 42px;
-	letter-spacing: 0;
-	color: #C8500F;
-	opacity: 1;
-}
-#inform-text-02{
-	text-align: center;
-	/* font: Bold 32px/46px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 46px;
-	letter-spacing: -0.96px;
-	color: #6E645A;
-	white-space: pre-line;
-}
-.inform-text-03{
-	text-align: center;
-	/* font: Regular 24px/36px NanumSquareRoundOTF; */
-	font-size: 24px;
-	line-height: 36px;
-	letter-spacing: -1.26px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-	margin-bottom: 60px;
-}
-</style>
 <div id="inform_wrap-1">
 	<div style="width: 960px; height: 100%; margin: auto;">
 		<img id="inform-img" src="../img/1-1/11main.png">
@@ -71,7 +29,7 @@
 		</div>
 	</div>
 </div>
-
+<script type="text/javascript" src="../js/inform.js"></script>
 <script>
 $(document).ready(function(){
 	$('#menu_bar-1').css("font-weight", "800");
@@ -89,5 +47,6 @@ $(document).ready(function(){
 		$('#menu_dropDown-1').css("display", "block");
 		$('#mdt-01').css("font-weight", "800");		
 	});
+
 });
 </script>

@@ -125,7 +125,7 @@ $(document).ready(function(){
 		else {
 			$.ajax({
 				type : "post",
-				url : '/MindDentist/admin/loginProcess',
+				url : '/admin/loginProcess',
 				data : {"id" : $('#adminId').val(), "password" : $('#adminPwd').val()},
 				dataType : 'text',
 				success : function(data){

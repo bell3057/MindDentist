@@ -1,79 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<style>
-#inform_wrap-2{
-	width: 100%;
-	height: 1947px;
-	font-family: 'NanumSquareRound';
-}
-#principle-text-01{
-	text-align: center;
-	/* font: Bold 30px/42px NanumSquareRoundOTF; */
-	font-size: 42px;
-	font-weight: bold; 
-	line-height: 56px;
-	letter-spacing: -1.26px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#principle-text-02{
-	text-align: center;
-	font-size: 24px;
-	line-height: 27px;
-	/* font: Regular 20px/23px NanumSquareRoundOTF; */
-	letter-spacing: -0.72px;
-	color: #6E645A;
-	opacity: 1;
-	margin-top: 28px;
-}
-.principle-text-div{
-	margin-left: 40px;
-	height: 280px;
-	float: left;
-	vertical-align: middle;
-}
-.principle-text-03{
-	margin-top: 64.5px;
-	text-align: left;
-	/* font: Bold 32px/30px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 30px;
-	letter-spacing: -0.96px;
-	color: #C8500F;
-	opacity: 1;
-}
-.principle-text-04{
-	text-align: left;
-	/* font: Regular 24px/36px NanumSquareRoundOTF; */
-	font-size: 24px;
-	line-height: 36px;
-	letter-spacing: -0.72px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-	margin-top: 18px;
-}
-#principle-text-05{
-	margin-top: 60px;
-	text-align: center;
-	/* font: Bold 36px/56px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 56px;
-	letter-spacing: -1.08px;
-	color: #C8500F;
-	opacity: 1;
-}
-.principle_img{
-	width: 480px;
-	height: 280px;
-	opacity: 1;
-	float: left;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/inform.css"/>
+
 <div id="inform_wrap-2">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px;">
 		<div id="principle-text-01">안녕하세요.
@@ -114,6 +43,7 @@
 		<div id="principle-text-05">“안심하세요. 이 곳은 마인드 치과입니다.”</div>
 	</div>
 </div>
+<script type="text/javascript" src="../js/inform.js"></script>
 <script>
 $(document).ready(function(){
 	$('#menu_bar-1').css("font-weight", "800");

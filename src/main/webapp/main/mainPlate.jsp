@@ -1,37 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<style>	
-#main_plate{
-	width: 100%;
-	height: 4279px;
-}
-#slider_wrap{
-	width: 100%;
-	height: 720px;
-	opacity: 1;
-}
-.slider-img{
-	width: 1920px;
-	height: 720px;
-}
-#slide-text{
-	top: 287px;
-    left: 29.49%;
-	width: 439px;
-	height: 146px;
-	text-align: left;
-	/* font: Regular 60px/80px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 60px;
-	font-weight: normal;
-	line-height: 80px;
-	letter-spacing: -3px;
-	color: #C8500F;
-	opacity: 1;
-	position: absolute;
-	white-space: pre-line;
-}
+
+<link rel="stylesheet" type="text/css" href="../css/mainPage.css"/>
+<style>
 .slick-dots{
 	top: 85.28%;
     left: 47.567%;
@@ -57,331 +28,9 @@
     outline: none;
     background: #B4AAA0;
 }
-.slick-dots li.slick-active button{
-	background: #C8500F;
-}
-#slide_button_box{
-	top: 800px;
-    left: 923px;
-	width: 75px; 
-	height: 15px;	
-	position: absolute;	
-}
-.slide_button{
-	width: 15px;
-	height: 15px;
-	background: #B4AAA0 0% 0% no-repeat padding-box;
-	opacity: 1;
-	float: left;
-}
-#accumulate_count_div{
-	width: 100%;
-	height: 174px;
-	background: #9B948C 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-.accumulate_count-text{
-	margin: 20px 0;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	color: #FFFFFF;
-	float: left;
-	line-height: 40px;
-}
-#accumulate_count{
-	margin-right: 13px;
-	text-align: right;
-	/* font: Bold 60px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 60px;
-	/* line-height: 40px; */
-	letter-spacing: 0;
-	color: #FFFFFF;
-	display: inline;
-	opacity: 1;
-}
-#kcsi-text{
-	margin: 23px 0 0 27px;
-	text-align: left;
-	/* font: Bold 32px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 32px;
-	line-height: 40px;
-	letter-spacing: -1.6px;
-	color: #6E645A;
-	float: left;
-	opacity: 1;
-}
-#main-content-text-01{
-	width: 295px;
-	height: 40px;
-	text-align: left;
-	/* font: Bold 36px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	letter-spacing: -1.8px;
-	color: #C8500F;
-	opacity: 1;
-	line-height: 40px;
-}
-#main-content-text-02{
-	width: 305px;
-	height: 153px;
-	text-align: left;
-	/* font: Regular 25px/42px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	letter-spacing: -1.25px;
-	font-size: 25px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-	line-height: 42px;
-}
-.mindIcon-box{
-	width: 80px;
-	height: 123px;
-	float: left;
-}
-.mindIcon-img{
-	width: 80px;
-	height: 68px;
-}
-.mindIcon-text{
-	text-align: center;
-	/* font: Bold 20px/23px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 23px;
-	letter-spacing: -0.6px;
-	color: #6E645A;
-	margin: 8px 0;
-	opacity: 1;
-}
-.mindIcon-link{
-	width: 80px;
-	text-align: center;
-	/* font: Bold 15px/17px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 17px;
-	letter-spacing: -0.45px;
-	color: #C8500F;
-	opacity: 1;
-	text-decoration: none;
-	float: left;
-}
-.mindIcon-border{
-	width: 0px;
-	height: 132px;
-	border: 0.6px solid #9B948C;
-	opacity: 1;
-	margin: 0 44px;
-	float: left;
-}
-#main-content-2{
-	width:100%; 
-	height: 1160px; 
-	background: transparent url('../img/Main/D-back.png') 0% 0% no-repeat padding-box; 
-	/* background-size: contain; */
-	background-position: center;
-}
-.main-content-text-03{
-	padding-top: 108px;
-	margin: auto;
-	width: 446px;
-	height: 44px;
-	text-align: center;
-	/* font: Bold 40px/30px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 30px;
-	letter-spacing: -2px;
-	color: #C8500F;
-	opacity: 1;
-}
-.main-content-D-div{
-	width: 220px;
-	height: 380px;
-	box-shadow: 1px 3px 4px #00000033;
-	border-radius: 10px;
-	opacity: 1;
-	float: left;
-	position: relative;
-	margin-right: 26px;
-}
-.main-content-img-01{
-	width: 300px;
-	height: 500px;
-	/* background: transparent url('img/D-01.png') 0% 0% no-repeat padding-box; */
-	box-shadow: 1px 3px 4px #00000033;
-	opacity: 1;
-}
-.main-content-D-inform{
-	margin: auto;
-	width: 198px;
-	height: 75px;
-	background: #FFFFFFE6 0% 0% no-repeat padding-box;
-	border-radius: 5px;
-	opacity: 1;
-	position: relative;
-    top: 294px;
-}
-.main-content-text-04{
-	width: 55px;
-	height: 22px;
-	text-align: left;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 22px;
-	letter-spacing: 0;
-	color: #C8500F;
-	opacity: 1;
-	position: absolute;
-	top: 15px;
-	left: 14px;
-}
-.main-content-text-05{
-	width: 58px;
-	height: 13px;
-	text-align: left;
-	letter-spacing: 0;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 16px;
-	color: #6E645A;
-	opacity: 1;
-	position: absolute;
-	top: 22px;
-	left: 69.61px;
-}
-.main-content-arrow{
-	position: absolute;
-    top: 12.7px;
-    left: 172.72px;
-    color: #D1550A;
-    font-weight: 800;
-    font-size: 22px;
-    text-decoration: none;
-}
-.main-content-text-06{
-	width: 111px;
-	height: 13px;
-	text-align: left;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: -0.36px;
-	color: #6E645A;
-	opacity: 1;
-	position: absolute;
-	top: 51px;
-	left: 14px;
-}
-#main-content-text-07{
-	width: 226px;
-	height: 90px;
-	text-align: left;
-	/* font: Bold 36px/50px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 50px;
-	letter-spacing: -1.8px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-	margin-top: 100px;
-}
-#main-content-text-08{
-	width: 330px;
-	height: 74px;
-	text-align: left;
-	/* font: Bold 30px/40px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 40px;
-	letter-spacing: 0;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
-#main-content-text-09{
-	width: 305px;
-	height: 67px;
-	text-align: left;
-	letter-spacing: -1.25px;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 25px;
-	line-height:37px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-	margin-top: 21px;
-	display: inline-block;
-}
-#main-content-img-02{
-	width: 480px; 
-	height: 480px; 
-	box-shadow: 2px 5px 6px #0000001F; 
-	border-radius: 10px;
-	opacity: 1;
-	float: left;
-}
-#main-content-img-03{
-	width: 220px;
-	height: 186px;
-	/* background: transparent url('img/Mark.png') 0% 0% no-repeat padding-box; */
-	opacity: 1;
-}
-#main-content-4{
-	width:100%; 
-	height: 845px; 
-	background: transparent url('../img/Main/WR-back.png') 0% 0% no-repeat padding-box; 
-	/* background-size: contain;  */
-	background-position: center;
-}
-#main-content-text-10{
-	width: 379px;
-	height: 76px;
-	text-align: left;
-	/* font: Bold 30px/42px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 36px;
-	font-weight: bold;
-	line-height: 48px;
-	letter-spacing: 0;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-	margin: 54px 0;
-	display: inline-block;
-}
-#main-content-text-11{
-	width: 257px;
-	height: 97px;
-	text-align: left;
-	/* font: Regular 25px/35px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 25px;
-	line-height: 35px;
-	letter-spacing: -1.25px;
-	color: #6E645A;
-	opacity: 1;
-	white-space: pre-line;
-}
 </style>
 <div id="main_plate">
-	<div style="width: 100%; height: 720px; position: relative;"><!-- slider -->
+	<div style="width: 1920px; height: 720px; position: relative;"><!-- slider -->
 		<div id="slider_wrap">
 			<img class="slider-img" src="../img/Main-01.png">
 			<img class="slider-img" src="">
@@ -396,7 +45,7 @@
 			<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
 			<span class="accumulate_count-text">임플란트 누적 식립 건</span>
 			<div style="width: 400px; text-align: right; float: right;">
-				<div id="accumulate_count">0</div>
+				<div id="accumulate_count">12,689</div>
 				<span class="accumulate_count-text" style="float: none;">건</span>
 			</div>
 		</div>
@@ -452,7 +101,36 @@
 		<div style="width:960px; height: 1160px; margin:auto; position: relative;">
 			<div class="main-content-text-03">전문의 및 석박사 출신 의료진</div>
 			<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 50.5px auto 49.5px;"></div>
-			<div id="main-content-staff"></div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/D-01.png); background-size: contain;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">양재민</div>
+						<div class="main-content-text-05">ㅣ 대표원장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/D-02.png); background-size: contain;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">김인석</div>
+						<div class="main-content-text-05">ㅣ 대표원장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/D-03.png); background-size: contain;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">박상우</div>
+						<div class="main-content-text-05">ㅣ 수석원장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div style="width:100%; height: 550px;"><!-- main content-3 -->
@@ -490,70 +168,7 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="../js/mainPage.js"></script>
 <script>
-$(document).ready(function(){
-	// 식립 건 수 불러오기
-	$.ajax({
-		type: 'post',
-		url : '/MindDentist/admin/accumulateLoader',
-		datatype : 'text',
-		success : function(data){
-			$('#accumulate_count').text(numberWithCommas(data));
-			
-			function numberWithCommas(data) {
-			    return data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-			}	
-		}		
-	});
-	
-	//의료진 목록 불러오기
-	$.ajax({
-		type: 'POST',
-		url : '/MindDentist/admin/adminStaffList',
-		dataType : 'json',
-		success : function(data){
-			$.each(data.list, function(index, items){
-				$('#main-content-staff').append($('<div/>', {
-					id : 'main-content-D-div-'+index,
-					class : 'main-content-D-div'
-					}).css('background'
-						, 'url("../upload/'+items.mainImgName+'") no-repeat')
-					.css('background-size', 'contain')
-						.append($('<div/>',{
-							class : 'main-content-D-inform'
-							}).append($('<div/>', {
-								class : 'main-content-text-04',
-								text : items.asName
-							})).append($('<div/>',{
-								class : 'main-content-text-05',
-								text : 'ㅣ ' + items.asPosition
-							})).append($('<a/>',{
-								class : 'main-content-arrow',
-								href : '../guidance/medicalStaff',
-								text : '〉'
-							})).append($('<div/>',{
-								class : 'main-content-text-06',
-								text : items.asMainCareer
-							}))));
-				if((index+1)%4==0){
-					$('#main-content-D-div-'+index).css('margin-right', '0');
-				}if(index>3){//줄바꿧을때 윗 들여쓰기
-					$('#main-content-D-div-'+index).css('margin-top', '40px');
-				}
-			});
-		}
-	});
-	$("#slider_wrap").slick({
-		infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
-		slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/
-		slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
-		autoplay: true, /* 자동으로 다음이미지 보여주기 */
-		arrows: false, /* 화살표 */
-		dots: true, /* 아래점 */
-		autoplaySpeed: 3000,/* 다음이미지로 넘어갈 시간 */
-		speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */
-		pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
-		//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
-	});
-});
+
 </script>

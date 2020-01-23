@@ -1,50 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<style>
-#footer_wrap{
-	width: 100%;
-	height: 100%;
-}
-#footer_logo_img{
-	margin: 54px 0 59px;
-	width: 236px;
-	height: 42px;
-	/* background: transparent url('img/logo.png') 0% 0% no-repeat padding-box; */
-	opacity: 1;
-}
-#copyright{
-	width: 236px;
-	height: 13px;
-	text-align: left;
-	font-family: 'NanumSquareRound';
-	font-size: 12px;
-	font-weight: bold;
-	letter-spacing: -0.4px;
-	color: #C8500F;
-	opacity: 1;
-	display: inline;
-}
-#footer_company{
-	margin: 54px 154px auto 65px;
-	width: 373px;
-	height: 114px;
-	text-align: left;
-	font-family: 'NanumSquareRound';
-	font-size: 16px;
-	letter-spacing: -0.32px;
-	color: #6E645A;
-	opacity: 1;
-	float: left;
-	white-space: pre-line; 
-	line-height: 35px;
-}
-.logo_png{
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-}
-</style>
+<link rel="stylesheet" type="text/css" src="../css/template.css">
+
 <div id="footer_wrap">
 	<div style="margin: auto; width: 960px; height: 100%">
 		<div style="width: 236px; float: left;">
@@ -63,11 +21,4 @@
 	</div>
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-$(document).ready(function(){
-	$('#inst_logo').click(function(){
-		location.href = "https://www.instagram.com/minddental/";
-	});
-});
-
-</script>
+<script src="../js/template.js"></script>

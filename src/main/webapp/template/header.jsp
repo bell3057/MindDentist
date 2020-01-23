@@ -3,86 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
-<style>
-#header_wrap{
-	width: 100%;
-	height: 100%;
-}
-#logo_img{
-	display: block;
-    margin:	auto;
-    padding: 49px 0 41px;
-    width: 220px;
-    height: 40px;
-	opacity: 1;
-	cursor: pointer;
-}
-.menu_bar{
-	height: 46px;
-	margin: 4px auto 0;
-	text-align: center;	
-	letter-spacing: 0;
-	opacity: 1;
-	float: left;
-}
-.menu_bar>a{
-	width: 58px;
-	height: 18px;
-	/* font: Bold 16px/18px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	margin: 0px 31px 0px;
-	color: #6E645A;
-	text-decoration:none;
-}
-.menu_selected_bar{
-	width: 65px;
-	height: 4px;
-	/* background: #B4AAA0 0% 0% no-repeat padding-box; */
-	opacity: 1;
-	margin: 20px auto 0;
-	/* display: none; */
-}
-#menu_dropDown{
-	width: 960px;
-	height: 50px;
-	background: #C8500F 0% 0% no-repeat padding-box;
-	box-shadow: 0px 3px 2px #0000001A;
-	border-radius: 0px 0px 15px 15px;
-	opacity: 1;
-	position: relative;
-	top: -1px;
-	margin: auto;
-	display: none;
-	z-index: 100;
-}
-.dropDown_menu{
-	width:960px; 
-	height: 18px; 
-	text-align: center; 
-	margin:auto; 
-	padding: 14px 0;
-	display: none;
-}
-.menu_dropDown-text{
-	width: 72px;
-	height: 18px;
-	text-align: center;
-	font: Regular 16px/22px NanumSquareRoundOTF;
-	font-family: 'NanumSquareRound',sans-serif;
-	font-size: 16px;
-	letter-spacing: 0;
-	color: #FFFFFF;
-	opacity: 1;
-	margin-right: 48px;
-	text-decoration:none;
-}
-.menu_dropDown-text:hover{ /* 상세메뉴 마우스오버 기능 */
-	font-weight: 800;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../css/template.css">
 <div id="header_wrap">
 	<a href="../main/index"><img id="logo_img" src="../img/logo.png"></a>
 	<div style="width: 100%; height: 50px; text-align: center;">
@@ -167,11 +88,9 @@
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript">
+<script src="../js/template.js"></script>
+<script>
 $(document).ready(function(){
-	
-	//메뉴바 hover
-	
 	$('#menu_bar-1').mouseover(function(){//마인드치과
 		$('.menu_bar>a').css("color", "#6E645A");
 		$('.menu_bar>a').css("font-weight", "bold");
