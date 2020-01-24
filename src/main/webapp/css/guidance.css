@@ -1,11 +1,64 @@
 @charset "UTF-8";
 
-/* 2-1 */
+@media all and (max-width: 2880px){
 #guidance_wrap-1{
 	width: 1920px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
+#guidance_wrap-2{
+	width: 1920px;
+	height: 1345px;
+}
+#guidance_wrap-3{
+	width: 1920px;
+	height: 100%;
+}
+#guidance_wrap-4{
+	width: 1920px;
+	height: 2324px;
+}
+}
+@media all and (max-width: 1920px){
+#guidance_wrap-1{
+	width: 1920px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#guidance_wrap-2{
+	width: 1920px;
+	height: 1345px;
+}
+#guidance_wrap-3{
+	width: 1920px;
+	height: 100%;
+}
+#guidance_wrap-4{
+	width: 1920px;
+	height: 2324px;
+}
+}
+@media all and (max-width: 1600px){
+#guidance_wrap-1{
+	width: 1600px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#guidance_wrap-2{
+	width: 1600px;
+	height: 1345px;
+}
+#guidance_wrap-3{
+	width: 1600px;
+	height: 100%;
+}
+#guidance_wrap-4{
+	width: 1600px;
+	height: 2324px;
+}
+}
+/* 2-1 */
+
 #ms-text-1{
 	text-align: center;
 	/* font: Bold 42px/30px NanumSquareRoundOTF; */
@@ -84,10 +137,7 @@
 }
 
 /* 2-2 */
-#guidance_wrap-2{
-	width: 1920px;
-	height: 1345px;
-}
+
 #facilities-text-1{
 	height: 47px;
 	text-align: center;
@@ -142,10 +192,7 @@ width: 105px; height: 15px; margin: 65px auto 0;
 	opacity: 1;
 }
 /* 2-3 */
-#guidance_wrap-3{
-	width: 1920px;
-	height: 100%;
-}
+
 #equipment-text-1{
 	text-align: center;
 	/* font: Bold 42px/30px NanumSquareRoundOTF; */
@@ -160,7 +207,6 @@ width: 105px; height: 15px; margin: 65px auto 0;
 .equipment-img{
 	width: 308px;
 	height: 308px;
-	background-color: #6E645A66;
 	border-radius: 10px;
 	float: left;
 	filter: brightness(0.75);
@@ -175,6 +221,44 @@ width: 105px; height: 15px; margin: 65px auto 0;
 	filter: brightness(1);
 	border: 3px solid #C8500F;
 	box-sizing: border-box;
+}
+.bg-box{
+	display: none;
+}
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.equipment-img{
+		width: 308px;
+		height: 308px;
+		border-radius: 10px;
+		float: left;
+		cursor: pointer;
+		position: relative;
+		z-index: 99;
+	}
+	.eq-img{
+		z-index: 101;
+	}
+	
+	.bg-box{
+		display: block;
+		width: 308px;
+		height: 308px;
+		background: rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		position: absolute;
+		z-index: 100;
+		float: left;
+		cursor: pointer;
+	}
+	.bg-box:hover{
+		background: rgba(0, 0, 0, 0);
+		border: 3px solid #C8500F;
+		box-sizing: border-box;
+	}
+	.bg-box:active{
+		z-index: 1;	
+	}
 }
 .eq_details{
 	width: 960px;
@@ -212,10 +296,7 @@ width: 105px; height: 15px; margin: 65px auto 0;
 	border-radius: 10px;
 }
 /* 2-4 */
-#guidance_wrap-4{
-	width: 1920px;
-	height: 2324px;
-}
+
 #dentistMap-text-1{
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */

@@ -1,12 +1,73 @@
 @charset "UTF-8";
 
-
-/* 1-1 */
+@media all and (max-width: 2880px){
 #inform_wrap-1{
 	width: 1920px;
 	height: 1937px;
 	font-family: 'NanumSquareRound'; 
 }
+#inform_wrap-2{
+	width: 1920px;
+	height: 1947px;
+	font-family: 'NanumSquareRound';
+}
+#inform_wrap-3{
+	width: 1920px;
+	height: 2631px;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#inform_wrap-4{
+	width: 1920px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+}
+@media all and (max-width: 1920px){
+#inform_wrap-1{
+	width: 1920px;
+	height: 1937px;
+	font-family: 'NanumSquareRound'; 
+}
+#inform_wrap-2{
+	width: 1920px;
+	height: 1947px;
+	font-family: 'NanumSquareRound';
+}
+#inform_wrap-3{
+	width: 1920px;
+	height: 2631px;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#inform_wrap-4{
+	width: 1920px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+}
+@media all and (max-width: 1600px){
+#inform_wrap-1{
+	width: 1600px;
+	height: 1937px;
+	font-family: 'NanumSquareRound'; 
+}
+#inform_wrap-2{
+	width: 1600px;
+	height: 1947px;
+	font-family: 'NanumSquareRound';
+}
+#inform_wrap-3{
+	width: 1600px;
+	height: 2631px;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#inform_wrap-4{
+	width: 1600px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+}
+/* 1-1 */
+
 #inform-img{
 	width: 960px;
 	height: 480px;
@@ -44,12 +105,10 @@
 	margin-bottom: 60px;
 }
 
+
 /* 1-2 */
-#inform_wrap-2{
-	width: 1920px;
-	height: 1947px;
-	font-family: 'NanumSquareRound';
-}
+
+
 #principle-text-01{
 	text-align: center;
 	/* font: Bold 30px/42px NanumSquareRoundOTF; */
@@ -117,11 +176,7 @@
 	float: left;
 }
 /* 1-3 */
-#inform_wrap-3{
-	width: 1920px;
-	height: 2631px;
-	font-family: 'NanumSquareRound',sans-serif;
-}
+
 .special_mind_div{
 	width: 720px;
 	/* height: 483px; */
@@ -162,11 +217,7 @@
 	margin: 70px auto;
 }
 /* 1-4 */
-#inform_wrap-4{
-	width: 1920px;
-	height: 100%;
-	font-family: 'NanumSquareRound',sans-serif;
-}
+
 .pSystem-text-1{
 	text-align: center;
 	/* font: Bold 25px/30px NanumSquareRoundOTF; */

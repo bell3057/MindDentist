@@ -34,13 +34,5 @@ $(document).ready(function(){
 		$('#pSystem_menu_selected-3').css("background-color", "#B4AAA0");
 		$('#pSystem_Detail-3').show();
 	});
-	$('#inform_wrap-4').mouseleave(function(){
-		$('.pSystem-text-1').css("color", "#9B948C").css("font-weight", "bold");
-		$('.pSystem_selected').css("background-color", "#FFFFFF");
-		$('.detail_page').css("display", "none");
-		$('#pSystem_menu_text-1').css("color", "#C8500F").css("font-weight","800");
-		$('#pSystem_menu_selected-1').css("background-color", "#B4AAA0");
-		$('#pSystem_Detail-1').show();
-	});	
 	
 });

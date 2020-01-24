@@ -31,7 +31,7 @@
 		<div class="ntGeneral-text-4">치아재식술 시술과정</div>
 		<div style="margin-top: 38px; width: 960px; height: 312px;">
 			<img class="ntGeneral-img-4" src="../img/6-1/6102.png">
-			<img class="ntGeneral-img-4" src="../img/6-1/6103.png" style="margin-left: 8px;">
+			<img class="ntGeneral-img-4" src="../img/6-1/6103.png" style="margin-left: 14px;">
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div id="ntGeneral-text-5">모든 경우에 외과적 신경치료가 적용될 수 있는 것은 아닙니다.

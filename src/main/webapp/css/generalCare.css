@@ -1,10 +1,73 @@
 @charset "UTF-8";
 
-/* 6-1 자연치아*/
-#generalCare_wrap-1{
+@media all and (max-width: 2880px){
+	#generalCare_wrap-1{
 	width: 1920px;
 	height: 3100px;
 }
+#generalCare_wrap-2{
+	width: 1920px;
+	height: 2599px;
+}
+#generalCare_wrap-3{
+	width: 1920px;
+	height: 3364px;
+}
+#generalCare_wrap-4{
+	width: 1920px;
+	height: 3404px;
+}
+#generalCare_wrap-5{
+	width: 1920px;
+	height: 3124px;
+}
+}
+@media all and (max-width: 1920px){
+	#generalCare_wrap-1{
+	width: 1920px;
+	height: 3100px;
+}
+#generalCare_wrap-2{
+	width: 1920px;
+	height: 2599px;
+}
+#generalCare_wrap-3{
+	width: 1920px;
+	height: 3364px;
+}
+#generalCare_wrap-4{
+	width: 1920px;
+	height: 3404px;
+}
+#generalCare_wrap-5{
+	width: 1920px;
+	height: 3124px;
+}
+}
+@media all and (max-width: 1600px){
+	#generalCare_wrap-1{
+	width: 1600px;
+	height: 3100px;
+}
+#generalCare_wrap-2{
+	width: 1600px;
+	height: 2599px;
+}
+#generalCare_wrap-3{
+	width: 1600px;
+	height: 3364px;
+}
+#generalCare_wrap-4{
+	width: 1600px;
+	height: 3404px;
+}
+#generalCare_wrap-5{
+	width: 1600px;
+	height: 3124px;
+}
+}
+/* 6-1 자연치아*/
+
 #ntGeneral-img-1{
 	width: 960px;
 	height: 320px;
@@ -77,6 +140,7 @@
 .ntGeneral-img-4{
 	width: 473px;
 	height: 312px;
+	float: left;
 }
 #ntGeneral-text-5{
 	text-align: center;
@@ -92,10 +156,6 @@
 
 /* 6-2 충치*/
 
-#generalCare_wrap-2{
-	width: 1920px;
-	height: 2599px;
-}
 #tdGeneral-img-1{
 	width: 960px;
 	height: 320px;
@@ -158,10 +218,6 @@
 
 /* 6-3 신경*/
 
-#generalCare_wrap-3{
-	width: 1920px;
-	height: 3364px;
-}
 #neGeneral-img-1{
 	width: 960px;
 	height: 320px;
@@ -232,6 +288,7 @@
 .neGeneral-img-4{
 	width: 478px;
 	height: 352px;
+	float: left;
 }
 #neGeneral-img-5{
 	width: 960px;
@@ -245,10 +302,6 @@
 
 /* 6-4 잇몸*/
 
-#generalCare_wrap-4{
-	width: 1920px;
-	height: 3404px;
-}
 #gtGeneral-img-1{
 	width: 960px;
 	height: 320px;
@@ -322,15 +375,11 @@
 .gtGeneral-img-5{
 	width: 478px;
 	height: 352px;
-
+	float: left;
 }
 
 /* 6-5 턱관절*/
 
-#generalCare_wrap-5{
-	width: 1920px;
-	height: 3124px;
-}
 #tpGeneral-img-1{
 	width: 960px;
 	height: 320px;

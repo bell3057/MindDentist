@@ -29,8 +29,8 @@
     background: #B4AAA0;
 }
 </style>
-<div id="main_plate">
-	<div style="width: 1920px; height: 720px; position: relative;"><!-- slider -->
+<div id="main_plate_wrap">
+	<div id="main_plate"><!-- slider -->
 		<div id="slider_wrap">
 			<img class="slider-img" src="../img/Main-01.png">
 			<img class="slider-img" src="">

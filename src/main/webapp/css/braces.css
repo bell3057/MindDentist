@@ -1,13 +1,75 @@
 @charset "UTF-8";
 
-
-/* 4-1 */
-
-
+@media all and (max-width: 2880px){
 #braces_wrap-1{
 	width: 1920px;
 	height: 4188px;
 }
+#braces_wrap-2{
+	width: 1920px;
+	height: 3374px;
+}
+#braces_wrap-3{
+	width: 1920px;
+	height: 3980px;
+}
+#braces_wrap-4{
+	width: 1920px;
+	height: 4181px;
+}
+#braces_wrap-5{
+	width: 1920px;
+	height: 3699px;
+}
+}
+@media all and (max-width: 1920px){
+	#braces_wrap-1{
+	width: 1920px;
+	height: 4188px;
+}
+#braces_wrap-2{
+	width: 1920px;
+	height: 3374px;
+}
+#braces_wrap-3{
+	width: 1920px;
+	height: 3980px;
+}
+#braces_wrap-4{
+	width: 1920px;
+	height: 4181px;
+}
+#braces_wrap-5{
+	width: 1920px;
+	height: 3699px;
+}
+}
+@media all and (max-width: 1600px){
+	#braces_wrap-1{
+	width: 1600px;
+	height: 4188px;
+}
+#braces_wrap-2{
+	width: 1600px;
+	height: 3374px;
+}
+#braces_wrap-3{
+	width: 1600px;
+	height: 3980px;
+}
+#braces_wrap-4{
+	width: 1600px;
+	height: 4181px;
+}
+#braces_wrap-5{
+	width: 1600px;
+	height: 3699px;
+}
+}
+/* 4-1 */
+
+
+
 #pBraces-img-1{
 	width: 960px;
 	height: 320px;
@@ -94,6 +156,7 @@
 .pBraces-img-3{
 	width: 472px;
 	height: 520px;
+	float: left;
 }
 #pBraces-text-6{
 	text-align: center;
@@ -114,15 +177,12 @@
 .pBarces-img-5{
 	width: 472px;
 	height: 520px;
+	float: left;
 }
 
 
 /* 4-2  덧니 교정*/
 
-#braces_wrap-2{
-	width: 1920px;
-	height: 3374px;
-}
 #sBraces-img-1{
 	width: 960px;
 	height: 320px;
@@ -175,6 +235,11 @@
 	opacity: 1;
 	white-space: pre-line;
 }
+sBraces-img-3{
+	width: 472px;
+	height: 300px;
+	float: left;
+}
 #sBraces-text-4{
 	text-align: center;
 	/* font: Regular 38px/60px NanumSquareRoundOTF; */
@@ -196,6 +261,7 @@
 .sBraces-img-6{
 	width: 312px;
 	height: 144px;
+	float: left;
 }
 #sBraces-text-5{
 	text-align: center;
@@ -216,10 +282,6 @@
 
 /* 4-3 비수술 */
 
-#braces_wrap-3{
-	width: 1920px;
-	height: 3980px;
-}
 #nBraces-img-1{
 	width: 960px;
 	height: 320px;
@@ -299,10 +361,6 @@
 /* 4-4 설측/콤비/투명 */
 
 
-#braces_wrap-4{
-	width: 1920px;
-	height: 4181px;
-}
 #cBraces-img-1{
 	width: 960px;
 	height: 320px;
@@ -376,10 +434,6 @@
 
 /* 4-5 부분교정 */
 
-#braces_wrap-5{
-	width: 1920px;
-	height: 3699px;
-}
 #paBraces-img-1{
 	width: 960px;
 	height: 320px;

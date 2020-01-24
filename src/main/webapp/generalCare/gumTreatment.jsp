@@ -30,7 +30,7 @@
 		<div class="gtGeneral-text-4" style="margin: 60px;">잇몸치료 과정</div>
 		<div style="width: 962px; height: 352px;">
 			<img id="gtGeneral-img-5" src="../img/6-4/6403.png">
-			<img id="gtGeneral-img-5" src="../img/6-4/6404.png">
+			<img id="gtGeneral-img-5" src="../img/6-4/6404.png" style="margin-left: 4px;">
 		</div>
 	</div>
 </div>

@@ -7,16 +7,27 @@
 	<div style="width: 960px; height:; margin: auto; padding-top: 150px;">
 		<div id="equipment-text-1">마인드 치과 보유장비</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; margin: 70px auto;"></div>
-		<div style="width: 960px; height: 960px; margin-bottom: 100px;">
-			<img id="eq-img-1" class="equipment-img eq-img" src="../img/2-3/g01.png" style="">
-			<img id="eq-img-2" class="equipment-img" src="../img/2-3/g02.png" style="margin: 0 18px;">
-			<img id="eq-img-3" class="equipment-img" src="../img/2-3/g03.png">
-			<img id="eq-img-4" class="equipment-img" src="../img/2-3/g04.png"style="margin: 18px 0;">
-			<img id="eq-img-5" class="equipment-img" src="../img/2-3/g05.png" style="margin: 18px;">
-			<img id="eq-img-6" class="equipment-img" src="../img/2-3/g06.png" style="margin: 18px 0;">
-			<img id="eq-img-7" class="equipment-img" src="../img/2-3/g07.png">
-			<img id="eq-img-8" class="equipment-img" src="../img/2-3/g08.png" style="margin: 0 18px;">
-			<img id="eq-img-9" class="equipment-img" src="../img/2-3/g09.png">
+		<div style="width: 960px; height: 960px; margin-bottom: 100px; position: relative;">
+			<div id="eq-img-1" class="equipment-img eq-img" style="background: url(../img/2-3/g01.png); background-size: contain;"></div>
+			<div id="eq-img-2" class="equipment-img" style="background: url(../img/2-3/g02.png); background-size: contain; margin: 0 18px;"></div>
+			<div id="eq-img-3" class="equipment-img" style="background: url(../img/2-3/g03.png); background-size: contain;"></div>
+			<div id="eq-img-4" class="equipment-img" style="background: url(../img/2-3/g04.png); background-size: contain; margin: 18px 0;"></div>
+			<div id="eq-img-5" class="equipment-img" style="background: url(../img/2-3/g05.png); background-size: contain; margin: 18px;"></div>
+			<div id="eq-img-6" class="equipment-img" style="background: url(../img/2-3/g06.png); background-size: contain; margin: 18px 0;"></div>
+			<div id="eq-img-7" class="equipment-img" style="background: url(../img/2-3/g07.png); background-size: contain;"></div>
+			<div id="eq-img-8" class="equipment-img" style="background: url(../img/2-3/g08.png); background-size: contain; margin: 0 18px;"></div>
+			<div id="eq-img-9" class="equipment-img" style="background: url(../img/2-3/g09.png); background-size: contain;"></div>
+			
+			<!-- IE -->
+			<div class="bg-box" style=""></div>
+			<div class="bg-box" style="left: 326px;"></div>
+			<div class="bg-box" style="left: 652px;"></div>
+			<div class="bg-box" style="top: 326px;"></div>
+			<div class="bg-box" style="top: 326px; left: 326px;"></div>
+			<div class="bg-box" style="top: 326px; left: 652px;"></div>
+			<div class="bg-box" style="top: 652px;"></div>
+			<div class="bg-box" style="top: 652px; left: 326px;"></div>
+			<div class="bg-box" style="top: 652px; left: 652px;"></div>	
 		</div>
 		<div id="eq_detail-1" class="eq_details" style="display: block;">
 			<div class="equipment-text-2">Dentri 3s (HDX사의 프리미엄 CT)</div>

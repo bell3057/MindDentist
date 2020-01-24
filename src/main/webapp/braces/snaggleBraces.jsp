@@ -18,7 +18,7 @@
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div style="width: 960px; height: 300px; margin: auto auto 60px;">
 			<img class="sBraces-img-3" src="../img/4-2/4201.png">
-			<img class="sBraces-img-3" src="../img/4-2/4202.png" style="margin-left: 10px;">
+			<img class="sBraces-img-3" src="../img/4-2/4202.png" style="margin-left: 16px;">
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div id="sBraces-text-4">마인드치과에서는 <span style="font-weight: bold;">“100% 정품 자가결찰 장치”</span>를 사용합니다.</div>
@@ -28,7 +28,7 @@
 		더 적은 힘으로 치료를 시작하게 되어 상대적으로 통증이 덜하고 구강관리가 용이해 위생적입니다.</div>
 		<div style="width: 960px; height: 144px; margin: auto;">
 			<img class="sBraces-img-6" src="../img/4-2/4205.png">
-			<img class="sBraces-img-6" src="../img/4-2/4206.png" style="margin: 0 6px;">
+			<img class="sBraces-img-6" src="../img/4-2/4206.png" style="margin: 0 12px;">
 			<img class="sBraces-img-6" src="../img/4-2/4207.png">
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>

@@ -182,5 +182,12 @@ $(document).ready(function(){
 		}, "mouseleave" : function(){
 			$(this).removeClass('hover');
 	}});
+	/*
+	$('.bg-box').mouseover(function(){
+		$('.bg-box').css('z-index', '1');
+	});
+	$('.bg-box').mouseleave(function(){
+		$('.bg-box').css('z-index', '100');
+	});*/
 	
 });

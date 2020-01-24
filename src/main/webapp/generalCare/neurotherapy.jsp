@@ -26,7 +26,7 @@
 		<div class="neGeneral-text-4">마인드 신경치료 과정</div>
 		<div style="margin-top: 50px; width: 962px; height: 352px;">
 			<img class="neGeneral-img-4" src="../img/6-3/6303.png">
-			<img class="neGeneral-img-4" src="../img/6-3/6304.png">
+			<img class="neGeneral-img-4" src="../img/6-3/6304.png" style="margin-left: 4px;">
 		</div>
 		<div class="neGeneral-text-3" style="margin-top: 41px;">사람마다 치아의 모양과 신경의 구조는 모두 다릅니다.
 		치아 뿌리가 휘어져 있는 경우 신경치료 기구가 쉽게 도달하지 못해 치료가 어렵고,

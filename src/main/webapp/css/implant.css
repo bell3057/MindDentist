@@ -1,10 +1,84 @@
 @charset "UTF-8";
-
-/* 3-1 */
+@media all and (max-width: 2880px){
 #implant_wrap-1{
-	width: 1920px;;
+	width: 1920px;
 	height: 2874px;
 }
+#implant_wrap-2{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-3{
+	width: 1920px;
+	height: 3074px;
+	text-align: center;
+}
+#implant_wrap-4{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-5{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+}
+@media all and (max-width: 1920px){
+#implant_wrap-1{
+	width: 1920px;
+	height: 2874px;
+}
+#implant_wrap-2{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-3{
+	width: 1920px;
+	height: 3074px;
+	text-align: center;
+}
+#implant_wrap-4{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-5{
+	width: 1920px;
+	height: 2874px;
+	text-align: center;
+}
+}
+@media all and (max-width: 1600px){
+#implant_wrap-1{
+	width: 1600px;
+	height: 2874px;
+}
+#implant_wrap-2{
+	width: 1600px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-3{
+	width: 1600px;
+	height: 3074px;
+	text-align: center;
+}
+#implant_wrap-4{
+	width: 1600px;
+	height: 2874px;
+	text-align: center;
+}
+#implant_wrap-5{
+	width: 1600px;
+	height: 2874px;
+	text-align: center;
+}
+}
+/* 3-1 */
+
 #mImplant-img-1{
 	width: 960px;
 	height: 320px;
@@ -70,7 +144,7 @@
 	
 }
 .mImplant-img-5{
-	widht: 472px;
+	width: 472px;
 	height: 280px;
 	float: left;
 }
@@ -105,11 +179,6 @@
 
 /* 3-2 */
 
-#implant_wrap-2{
-	width: 1920px;;
-	height: 2874px;
-	text-align: center;
-}
 #oImplant-img-1{
 	width: 960px;
 	height: 320px;
@@ -167,7 +236,7 @@
 	white-space: pre-line;
 }
 .oImplant-img-5{
-	widht: 472px;
+	width: 472px;
 	height: 280px;
 	float: left;
 }
@@ -213,11 +282,6 @@
 /* 3-3 */
 
 
-#implant_wrap-3{
-	width: 1920px;;
-	height: 3074px;
-	text-align: center;
-}
 #nImplant-img-1{
 	width: 960px;
 	height: 320px;
@@ -326,11 +390,6 @@
 /* 3-4 */
 
 
-#implant_wrap-4{
-	width: 1920px;;
-	height: 2874px;
-	text-align: center;
-}
 #aImplant-img-1{
 	width: 960px;
 	height: 320px;
@@ -402,17 +461,13 @@
 	height: 318px;
 	border-radius: 10px;
 	opacity: 1;
+	float: left;
 }
 
 
 /* 3-5 */
 
 
-#implant_wrap-5{
-	width: 1920px;;
-	height: 2874px;
-	text-align: center;
-}
 #dImplant-img-1{
 	width: 960px;
 	height: 320px;
@@ -456,6 +511,7 @@
 .dImplant-img-3{
 	width: 477px;
 	height: 380px;
+	float: left;
 }
 #dImplant-text-box{
 	margin: auto;
@@ -522,5 +578,6 @@
 .dImplant-img-5{
 	width: 472px;
 	height: 300px;
+	float: left;
 }
 

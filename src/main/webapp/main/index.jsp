@@ -5,7 +5,7 @@
 <head>
 <title>마인드 치과</title>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 최신버전 문서모드 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../img/Main/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">

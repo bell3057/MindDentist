@@ -9,31 +9,31 @@
 	<div style="width: 100%; height: 50px; text-align: center;">
 		<div style="display: inline-block; height: 50px;">
 			<div class="menu_bar">
-				<a id="menu_bar-1" href="../inform/information">마인드치과</a>
+				<div class="mb-d"><a id="menu_bar-1" href="../inform/information">마인드치과</a></div>
 				<div id="menu_selected_bar-1" class="menu_selected_bar" style="width: 69px;"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-2" href="../guidance/medicalStaff">병원안내</a>
+				<div class="mb-d"><a id="menu_bar-2" href="../guidance/medicalStaff">병원안내</a></div>
 				<div id="menu_selected_bar-2" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-3" href="../implant/mindImplant">임플란트</a>
+				<div class="mb-d"><a id="menu_bar-3" href="../implant/mindImplant">임플란트</a></div>
 				<div id="menu_selected_bar-3" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-4" href="../braces/protrudingBraces">치아교정</a>
+				<div class="mb-d"><a id="menu_bar-4" href="../braces/protrudingBraces">치아교정</a></div>
 				<div id="menu_selected_bar-4" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-5" href="../cosmetic/laminateCosmetic">심미치료</a>
+				<div class="mb-d"><a id="menu_bar-5" href="../cosmetic/laminateCosmetic">심미치료</a></div>
 				<div id="menu_selected_bar-5" class="menu_selected_bar"></div>	
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-6" href="../generalCare/naturalTeeth">일반진료</a>
+				<div class="mb-d"><a id="menu_bar-6" href="../generalCare/naturalTeeth">일반진료</a></div>
 				<div id="menu_selected_bar-6" class="menu_selected_bar"></div>
 			</div>
 			<div class="menu_bar">
-				<a id="menu_bar-7" href="../serviceCenter/notice">고객센터</a>
+				<div class="mb-d"><a id="menu_bar-7" href="../serviceCenter/notice">고객센터</a></div>
 				<div id="menu_selected_bar-7" class="menu_selected_bar"></div>
 			</div>
 		</div>
@@ -92,8 +92,8 @@
 <script>
 $(document).ready(function(){
 	$('#menu_bar-1').mouseover(function(){//마인드치과
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-1').css("color", "#C8500F");
 		$('#menu_bar-1').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -105,8 +105,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-2').mouseover(function(){//병원안내
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-2').css("color", "#C8500F");
 		$('#menu_bar-2').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -118,8 +118,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-3').mouseover(function(){//임플란트
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-3').css("color", "#C8500F");
 		$('#menu_bar-3').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -131,8 +131,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-4').mouseover(function(){//치아교정
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-4').css("color", "#C8500F");
 		$('#menu_bar-4').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -144,8 +144,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-5').mouseover(function(){//치아교정
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-5').css("color", "#C8500F");
 		$('#menu_bar-5').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -157,8 +157,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-6').mouseover(function(){//치아교정
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-6').css("color", "#C8500F");
 		$('#menu_bar-6').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -170,8 +170,8 @@ $(document).ready(function(){
 		$('#menu_selected_bar').css("display", "block");
 	});
 	$('#menu_bar-7').mouseover(function(){//치아교정
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold");
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold");
 		$('#menu_bar-7').css("color", "#C8500F");
 		$('#menu_bar-7').css("font-weight", "800");
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
@@ -184,8 +184,8 @@ $(document).ready(function(){
 	});
 	
 	$('#header_wrap').mouseleave(function(){//헤더 벗어날시 공통적용
-		$('.menu_bar>a').css("color", "#6E645A");
-		$('.menu_bar>a').css("font-weight", "bold")
+		$('.mb-d>a').css("color", "#6E645A");
+		$('.mb-d>a').css("font-weight", "bold")
 		$('.menu_selected_bar').css("background-color", "#FFFFFF");
 		/* $('#menu_dropDown').css("display", "none"); */
 		$('#menu_dropDown').slideUp(200);

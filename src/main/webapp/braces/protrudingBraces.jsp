@@ -27,7 +27,7 @@
 		하지만 앞니 치아 뿌리를 이동시킬 수 있는 치료법을 사용할 경우 잇몸 부분 돌출 개선이 가능합니다.</div>
 		<div style="width: 960px; height: 520px; margin: 67px auto 0;">
 			<img class="pBraces-img-3" src="../img/4-1/4101.png">
-			<img class="pBraces-img-3" src="../img/4-1/4102.png" style="margin-left: 10px;">
+			<img class="pBraces-img-3" src="../img/4-1/4102.png" style="margin-left: 16px;">
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 87px auto 86px;"></div>
 		<div class="pBraces-text-5">치아 배열보다 입 넣는 게 급하다면?
@@ -43,7 +43,7 @@
 		<img id="pBraces-img-4" src="../img/4-1/4103.png">
 		<div style="widht: 960px; height: 520px; margin: auto;">
 			<img class="pBraces-img-5" src="../img/4-1/4104.png">
-			<img class="pBraces-img-5" src="../img/4-1/4105.png" style="margin-left:10px;">
+			<img class="pBraces-img-5" src="../img/4-1/4105.png" style="margin-left:16px;">
 		</div>
 		<div class="pBraces-text-4" style="margin-top: 60px;">일반 교정은 치아배열 후 돌출 입 당기기가 진행됩니다.
 		반면, 킬본 교정은 치아를 먼저 당긴 후 치아 배열 및 마무리 치료가 들어가기

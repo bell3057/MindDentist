@@ -14,7 +14,7 @@
 		<div id="dImplant-text-2">기존 틀니의 단점</div>
 		<div style="width: 960px; height: 380px;">
 			<img class="dImplant-img-3" src="../img/3-5/3501.png">
-			<img class="dImplant-img-3" src="../img/3-5/3502.png">
+			<img class="dImplant-img-3" src="../img/3-5/3502.png" style="margin-left: 6px;">
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 60px auto;"></div>
 		<div id="dImplant-text-box">
@@ -31,7 +31,7 @@
 		양질의 식사를 통한 신체의 건강함은 물론 치아가 있었을 때와 같은 건강한 외모도 되찾을 수 있습니다.</div>
 		<div style="width: 960px; height: 300px; margin: 60px auto;">
 			<img class="dImplant-img-5" src="../img/3-5/3505.png"> 
-			<img class="dImplant-img-5" src="../img/3-5/3506.png" style="margin-left: 10px;">
+			<img class="dImplant-img-5" src="../img/3-5/3506.png" style="margin-left: 16px;">
 		</div>
 		<div class="dImplant-text-6">성공적인 전악 임플란트 수술을 위해선 고난이도의 기술이 요구됩니다.
 		마인드 치과에는 다수의 임상 경험을 지닌 숙련된 의료진이 환자 개개인의 상태에 맞춘 1:1 치료계획을
