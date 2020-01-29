@@ -8,7 +8,7 @@
 		<div class="special_mind_div" >
 			<div class="special_mind_div_text-1">전문적인 마인드</div>
 			<img src="../img/1-3/icon01.png" style="width: 212px; height: 212px;">
-			<div class="special_mind_div_text-2">전문의 및 석 / 박사 출신 6인의 의료진이 각각 전문 분야에 따라 임플란트, 심미교정 등
+			<div class="special_mind_div_text-2">전문의 및 석 / 박사 출신 7인의 의료진이 각각 전문 분야에 따라 임플란트, 심미교정 등
 			분과별 전문센터를 운영하며, 협진을 통해 보다 체계적인 환자 중심의 맞춤 진료를 제공
 			합니다. 진료 영역에 따른 전문 원장님이 직접 진료하시기 때문에 마인드치과에서는 더
 			욱 더 전문적인 진료를 받으실 수 있습니다.</div>			
@@ -27,8 +27,8 @@
 			<div class="special_mind_div_text-1">연구하는 마인드</div>
 			<img src="../img/1-3/icon03.png" style="width: 210px; height: 210px;">
 			<div class="special_mind_div_text-2">마인드 치과의 의료진들은 각종 해외연수, 세미나, 교육 등을 통해 끊임 없이 연구하며
-			진료 노하우를 쌓아가고 있습니다. 자체적으로 임플란트 연구소, 소아교정 연구실을 운
-			영하며, 대학병원 급 최신식 장비 사용과 함께 대학병원급 소독 시스템을 통해 안심하고
+			진료 노하우를 쌓아가고 있습니다. 자체적으로 임플란트 연구소, 치아교정 연구실을 운
+			영하며, 최신식 장비 사용과 함께 소독 시스템을 통해 안심하고
 			믿을 수 있는 진료를 약속 드립니다.</div>
 		</div>
 		<div class="special_mind-border"></div>

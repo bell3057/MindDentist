@@ -17,7 +17,14 @@
 		치료를 미룰수록 더 많은 통증과 치료기간, 비용이 발생하게 되기 때문에
 		충치치료는 빠르면 빠를수록 좋습니다.</div>
 		<img id="tdGeneral-img-3" src="../img/6-2/6201.png">
-		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 77px auto 63px;"></div>
+		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 81px auto;"></div>
+		<div class="tdGeneral-text-4">충치 진행과정</div>
+		<div style="width: 960px; height: 352px;">
+			<img class="tdGeneral-img-5" src="../img/6-2/6205.png">
+			<img class="tdGeneral-img-5" src="../img/6-2/6206.png" style="margin-left: 4px;">
+		</div>
+		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 81px auto;"></div>
+		<div class="tdGeneral-text-4">충치 치료의 종류</div>
 		<img class="tdGeneral-img-4" src="../img/6-2/6202.png">
 		<img class="tdGeneral-img-4" src="../img/6-2/6203.png" style="margin: 50px auto;">
 		<img class="tdGeneral-img-4" src="../img/6-2/6204.png">

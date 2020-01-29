@@ -13,7 +13,7 @@
 		</div>
 		<div id="oImplant-text-2">“진단부터 식립까지, 하루면 충분합니다.”</div>
 		<img id="oImplant-img-3" src="../img/3-2/3201.png">
-		<div id="oImplant-text-3">오랜 기간이 걸리는 임플란트 기간을 절반으로 단축시킬 수 있습니다.
+		<div id="oImplant-text-3">오랜 시간이 걸리는 임플란트 기간을 절반으로 단축시킬 수 있습니다.
 		뼈가 흡수되는 것을 막을 수 있어 자연스러운 외형 및 강한 강도를 유지시킬 수 있습니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div style="width: 960px; height: 280px;">

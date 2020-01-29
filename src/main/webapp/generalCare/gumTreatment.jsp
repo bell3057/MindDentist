@@ -24,13 +24,13 @@
 		<div class="gtGeneral-text-4" style="margin: 100px auto 60px;">치주질환의 증상</div>
 		<img id="gtGeneral-img-4" src="../img/6-4/6402.png">
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
-		<div class="gtGeneral-text-3">잇몸 치료는 보험이 적용되는 치료입니다.
+		<div class="gtGeneral-text-3" style="width: 964px;">잇몸 치료는 보험이 적용되는 치료입니다.
 		다시 말하면 건강보험에서 인정한 누구나 꼭 받아야 하는 진료라는 뜻이기도 합니다.
 		치아를 살리는 치료는 많은 비용이 들지 않습니다. 의사와 병원의 꼼꼼한 도움이 필요합니다.</div>
 		<div class="gtGeneral-text-4" style="margin: 60px;">잇몸치료 과정</div>
 		<div style="width: 962px; height: 352px;">
-			<img id="gtGeneral-img-5" src="../img/6-4/6403.png">
-			<img id="gtGeneral-img-5" src="../img/6-4/6404.png" style="margin-left: 4px;">
+			<img class="gtGeneral-img-5" src="../img/6-4/6403.png">
+			<img class="gtGeneral-img-5" src="../img/6-4/6404.png" style="margin-left: 4px;">
 		</div>
 	</div>
 </div>

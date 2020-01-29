@@ -14,7 +14,7 @@
 		<div id="sBraces-text-2">들쑥날쑥 치아배열,
 		가지런한 치아와 환한 미소를 되찾으세요</div>
 		<div class="sBraces-text-3">치아가 가지런해 지면 음식을 씹기가 편해지고, 호흡, 발음, 구강 위생 등이 좋아지며,
-		위아래 치아들끼리 보호기능이 살아나서 치아를 더 오래 사용할 수 있게 됩니다.</div>
+		위아래 치아들끼리의 보호기능이 살아나서 치아를 더 오래 사용할 수 있게 됩니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div style="width: 960px; height: 300px; margin: auto auto 60px;">
 			<img class="sBraces-img-3" src="../img/4-2/4201.png">
@@ -24,8 +24,10 @@
 		<div id="sBraces-text-4">마인드치과에서는 <span style="font-weight: bold;">“100% 정품 자가결찰 장치”</span>를 사용합니다.</div>
 		<img id="sBraces-img-4" src="../img/4-2/4203.png">
 		<img id="sBraces-img-5" src="../img/4-2/4204.png">
-		<div class="sBraces-text-3" style="margin: 100px auto 60px;">자가결찰장치 사용 시 장치와 교정용 와이어간의 마찰력이 감소하여 치료과정이 간단해집니다.
-		더 적은 힘으로 치료를 시작하게 되어 상대적으로 통증이 덜하고 구강관리가 용이해 위생적입니다.</div>
+		<div class="sBraces-text-3" style="margin: 100px auto 60px;">자가결찰장치 사용 시 장치와 교정용 와이어간의 마찰력이 감소하여
+		치료과정이 간단해집니다.
+		더 적은 힘으로 치료를 시작하게 되어 상대적으로 통증이 덜하고
+		구강관리가 용이해 위생적입니다.</div>
 		<div style="width: 960px; height: 144px; margin: auto;">
 			<img class="sBraces-img-6" src="../img/4-2/4205.png">
 			<img class="sBraces-img-6" src="../img/4-2/4206.png" style="margin: 0 12px;">

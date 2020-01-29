@@ -32,7 +32,7 @@
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 87px auto 86px;"></div>
 		<div class="pBraces-text-5">치아 배열보다 입 넣는 게 급하다면?
 		입부터 들어가는 돌출입 교정</div>
-		<div class="pBraces-text-4">일반적인 교정방법으로는 돌출입이 개선되기 위해서는 ‘치아배열, 앞니의 후방이동’의 순서를
+		<div class="pBraces-text-4">일반적인 교정방법으로 돌출입이 개선되기 위해서는 ‘치아배열, 앞니의 후방이동’의 순서를
 		거쳐야 하기 때문에 효과를 느끼기까지 보통 1년 이상의 시간이 소요됩니다.
 		마인드치과에서는 돌출입 개선이 시급한 환자분들을 위해 빠른 돌출입 치료 방식을 제안합니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 89px auto;"></div>
@@ -45,9 +45,9 @@
 			<img class="pBraces-img-5" src="../img/4-1/4104.png">
 			<img class="pBraces-img-5" src="../img/4-1/4105.png" style="margin-left:16px;">
 		</div>
-		<div class="pBraces-text-4" style="margin-top: 60px;">일반 교정은 치아배열 후 돌출 입 당기기가 진행됩니다.
+		<!-- <div class="pBraces-text-4" style="margin-top: 60px;">일반 교정은 치아배열 후 돌출 입 당기기가 진행됩니다.
 		반면, 킬본 교정은 치아를 먼저 당긴 후 치아 배열 및 마무리 치료가 들어가기
-		때문에 교정 속도가 빠르고 효과가 뛰어납니다.</div>
+		때문에 교정 속도가 빠르고 효과가 뛰어납니다.</div> -->
 	</div>
 </div>
 

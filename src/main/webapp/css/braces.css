@@ -3,7 +3,7 @@
 @media all and (max-width: 2880px){
 #braces_wrap-1{
 	width: 1920px;
-	height: 4188px;
+	height: 4028px;
 }
 #braces_wrap-2{
 	width: 1920px;
@@ -25,7 +25,7 @@
 @media all and (max-width: 1920px){
 	#braces_wrap-1{
 	width: 1920px;
-	height: 4188px;
+	height: 4028px;
 }
 #braces_wrap-2{
 	width: 1920px;
@@ -47,7 +47,7 @@
 @media all and (max-width: 1600px){
 	#braces_wrap-1{
 	width: 1600px;
-	height: 4188px;
+	height: 4028px;
 }
 #braces_wrap-2{
 	width: 1600px;
@@ -174,7 +174,7 @@
 	height: 516px;
 	margin: 80px auto 68px;
 }
-.pBarces-img-5{
+.pBraces-img-5{
 	width: 472px;
 	height: 520px;
 	float: left;
@@ -235,7 +235,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-sBraces-img-3{
+.sBraces-img-3{
 	width: 472px;
 	height: 300px;
 	float: left;
@@ -510,4 +510,5 @@ sBraces-img-3{
 #paBraces-img-5{
 	width: 960px;
 	height: 510px;
+	float: left;
 }

@@ -32,7 +32,7 @@
 			<img class="principle_img" src="../img/1-2/mind-03.png">
 			<div class="principle-text-div">
 				<div class="principle-text-03">셋째, 환자의 마음으로</div>
-				<div class="principle-text-04" style="letter-spacing: -1.06px;">깨끗한 환경에서 아프지 않게진료할 것을 
+				<div class="principle-text-04" style="letter-spacing: -1.06px;">깨끗한 환경에서 아프지 않게 진료할 것을 
 				약속 드리며, 늘 환자의 입장에서 생각하고 
 				소통하며 그 마음을 헤아리겠습니다.</div>
 			</div>

@@ -6,7 +6,7 @@
 <div id="cosmetic_wrap-3">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 130px; text-align: center;">
 		<div style="width: 960px; height: 320px; position: relative;">
-			<img id="wCosmetic-img-1" src="../img/4-5/45_main.png">
+			<img id="wCosmetic-img-1" src="../img/5-3/53_main.png">
 			<img id="wCosmetic-img-2" src="../img/3-2/32_m_icon.png">
 			<div id="wCosmetic-text-1">마인드
 			원데이 치아미백</div>

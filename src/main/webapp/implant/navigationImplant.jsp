@@ -17,7 +17,7 @@
 		<div id="nImplant-text-4">네비게이션 임플란트란 ?</div>
 		<div id="nImplant-text-5">네비게이션 임플란트란 최신 디지털 기술과 임플란트를 접목한 치료 방법입니다.
 		첨단 3D 장비를 기반으로 환자의 잇몸뼈와 치아 위치, 내부 신경의 위치 등 세밀한 수술 조건들의
-		파악이 가능합니다. 그 것을 기반으로 환자 개개인에 꼭 맞는 가이드를 제작하여
+		파악이 가능합니다. 이를 기반으로 환자 개개인에 꼭 맞는 가이드를 제작하여
 		보다 정확한 위치에 정밀한 시술을 가능하게 합니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 100px auto;"></div>
 		<div class="nImplant-text-6">네비게이션 임플란트 진행 과정</div>
