@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+*{
+	font-family: 'NanumSquareRound',sans-serif;
+}
 @media all and (max-width: 2880px){
 #cosmetic_wrap-1{
 	width: 1920px;
@@ -12,6 +14,10 @@
 #cosmetic_wrap-3{
 	width: 1920px;
 	height: 2983px;
+}
+#cosmetic_wrap-4{
+	width: 1920px;
+	height: 3877px;
 }
 }
 @media all and (max-width: 1920px){
@@ -27,6 +33,10 @@
 	width: 1920px;
 	height: 2983px;
 }
+#cosmetic_wrap-4{
+	width: 1920px;
+	height: 3877px;
+}
 }
 @media all and (max-width: 1600px){
 #cosmetic_wrap-1{
@@ -40,6 +50,10 @@
 #cosmetic_wrap-3{
 	width: 1600px;
 	height: 2983px;
+}
+#cosmetic_wrap-4{
+	width: 1600px;
+	height: 3877px;
 }
 }
 /* 5-1 */
@@ -280,4 +294,82 @@
 	margin-bottom: 91px;
 	width: 960px;
 	height: 300px;
+}
+
+/* 5-4 */
+
+#cCosmetic-img-1{
+	width: 960px;
+	height: 320px;
+}
+#cCosmetic-img-2{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+#cCosmetic-text-1{
+	position: absolute;
+	top: 134px;
+	left: 80px;;
+	width: 301px;
+	height: 115px;
+	text-align: left;
+	/* font: Bold 48px/62px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+
+#cCosmetic-text-2{
+	margin: 100px 0 51px;
+	height: 103px;
+	text-align: center;
+	/* font: Bold 42px/56px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 56px;
+	letter-spacing: -1.26px;
+	color: #C8500F;
+	white-space: pre-line;
+}
+.cCosmetic-text-3{
+	height: 231px;
+	text-align: center;
+	/* font: Regular 28px/40px NanumSquareRoundOTF; */
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+#cCosmetic-img-3{
+	width: 960px;
+	height: 252px;
+}
+.cCosmetic-text-4{
+	height: 40px;
+	text-align: center;
+	/* font: Bold 36px/44px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;
+}
+#cCosmetic-img-4{
+	width: 960px;
+	height: 416px;
+}
+.cCosmetic-img-5{
+	width: 960px;
+	height: 370px;
 }

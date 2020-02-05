@@ -34,4 +34,13 @@ public class CosmeticController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/cosmetic/crown", method=RequestMethod.GET)
+	public ModelAndView crown() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/cosmetic/crown.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }

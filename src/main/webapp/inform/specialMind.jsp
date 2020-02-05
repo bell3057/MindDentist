@@ -28,7 +28,7 @@
 			<img src="../img/1-3/icon03.png" style="width: 210px; height: 210px;">
 			<div class="special_mind_div_text-2">마인드 치과의 의료진들은 각종 해외연수, 세미나, 교육 등을 통해 끊임 없이 연구하며
 			진료 노하우를 쌓아가고 있습니다. 자체적으로 임플란트 연구소, 치아교정 연구실을 운
-			영하며, 최신식 장비 사용과 함께 소독 시스템을 통해 안심하고
+			영하며, 최신식 장비 사용과 함께 대학병원급 소독 시스템을 통해 안심하고
 			믿을 수 있는 진료를 약속 드립니다.</div>
 		</div>
 		<div class="special_mind-border"></div>

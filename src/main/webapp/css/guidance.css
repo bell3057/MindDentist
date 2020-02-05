@@ -214,11 +214,13 @@ width: 105px; height: 15px; margin: 65px auto 0;
 }
 .equipment-img:hover{
 	filter: brightness(1);
+	border-radius: 14px;
 	border: 3px solid #C8500F;
 	box-sizing: border-box;
 }
 .eq-img{
 	filter: brightness(1);
+	border-radius: 14px;
 	border: 3px solid #C8500F;
 	box-sizing: border-box;
 }

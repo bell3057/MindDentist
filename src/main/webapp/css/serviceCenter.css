@@ -8,12 +8,17 @@
 }
 #service_wrap-2{
 	width: 2880px;
-	height: 1446px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#service_wrap-2-2{
+	width: 2880px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 #service_wrap-3{
 	width: 2880px;
-	height: 1446px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 }@media all and (max-width: 1920px){
@@ -24,12 +29,17 @@
 }
 #service_wrap-2{
 	width: 1920px;
-	height: 1446px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#service_wrap-2-2{
+	width: 1920px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 #service_wrap-3{
 	width: 1920px;
-	height: 1446px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 }
@@ -41,12 +51,17 @@
 }
 #service_wrap-2{
 	width: 1600px;
-	height: 1446px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#service_wrap-2-2{
+	width: 1600px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 #service_wrap-3{
 	width: 1600px;
-	height: 1446px;
+	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 }
@@ -156,9 +171,11 @@ width: 32px; padding-right: 24px;
 	display: table-cell;
 	vertical-align: middle;
 }
-/* 7-2 치료전후 */
 
-#bna-text-1{
+
+/* 7-2 마인드 히스토리 */
+
+.history-text-1{
 height: 44px;
 text-align: center;
 /* font: Bold 40px/30px NanumSquareRoundOTF; */
@@ -169,7 +186,7 @@ letter-spacing: -2px;
 color: #C8500F;
 opacity: 1;
 }
-#bna-text-2{
+.history-text-2{
 margin: 20px auto 60px;
 text-align: center;
 /* font: Regular 20px/23px NanumSquareRoundOTF; */
@@ -180,9 +197,58 @@ color: #6E645A;
 opacity: 1;
 }
 
-/* 7-3 치료후기 */
+.history-box{
+	margin-right: 6px;
+	width: 316px;
+	height: 342px;
+	float: left;
+	cursor: pointer;
+}
+.history-img-3{
+	width: 316px;
+	height: 316px;
+	background: #DBDBDB 0% 0% no-repeat padding-box;
+}
+.history-text-3{
+	margin-top: 24px;
+	height: 22px;
+	text-align: center;
+	/* font: Bold 20px/23px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: -0.6px;
+	color: #6E645A;
+	opacity: 1;
+}
 
-#reivew-text-1{
+/* 7-2-2 히스토리 */
+.history-event-box{
+	width: 960xp;
+	height: 830px; /* 나중에 지울것! */	
+	margin-bottom: 60px;
+}
+.history-event-img{
+	width: 960px;
+	height: 600px;
+	background: #DBDBDB 0% 0% no-repeat padding-box;
+	margin-bottom: 60px;
+}
+.history-event-text{
+	height: 170px;
+	text-align: center;
+	/* font: Bold 24px/36px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.72px;
+	color: #6E645A;
+	opacity: 1;
+	white-space: pre-line;
+}
+/* 7-3 칭찬불만 */
+
+#compliment-text-1{
 height: 44px;
 text-align: center;
 /* font: Bold 40px/30px NanumSquareRoundOTF; */
@@ -193,13 +259,198 @@ letter-spacing: -2px;
 color: #C8500F;
 opacity: 1;
 }
-#reivew-text-2{
-margin: 20px auto 60px;
-text-align: center;
-/* font: Regular 20px/23px NanumSquareRoundOTF; */
-font-size: 20px;
-line-height: 23px;
-letter-spacing: -0.6px;
-color: #6E645A;
-opacity: 1;
+#compliment-box-1{
+	margin-top:  116px;
+	width: 960xp;
+	height: 480px;
+	background: transparent url('../img/7-3/7301.png') 0% 0% no-repeat padding-box;
+	position: relative;
 }
+
+#compliment-text-2{
+	top: 40px;
+	height: 152px;
+	text-align: left;
+	/* font: Bold 36px/56px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 56px;
+	letter-spacing: -1.08px;
+	color: #C8500F;
+	opacity: 1;	
+	position: absolute;
+	white-space: pre-line;
+}
+
+#compliment-text-3{
+	top: 268px;
+	height: 139px;
+	text-align: left;
+	/* font: Regular 22px/38px NanumSquareRoundOTF; */
+	font-size: 22px;
+	line-height: 38px;
+	letter-spacing: -1.1px;
+	color: #6E645A;
+	opacity: 1;
+	position: absolute;
+	white-space: pre-line;
+}
+
+.compliment-box-2{
+	width: 320px;
+	height: 60px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+	border-radius: 10px;
+	text-align: center;
+	/* font: Bold 24px/27px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: -0.72px;
+	color: #6E645A;
+	opacity: 1;
+	cursor: pointer;
+	display: table;
+	box-sizing: border-box;
+	float: left;
+}
+
+.cb-check{
+	background: #C8500F;
+	color: #fff;
+	border: none;
+}
+.compliment-box-2>span{
+	display: table-cell;
+	vertical-align: middle;
+}
+#compliment-text-4{
+	height: 22px;
+	text-align: center;
+	/* font: Regular 20px/23px NanumSquareRoundOTF; */
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: -0.6px;
+	color: #C8500F;
+	opacity: 1;
+	margin-top: 37px;
+}
+.ctr{
+	height: 132px;
+	vertical-align: top;
+}
+#compliment-table{
+	margin: 130px auto;
+	width: 664px;
+	height: 755px;	
+	opacity: 1;
+}
+#compliment-table th{
+	text-align: left;
+	white-space: pre-line;	
+}
+.cth{
+	width: 194px;
+	/* font: Bold 28px/32px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	padding-top: 15px;
+    display: inherit;
+}
+#compliment-table td{
+	text-align: left;
+	width: 470px;
+	height: 60px;
+}
+#compliment-table input{
+	height: 60px;
+	text-align: center;
+	/* font: Bold 28px/32px NanumSquareRoundOTF; */
+	font-family: 'NanumSquareRound',sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	border: 1px solid #707070;
+	border-radius: 10px;
+	box-sizing: border-box;
+	opacity: 1;
+}
+.ct-year{
+	width: 160px;
+}
+.ct-day{
+	width: 80px;
+}
+.ctd{
+	margin: auto 9px auto 14px;
+	width: 25px;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+}
+.ct-text{
+	width: 320px;
+}
+#ct-th-text{
+	text-align: left;
+	/* font: Regular 14px/22px NanumSquareRoundOTF; */
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.42px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#compliment-table textarea{
+	padding: 48px;
+	width: 374px;
+	height: 263px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 38px;
+	border: 1px solid #707070;
+	border-radius: 10px;
+	opacity: 1;
+	overflow: hidden;
+	resize: none;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#compliment-table input,textarea:focus{
+	outline: none;
+}
+
+#compliment-text-5{
+	width: 480px;
+	height: 60px;
+	text-align: center;
+	/* font: Bold 28px/32px NanumSquareRoundOTF; */
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.84px;
+	color: #FFFFFF;
+	background: #C8500F 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	cursor: pointer;
+	display: table;
+}
+#compliment-text-5>span{
+	display: table-cell;
+	vertical-align: middle;
+	height: 31px;	
+}
+
+
+
+
+

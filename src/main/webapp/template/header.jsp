@@ -70,7 +70,8 @@
 		<div id="menu_dropDown-5" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-19" href="../cosmetic/laminateCosmetic">무삭제 라미네이트</a>
 			<a class="menu_dropDown-text" id="mdt-20" href="../cosmetic/toothMolding">맞춤 치아성형</a>
-			<a class="menu_dropDown-text" id="mdt-21" href="../cosmetic/teethWhitening" style="margin-right:0px;">원데이 치아미백</a>
+			<a class="menu_dropDown-text" id="mdt-21" href="../cosmetic/teethWhitening">원데이 치아미백</a>
+			<a class="menu_dropDown-text" id="mdt-21-5" href="../cosmetic/crown" style="margin-right:0px;">마인드 앞니 크라운</a>
 		</div>
 		<div id="menu_dropDown-6" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-22" href="../generalCare/naturalTeeth">자연치아 살리기</a>
@@ -81,8 +82,8 @@
 		</div>
 		<div id="menu_dropDown-7" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-27" href="../serviceCenter/notice">공지사항</a>
-			<a class="menu_dropDown-text" id="mdt-28" href="../serviceCenter/before_n_after">치료전후</a>
-			<a class="menu_dropDown-text" id="mdt-29" href="../serviceCenter/review" style="margin-right:0px;">마인드 후기</a>
+			<a class="menu_dropDown-text" id="mdt-28" href="../serviceCenter/history">마인드 히스토리</a>
+			<a class="menu_dropDown-text" id="mdt-29" href="../serviceCenter/compliment" style="margin-right:0px;">칭찬불만</a>
 		</div>
 	</div>
 </div>

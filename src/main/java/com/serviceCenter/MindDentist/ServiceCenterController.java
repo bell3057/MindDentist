@@ -17,19 +17,28 @@ public class ServiceCenterController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/serviceCenter/before_n_after", method=RequestMethod.GET)
-	public ModelAndView bna() {
+	@RequestMapping(value="/serviceCenter/history", method=RequestMethod.GET)
+	public ModelAndView history() {
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("display", "/serviceCenter/before_n_after.jsp");
+		mav.addObject("display", "/serviceCenter/history.jsp");
 		mav.setViewName("/main/index");
 		
 		return mav;
 	}
 	
-	@RequestMapping(value="/serviceCenter/review", method=RequestMethod.GET)
+	@RequestMapping(value="/serviceCenter/historyEvent", method=RequestMethod.GET)
+	public ModelAndView historyEvent() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/serviceCenter/historyEvent.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/serviceCenter/compliment", method=RequestMethod.GET)
 	public ModelAndView review() {
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("display", "/serviceCenter/review.jsp");
+		mav.addObject("display", "/serviceCenter/compliment.jsp");
 		mav.setViewName("/main/index");
 		
 		return mav;
