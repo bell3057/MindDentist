@@ -87,7 +87,7 @@ input[type="number"]::-webkit-inner-spin-button {
 				</div>
 			</div>
 		</div>
-		<form id="accumulate_input_form" name="aif" method="post" action="/MindDentist/admin/accumulateCounting" onsubmit='return submitChk()'>
+		<form id="accumulate_input_form" name="aif" method="post" action="/admin/accumulateCounting" onsubmit='return submitChk()'>
 			<div style="width: 930px; height: 80px; margin:auto; padding: 47px 0;">
 				<span class="accumulate_count-text" style="margin-left: 100px; color: #6E645A;">식립 건 수 입력 : </span>
 				<div style="float: right;">
@@ -115,10 +115,12 @@ function submitChk(){
 }
 
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+
 	// 임플란트 식립건수 불러오기
 	$.ajax({
 		type: 'post',
-		url : '/MindDentist/admin/accumulateLoader',
+		url : '/admin/accumulateLoader',
 		datatype : 'text',
 		success : function(data){
 			$('#accumulate_count').text(numberWithCommas(data));
@@ -130,7 +132,7 @@ $(document).ready(function(){
 	});
 	
 	$('#main-link').click(function(){
-		location.href="/MindDentist/main/index";
+		location.href ="/main/index";
 	});
 });
 </script>

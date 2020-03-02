@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 	$('.history-box').click(function(){
-		location.href="/MindDentist/serviceCenter/historyEvent"
+		location.href="../serviceCenter/historyEvent"
 	});
 	
 	$('#cb-1').click(function(){

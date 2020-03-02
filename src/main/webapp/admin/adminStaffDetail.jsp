@@ -106,12 +106,12 @@ height: 100%;
 $(document).ready(function(){
 	var asIndex = ${asDTO.asIndex};
 	$('#modifyBtn').click(function(){
-		location.href = "/MindDentist/admin/modify_staff?asIndex="+asIndex;
+		location.href = "/admin/modify_staff?asIndex="+asIndex;
 	});
 	$('#deleteBtn').click(function(){
 		var deleteBtn = confirm("정말로 삭제하시겠습니까?");
 		if(deleteBtn == true){
-			location.href = "/MindDentist/admin/delete_staff?asIndex="+asIndex;
+			location.href = "/admin/delete_staff?asIndex="+asIndex;
 		}
 	});
 	$('#closeBtn').click(function(){

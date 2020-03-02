@@ -111,6 +111,8 @@ div.admin_Btn:hover{
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+	
 	$('#admin_loginBtn').click(function(){
 		$('#adminIdDiv').empty();
 		$('#adminPwdDiv').empty();
@@ -123,18 +125,25 @@ $(document).ready(function(){
 		
 		//관리자 DB에서 조회 후 로그인 성공/실패 구분  - TBL_ADMIN  : 테이블명
 		else {
+			alert("로그인 시도");
 			$.ajax({
 				type : "post",
-				url : '/admin/loginProcess',
+				url : contextPath + '/admin/loginProcess',
 				data : {"id" : $('#adminId').val(), "password" : $('#adminPwd').val()},
 				dataType : 'text',
+				Async: false,
 				success : function(data){
+					console.log(data);
 					if(data == 'login_ok'){
-						location.href="/MindDentist/admin/adminMain";
+						location.href= contextPath + "/admin/adminMain";
 					} else if(data == 'login_fail'){
 						$('#loginResultDiv').text("로그인 실패").css("color","red").css("font-size","12pt");
 					}
+				},
+				error:	function(request,status,error){
+				  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 				}
+
 			});
 		}
 	});

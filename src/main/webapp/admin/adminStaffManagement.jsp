@@ -104,7 +104,7 @@ $(document).ready(function(){
 	//의료진 목록
 	$.ajax({
 		type: 'POST',
-		url : '/MindDentist/admin/adminStaffList',
+		url : '/admin/adminStaffList',
 		dataType : 'json',
 		success : function(data){
 			$.each(data.list, function(index, items){
@@ -133,13 +133,13 @@ $(document).ready(function(){
 				}
 				//상세
 				$('#staff-div-'+index).click(function(){
-					window.open("/MindDentist/admin/adminStaffLoader?asIndex="+items.asIndex, '','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
+					window.open("/admin/adminStaffLoader?asIndex="+items.asIndex, '','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
 				});
 			});
 		}
 	});
 	$('#add_staff').click(function(){
-		window.open("/MindDentist/admin/add_staff",'','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
+		window.open("/admin/add_staff",'','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
 	});
 });
 </script>

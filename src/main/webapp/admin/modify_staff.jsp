@@ -82,7 +82,7 @@ height: 100%;
 </head>
 <body>
 <div id="as-text-1">의료진 수정</div>
-<form id="asForm" method="post" enctype="multipart/form-data" action="/MindDentist/admin/modify_staff_exe">
+<form id="asForm" method="post" enctype="multipart/form-data" action="/admin/modify_staff_exe">
 	<input type="hidden" name="asIndex" value="${asDTO.asIndex }">
 	<table id="asTable">
 		<tr>

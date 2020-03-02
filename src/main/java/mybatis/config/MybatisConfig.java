@@ -14,8 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class MybatisConfig {
 	
-	//개발자
-	/*
+	
+	
+	//로컬
 	@Bean(name="dataSource")
 	public BasicDataSource getBasicDataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
@@ -26,8 +27,9 @@ public class MybatisConfig {
 		basicDataSource.setMaxTotal(20);
 		basicDataSource.setMaxIdle(3);
 		return basicDataSource;
-	}
-	*/
+	}/*
+	
+	
 	//서버
 	@Bean(name="dataSource")
 	public BasicDataSource getBasicDataSource() {
@@ -39,7 +41,8 @@ public class MybatisConfig {
 		basicDataSource.setMaxTotal(20);
 		basicDataSource.setMaxIdle(3);
 		return basicDataSource;
-	}
+	}*/
+	
 	@Bean
 	public SqlSessionFactory getSqlSessionFactoryBean() throws Exception {
 		SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
