@@ -98,7 +98,7 @@
 		<div id="staff-box"></div>
 	</div>
 </div>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(document).ready(function(){
 	//의료진 목록

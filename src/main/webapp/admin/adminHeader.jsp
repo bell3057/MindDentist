@@ -32,7 +32,7 @@ text-align: left;
 		<a id="header-title" class="herder-box" href="/admin/adminMain">마인드 치과 관리자 페이지</a>
 		<a class="herder-box header-menu"  href="/admin/adminMain">임플란트 관리</a>
 		<a class="herder-box header-menu" href="/admin/adminStaffManagement">의료진 관리</a>
-		<a class="herder-box header-menu" href="/admin/adminBoardManagement">게시판 관리</a>
+		<a class="herder-box header-menu" href="/MindDentist/admin/adminBoardManagement">게시판 관리</a>
 		<a id="logout" class="herder-box header-menu" href="/admin/adminLogout">로그아웃</a>
 	</div>
 	<div style="width:100%; height: 7px; background: transparent linear-gradient(90deg, #C8500F 0%, #FCA876 100%) 0% 0% no-repeat padding-box;
