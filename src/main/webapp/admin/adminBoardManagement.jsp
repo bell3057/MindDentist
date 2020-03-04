@@ -83,7 +83,8 @@ $(document).ready(function(){
 	
 	//게시물 작성
 	$('#cbm').click(function(){
-		alert("새 글 작성 메소드 입력 예정");
+		//alert("새 글 작성 메소드 입력 예정");
+		location.href="/MindDentist/admin/adminBoardWriteForm";
 	});
 });
 </script>

@@ -80,4 +80,14 @@ public class AdminController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/admin/adminBoardWriteForm", method=RequestMethod.GET)
+	public ModelAndView adminBoardWrite() {
+		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("display", "/admin/adminBoardWriteForm.jsp");
+		mav.setViewName("/admin/adminIndex");
+		
+		return mav;
+	}
 }
