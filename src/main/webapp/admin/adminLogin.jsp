@@ -96,7 +96,7 @@ div.admin_Btn:hover{
 		<tr>
 			<td>비밀번호</td>
 			<td>
-				<input type="password" id="adminPwd" name="adminPwd" placeholder="비밀번호"/>
+				<input type="password" id="adminPwd" name="adminPwd" placeholder="비밀번호" onkeydown="if(event.keyCode == 13) login()"/>
 				<div id="adminPwdDiv" class="checkDiv"></div>
 			</td>
 		</tr>
@@ -110,42 +110,47 @@ div.admin_Btn:hover{
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
+function login(){
+	var contextPath = "${pageContext.request.contextPath}";
+	
+	$('#adminIdDiv').empty();
+	$('#adminPwdDiv').empty();
+	$('#loginResultDiv').empty();
+	
+	if($('#adminId').val()=='')
+		$('#adminIdDiv').text('아이디를 입력하세요').css('color','red').css('font-size','15px');
+	else if($('#adminPwd').val()=='')
+		$('#adminPwdDiv').text('비밀번호를 입력하세요').css('color','red').css('font-size','15px');
+	
+	//관리자 DB에서 조회 후 로그인 성공/실패 구분  - TBL_ADMIN  : 테이블명
+	else {
+		alert("로그인 시도");
+		$.ajax({
+			type : "post",
+			url : contextPath + '/admin/loginProcess',
+			data : {"id" : $('#adminId').val(), "password" : $('#adminPwd').val()},
+			dataType : 'text',
+			Async: false,
+			success : function(data){
+				console.log(data);
+				if(data == 'login_ok'){
+					location.href= contextPath + "/admin/adminMain";
+				} else if(data == 'login_fail'){
+					$('#loginResultDiv').text("로그인 실패").css("color","red").css("font-size","12pt");
+				}
+			},
+			error:	function(request,status,error){
+			  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+
+		});
+	}
+}
 $(document).ready(function(){
-	var contextPath = "${pageContext.request.contextPath}"
+	
 	
 	$('#admin_loginBtn').click(function(){
-		$('#adminIdDiv').empty();
-		$('#adminPwdDiv').empty();
-		$('#loginResultDiv').empty();
-		
-		if($('#adminId').val()=='')
-			$('#adminIdDiv').text('아이디를 입력하세요').css('color','red').css('font-size','15px');
-		else if($('#adminPwd').val()=='')
-			$('#adminPwdDiv').text('비밀번호를 입력하세요').css('color','red').css('font-size','15px');
-		
-		//관리자 DB에서 조회 후 로그인 성공/실패 구분  - TBL_ADMIN  : 테이블명
-		else {
-			alert("로그인 시도");
-			$.ajax({
-				type : "post",
-				url : contextPath + '/admin/loginProcess',
-				data : {"id" : $('#adminId').val(), "password" : $('#adminPwd').val()},
-				dataType : 'text',
-				Async: false,
-				success : function(data){
-					console.log(data);
-					if(data == 'login_ok'){
-						location.href= contextPath + "/admin/adminMain";
-					} else if(data == 'login_fail'){
-						$('#loginResultDiv').text("로그인 실패").css("color","red").css("font-size","12pt");
-					}
-				},
-				error:	function(request,status,error){
-				  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-				}
-
-			});
-		}
+		login();
 	});
 	
 });

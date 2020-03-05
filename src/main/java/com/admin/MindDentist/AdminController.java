@@ -90,4 +90,9 @@ public class AdminController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/smartEditor2/SmartEditor2Skin", method=RequestMethod.GET)
+	public ModelAndView smartEditor() {
+		return new ModelAndView("redirect:/smartEditor2/SmartEditor2Skin.jsp");
+	}
 }

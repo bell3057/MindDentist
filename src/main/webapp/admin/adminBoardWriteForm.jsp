@@ -73,6 +73,8 @@
 	vertical-align: middle;
 }
 </style>
+<script type="text/javascript" src="<%=request.getContextPath()%>/sEditor2/js/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/sEditor2/photo_uploader/plugin/hp_SE2M_AttachQuickPhoto.js" charset="utf-8"></script>
 <div id="ab_div">
 	<div id="ab_title"><span style="display: table-cell; vertical-align: middle;">게시글 작성</span></div>
 	<form id="abwf_frm" method="post" action="">
@@ -93,7 +95,7 @@
 			</tr>
 			<tr>
 				<th style="height: 300px;">내용</th>
-				<td><textarea name="abContent" id="abContent" rows="10" cols="100"></textarea></td>
+				<td><textarea name="abContent" id="abContent" rows="10" cols="100" style="width: 100%;"></textarea></td>
 			</tr>
 			<tr>
 				<th>파일 업로드</th>
@@ -106,15 +108,44 @@
 		<a id="ab_cancel" class="ab_btn"><span>취소</span></a>
 	</div>
 </div>
-<script type="text/javascript" src="/MindDentist/smartEditor2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
-<script> 
-var oEditors = [];
+
+<script type="text/javascript"> 
+/* var oEditors = [];
 nhn.husky.EZCreator.createInIFrame({
 		oAppRef: oEditors,
-		elPlaceHolder: 'abContent', 
-		sSkinURI: '/MindDentist/smartEditor2/SmartEditor2Skin.html', 
+		elPlaceHolder: "abContent", 
+		sSkinURI: '/MindDentist/sEditor2/SmartEditor2Skin.html', 
 		fCreator: 'createSEditor2' 
-}); 
+});  */
+
+var oEditors = [];
+nhn.husky.EZCreator.createInIFrame({
+    oAppRef: oEditors,
+    elPlaceHolder: "abContent",
+    sSkinURI: "<%=request.getContextPath()%>/sEditor2/SmartEditor2Skin.html",
+    fCreator: "createSEditor2"
+});
+ 
+//‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
+function submitContents(elClickedObj) {
+    // 에디터의 내용이 textarea에 적용된다.
+    oEditors.getById["abContent"].exec("UPDATE_CONTENTS_FIELD", [ ]);
+ 
+    // 에디터의 내용에 대한 값 검증은 이곳에서
+    // document.getElementById("textAreaContent").value를 이용해서 처리한다.
+  
+    try {
+        elClickedObj.form.submit();
+    } catch(e) {
+     
+    }
+}
+ 
+// textArea에 이미지 첨부
+function pasteHTML(filepath){
+    var sHTML = '<img src="<%=request.getContextPath()%>/upload/'+filepath+'">';
+    oEditors.getById["abContent"].exec("PASTE_HTML", [sHTML]);
+}
 </script>
 
 <script>
@@ -124,7 +155,9 @@ $(document).ready(function(){
 			alert('제목을 입력해주세요');
 		}
 		else {
-			$.ajax({
+			oEditors.getById["abContent"].exec("UPDATE_CONTENTS_FIELD", []);
+			alert($('#abContent').val());
+			/* $.ajax({
 				type: 'post',
 				url : '/MindDentist/admin/adminBoardWrite',
 				data: $('#abwf_frm').serialize(),
@@ -138,7 +171,7 @@ $(document).ready(function(){
 				error:	function(request,status,error){
 		  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 				}
-			});
+			}); */
 		}
 		
 	});
