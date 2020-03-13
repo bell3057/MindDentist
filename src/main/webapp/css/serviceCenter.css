@@ -6,23 +6,33 @@
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
+#service_wrap-1-1{
+	width: 1920px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
 #service_wrap-2{
-	width: 2880px;
+	width: 1920px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 #service_wrap-2-2{
-	width: 2880px;
+	width: 1920px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 #service_wrap-3{
-	width: 2880px;
+	width: 1920px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
 }
 }@media all and (max-width: 1920px){
 #service_wrap-1{
+	width: 1920px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#service_wrap-1-1{
 	width: 1920px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
@@ -45,6 +55,11 @@
 }
 @media all and (max-width: 1600px){
 #service_wrap-1{
+	width: 1600px;
+	height: 100%;
+	font-family: 'NanumSquareRound',sans-serif;
+}
+#service_wrap-1-1{
 	width: 1600px;
 	height: 100%;
 	font-family: 'NanumSquareRound',sans-serif;
@@ -102,6 +117,9 @@ opacity: 1;
 	width: 960px;
 	border-top: 1px solid #9B948C;
 	cursor: pointer;
+}
+.notice_append_table:hover{
+	background: #e9e9e9;
 }
 .notice_table th{
 	/* font: Bold 16px/18px NanumSquareRoundOTF; */
@@ -225,7 +243,7 @@ opacity: 1;
 /* 7-2-2 히스토리 */
 .history-event-box{
 	width: 960xp;
-	height: 830px; /* 나중에 지울것! */	
+	height: 100%; 
 	margin-bottom: 60px;
 }
 .history-event-img{
@@ -235,7 +253,7 @@ opacity: 1;
 	margin-bottom: 60px;
 }
 .history-event-text{
-	height: 170px;
+	height: 100%;
 	text-align: center;
 	/* font: Bold 24px/36px NanumSquareRoundOTF; */
 	font-weight: bold;

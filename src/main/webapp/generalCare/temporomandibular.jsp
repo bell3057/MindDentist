@@ -21,7 +21,7 @@
 		<div class="tpGeneral-text-3" style="margin: 60px auto 68px;">턱관절 장애의 치료를 위해선 턱관절에 무리를 주는 나쁜 습관의 개선, 물리치료, 운동요법 등과 함께
 		약물요법, 교합안전장치 등의 비수술적 치료법이 선행되어야 합니다. 마인드 치과에서는
 		턱관절 물리치료실을 마련해 환자 개인의 상태에 맞춘 체계적이고 효율적인 치료를 제공합니다.</div>
-		<img id="tpGeneral-img-4" src="">
+		<img id="tpGeneral-img-4" src="../img/6-5/6502.png">
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 80px auto;"></div>
 		<div class="tpGeneral-text-4">보톡스는 턱 근육 전문가 치과의사에게</div>
 		<div class="tpGeneral-text-3" style="margin: 60px auto 70px;">씹는 힘이 강해서 턱이 비대해지고, 이로 인해 사각턱을 가지고 계신 환자분들에게서

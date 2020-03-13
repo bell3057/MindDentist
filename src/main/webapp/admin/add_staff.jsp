@@ -82,7 +82,7 @@ height: 100%;
 </head>
 <body>
 <div id="as-text-1">의료진 등록</div>
-<form id="asForm" method="post" enctype="multipart/form-data" action="/admin/add_staff_exe">
+<form id="asForm" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/admin/add_staff_exe">
 	<table id="asTable">
 		<tr>
 			<th>성 명</th>

@@ -15,28 +15,29 @@
 			더욱 발전하는 모습으로 보답하겠습니다. 감사합니다.</div>
 		</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 49px auto 73px;"></div>
-		<form id="complimentForm" method="post" action="">
+		<form id="complimentForm">
 			<div style="width: 664px; height: 60px;">
 				<div id="cb-1" class="compliment-box-2 cb-check" style="margin-right: 24px;"><span>칭 찬</span></div>
 				<div id="cb-2" class="compliment-box-2"><span>불 만</span></div>
+				<input type="hidden" id="cpl" name="cpl" value="칭찬">
 			</div>
 			<div id="compliment-text-4">* 칭찬 또는 불만사항을 선택해 주세요.</div>
 			<table id="compliment-table">
 				<tr class="ctr">
 					<th><span class="cth">일 시</span></th>
 					<td>
-						<input class="ct-year" type="text"><span class="ctd">년</span>
-						<input class="ct-day" type="text"><span class="ctd">월</span>
-						<input class="ct-day" type="text"><span class="ctd" style="margin-right: 0;">일</span>
+						<input class="ct-year" name="year" type="text"><span class="ctd">년</span>
+						<input class="ct-day" name="month" type="text"><span class="ctd">월</span>
+						<input class="ct-day" name="day" type="text"><span class="ctd" style="margin-right: 0;">일</span>
 					</td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">고객성명</span></th>
-					<td><input class="ct-text" type="text"></td>
+					<td><input class="ct-text" name="name" type="text"></td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">연락처</span></th>
-					<td><input class="ct-text" type="text"></td>
+					<td><input class="ct-text" name="phone" type="text"></td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">사 유</span>
@@ -45,7 +46,7 @@
 					개선해야 할 점, 칭찬하고
 					싶은 내용 등 자유롭게
 					기재해주시기 바랍니다.</span></th>
-					<td><textarea id="ct-textarea"></textarea></td>
+					<td><textarea id="ct-textarea" name="content"></textarea></td>
 				</tr>
 			</table>
 			<div id="compliment-text-5"><span>제출하기</span></div>
@@ -56,6 +57,8 @@
 <script src="../js/serviceCenter.js"></script>
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+	
 	$('#menu_bar-7').css("font-weight", "800");
 	$('#menu_bar-7').css("color", "#C8500F");
 	$('#menu_selected_bar-7').css("background-color", "#B4AAA0");
@@ -70,6 +73,28 @@ $(document).ready(function(){
 		$('#menu_dropDown').slideDown(200);
 		$('#menu_dropDown-7').css("display", "block");
 		$('#mdt-29').css("font-weight", "800");		
+	});
+	
+	
+	
+	$('#compliment-text-5').click(function(){
+		var formData = new FormData($("#complimentForm")[0]);
+		
+		$.ajax({
+			type : 'post',
+			url : contextPath + "/admin/sendMail",
+			data : formData,
+			processData: false,
+	        contentType: false,
+			success : function(data){
+				if(data == "result"){
+					alert("메일이 발송되었습니다.");
+				}
+			},
+			error:	function(request,status,error){
+	  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+		});
 	});
 });
 </script>

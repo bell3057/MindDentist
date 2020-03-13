@@ -18,7 +18,7 @@
 			<jsp:include page="../template/header.jsp"/>
 		</div>	
 		<!-- content -->		
-		<div>
+		<div id="content">
 			<jsp:include page="${display }"/>
 		</div>
 		<!-- footer -->

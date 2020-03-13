@@ -6,7 +6,7 @@
 .slick-dots{
 	top: 85.28%;
     left: 47.567%;
-	width: 90px; 
+	width: 150px; 
 	height: 15px;	
 	position: absolute;	
 }
@@ -32,13 +32,15 @@
 <div id="main_plate_wrap">
 	<div id="main_plate"><!-- slider -->
 		<div id="slider_wrap">
-			<img class="slider-img" src="../img/Main-01.png">
-			<img class="slider-img" src="">
-			<img class="slider-img" src="">
+			<img class="slider-img" src="../img/Main/Main_01.png">
+			<img class="slider-img" src="../img/Main/Main_02.png">
+			<img class="slider-img" src="../img/Main/Main_03.png">
+			<img class="slider-img" src="../img/Main/Main_04.png">
+			<img class="slider-img" src="../img/Main/Main_05.png">
 		</div>
-		<div id="slide-text">안심하세요,
+		<!-- <div id="slide-text">안심하세요,
 		마인드치과입니다.
-		</div>
+		</div> -->
 	</div><!-- slider -->
 	<div id="accumulate_count_div"><!-- 누적 시립건 -->
 		<div style="width: 830px; height: 80px; margin:auto; padding: 47px 0;">
@@ -53,9 +55,10 @@
 	<div style="width:100%; height: 830px;"><!-- main content-1 -->
 		<div style="width:960px; height: 830px; margin:auto;">
 			<div style="width: 960px; height: 210px; ">
-				<div style=" width: 675px; height: 80px; margin:auto; padding: 65px 0;">
+				<div style=" width: 960px; height: 80px; margin:auto; padding: 65px 0;">
 					<img src="../img/KCSI.png" style="width: 400px; height: 80px; margin: auto; float: left;">
 					<div id="kcsi-text">(임플란트 부분 1위)</div>
+					<img src="../img/Main/Main_Sub_logo.png" style="margin-left: 60px; width: 186px; height: 80px;">
 				</div>
 			</div>
 			<img src="../img/Mainimg01.png" style="float: left;">

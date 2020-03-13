@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,13 +52,15 @@ public class AdminStaffController {
 	
 	//의료진 등록
 	@RequestMapping(value="/admin/add_staff_exe", method=RequestMethod.POST)
-	public String add_staff_exe(@ModelAttribute AsDTO asDTO
+	public String add_staff_exe(@ModelAttribute AsDTO asDTO, HttpServletRequest request
 						, @RequestParam MultipartFile mainImg, @RequestParam MultipartFile pageImg) {
-		//파일경로 설정 - 서버 적용시에는 "/upload"
-		//String mainImgPath = "D:\\coding\\java_ee\\workspace\\MindDentist\\src\\main\\webapp\\upload";
-		//String pageImgPath = "D:\\coding\\java_ee\\workspace\\MindDentist\\src\\main\\webapp\\upload";
-		String mainImgPath = "/upload";
-		String pageImgPath = "/upload";
+		//파일경로 설정
+		//리눅스 경로
+		//String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
+		//String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
+		//윈도우 경로
+		String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "upload\\staff";
+		String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "upload\\staff";
 		
 		//파일 이름 지정
 		String mainImgName = mainImg.getOriginalFilename();
@@ -74,6 +77,7 @@ public class AdminStaffController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println(mainImgPath);
 		//파일이름부여
 		asDTO.setMainImgName(mainImgName);
 		asDTO.setPageImgName(pageImgName);

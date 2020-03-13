@@ -2,6 +2,7 @@ package com.admin.dao;
 
 import java.util.List;
 
+import com.admin.bean.AbDTO;
 import com.admin.bean.AdminDTO;
 import com.admin.bean.AsDTO;
 
@@ -24,5 +25,13 @@ public interface AdminDAO {
 	public int delete_staff(int asIndex);
 
 	public List<AsDTO> allStaffList();
+
+	public int adminBoardWrite(AbDTO abDTO);
+
+	public List<AbDTO> adminBoardList();
+
+	public AbDTO noticeView(int abNum);
+
+	public void hitUp(int abNum);
 
 }

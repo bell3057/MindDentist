@@ -83,7 +83,7 @@ height: 100%;
 <body>
 <div style="padding-top: 80px;">
 	<div class="ms-staff-box" style="width: 800px; height: 360px;">
-		<img class="ms-img" src="../upload/${asDTO.pageImgName }">
+		<img class="ms-img" src="../upload/staff/${asDTO.pageImgName }">
 		<div style="width: 545px; margin-left: 14px; float: left;">
 			<div class="ms-text-2">${asDTO.asName }</div>
 			<div class="ms-text-3">ㅣ ${asDTO.asPosition }</div>
@@ -104,14 +104,16 @@ height: 100%;
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
 	var asIndex = ${asDTO.asIndex};
+	
 	$('#modifyBtn').click(function(){
-		location.href = "/admin/modify_staff?asIndex="+asIndex;
+		location.href = contextPath + "/admin/modify_staff?asIndex="+asIndex;
 	});
 	$('#deleteBtn').click(function(){
 		var deleteBtn = confirm("정말로 삭제하시겠습니까?");
 		if(deleteBtn == true){
-			location.href = "/admin/delete_staff?asIndex="+asIndex;
+			location.href = contextPath + "/admin/delete_staff?asIndex="+asIndex;
 		}
 	});
 	$('#closeBtn').click(function(){

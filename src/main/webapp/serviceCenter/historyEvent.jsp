@@ -8,20 +8,8 @@
 		<div class="history-text-1">마인드 히스토리</div>
 		<div class="history-text-2">마인드치과의 다양한 소식을 전합니다.</div>
 		<div class="history-event-box">
-			<img class="history-event-img">
-			<div class="history-event-text">본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE</div>
-		</div>
-		<div class="history-event-box">
-			<img class="history-event-img">
-			<div class="history-event-text">본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 
-			본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE 본문내용 SAMPLE</div>
+			<!-- <img class="history-event-img"> -->
+			<div class="history-event-text">${abDTO.abContent }</div>
 		</div>
 	</div>
 </div>

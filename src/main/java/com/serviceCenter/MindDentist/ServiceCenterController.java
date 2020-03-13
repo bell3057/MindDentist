@@ -26,14 +26,6 @@ public class ServiceCenterController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/serviceCenter/historyEvent", method=RequestMethod.GET)
-	public ModelAndView historyEvent() {
-		ModelAndView mav = new ModelAndView();
-		mav.addObject("display", "/serviceCenter/historyEvent.jsp");
-		mav.setViewName("/main/index");
-		
-		return mav;
-	}
 	
 	@RequestMapping(value="/serviceCenter/compliment", method=RequestMethod.GET)
 	public ModelAndView review() {

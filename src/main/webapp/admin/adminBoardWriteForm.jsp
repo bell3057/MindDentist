@@ -2,9 +2,9 @@
     pageEncoding="UTF-8"%>
 <style>
 #ab_div{
-	width: 800px;
+	width: 960px;
 	height: 100%;
-	padding: 50px 0;
+	padding-top: 50px;
 }
 #ab_title{
 	width: 800px;
@@ -17,14 +17,14 @@
 	border-radius: 5px;
 	display: table;
 }
-#abwf-frm{
-	width: 800px;
+#abwf_frm{
+	width: 960px;
 	height: 90%;
 }
 #abwf-tbl{
 	margin-top: 30px;
-	width: 800px;
-	height: 90%;
+	width: 960px;
+	height: 100%;
 }
 #abwf-tbl th{
 	background: #fff7f2;
@@ -50,6 +50,7 @@
 	width: 200px;
 	height: 30px;
 	float: right;
+	margin-bottom: 50px;
 }
 .ab_btn{
 	display: table;
@@ -77,7 +78,7 @@
 <script type="text/javascript" src="<%=request.getContextPath()%>/sEditor2/photo_uploader/plugin/hp_SE2M_AttachQuickPhoto.js" charset="utf-8"></script>
 <div id="ab_div">
 	<div id="ab_title"><span style="display: table-cell; vertical-align: middle;">게시글 작성</span></div>
-	<form id="abwf_frm" method="post" action="">
+	<form id="abwf_frm" method="post"  enctype="multipart/form-data">
 		<table id="abwf-tbl">
 			<tr>
 				<th>제목</th>
@@ -99,7 +100,10 @@
 			</tr>
 			<tr>
 				<th>파일 업로드</th>
-				<td><input type="file" name="abFile" style="height: 25px;"></td>
+				<td>
+					<input type="file" id="abFileU" name="abFileU" style="width: 300px; height: 25px;">
+					<span style="margin-left: 10px; font-size: 14px; color:#9B948C;">※히스토리 작성의 경우 반드시 파일을 삽입해주세요.</span>
+				</td>
 			</tr>
 		</table>
 	</form>
@@ -126,7 +130,7 @@ nhn.husky.EZCreator.createInIFrame({
     fCreator: "createSEditor2"
 });
  
-//‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
+/* //‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
 function submitContents(elClickedObj) {
     // 에디터의 내용이 textarea에 적용된다.
     oEditors.getById["abContent"].exec("UPDATE_CONTENTS_FIELD", [ ]);
@@ -139,7 +143,7 @@ function submitContents(elClickedObj) {
     } catch(e) {
      
     }
-}
+} */
  
 // textArea에 이미지 첨부
 function pasteHTML(filepath){
@@ -150,28 +154,38 @@ function pasteHTML(filepath){
 
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+	
 	$('#ab_submit').click(function(){
 		if($('#abSubject').val()==''){
 			alert('제목을 입력해주세요');
 		}
 		else {
 			oEditors.getById["abContent"].exec("UPDATE_CONTENTS_FIELD", []);
-			alert($('#abContent').val());
-			/* $.ajax({
+			var formData = new FormData($("#abwf_frm")[0]);
+			//alert($('#abSubject').val());
+			//alert($('#abContent').val());
+			//alert($('#abType').val());
+			//alert($('#abFile').val());
+			//+	alert(adwf_frm);
+			$.ajax({
 				type: 'post',
-				url : '/MindDentist/admin/adminBoardWrite',
-				data: $('#abwf_frm').serialize(),
+				url : contextPath + '/admin/adminBoardWrite',
+				processData: false,
+		        contentType: false,
+				data: formData,
 				success : function(data){
-					if(data=="success"){
-						
+					alert(data);
+					if(data == 'good'){
+						history.back();
 					}else{
-						
+						alert('데이터 입력 실패');
 					}
 				},
 				error:	function(request,status,error){
 		  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 				}
-			}); */
+			});
 		}
 		
 	});

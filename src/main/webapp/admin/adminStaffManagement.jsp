@@ -101,10 +101,12 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+	
 	//의료진 목록
 	$.ajax({
 		type: 'POST',
-		url : '/admin/adminStaffList',
+		url : contextPath + '/admin/adminStaffList',
 		dataType : 'json',
 		success : function(data){
 			$.each(data.list, function(index, items){
@@ -112,7 +114,7 @@ $(document).ready(function(){
 					id : 'staff-div-'+index,
 					class : 'staff-div'
 					}).css('background'
-						, 'url("../upload/'+items.mainImgName+'") no-repeat')
+						, 'url("../upload/staff/'+items.mainImgName+'") no-repeat')
 					.css('background-size', 'contain')
 						.append($('<div/>',{
 							class : 'staff-inform'
@@ -133,13 +135,13 @@ $(document).ready(function(){
 				}
 				//상세
 				$('#staff-div-'+index).click(function(){
-					window.open("/admin/adminStaffLoader?asIndex="+items.asIndex, '','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
+					window.open(contextPath + "/admin/adminStaffLoader?asIndex="+items.asIndex, '','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
 				});
 			});
 		}
 	});
 	$('#add_staff').click(function(){
-		window.open("/admin/add_staff",'','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
+		window.open(contextPath + "/admin/add_staff",'','width=900, height=600, left=200, top=100, resizable=no, toolbar=no','true');
 	});
 });
 </script>

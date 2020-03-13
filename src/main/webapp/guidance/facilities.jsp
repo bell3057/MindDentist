@@ -9,9 +9,14 @@
 		<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 70px auto;"></div>
 		<div style="width: 960px; height: 685px; margin: auto;">
 			<div id="facilities-slide-wrap">
-				<img class="facilities-img" src="../img/2-2/H01.png">
-				<img class="facilities-img" src="">
-				<img class="facilities-img" src="">
+				<img class="facilities-img" src="../img/2-2/Interior_01.png">
+				<img class="facilities-img" src="../img/2-2/Interior_02.png">
+				<img class="facilities-img" src="../img/2-2/Interior_03.png">
+				<img class="facilities-img" src="../img/2-2/Interior_04.png">
+				<img class="facilities-img" src="../img/2-2/Interior_05.png">
+				<img class="facilities-img" src="../img/2-2/Interior_06.png">
+				<img class="facilities-img" src="../img/2-2/Interior_07.png">
+				<img class="facilities-img" src="../img/2-2/Interior_08.png">
 			</div>		
 			<!-- <div style="width: 75px; height: 15px; margin: 70px auto 0;">
 				<div class="facilities-slide-btn"></div>

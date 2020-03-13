@@ -43,6 +43,8 @@
 		<beans:property name="maxUploadSize" value="5000000"/>
 	</beans:bean>
 	
+	
+
 	<!-- Controller -->
 	<context:component-scan base-package="com.controller.MindDentist" />
 	<context:component-scan base-package="com.main.MindDentist"/>

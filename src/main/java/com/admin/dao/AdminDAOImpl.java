@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.FileCopyUtils;
 
+import com.admin.bean.AbDTO;
 import com.admin.bean.AdminDTO;
 import com.admin.bean.AsDTO;
 
@@ -64,6 +65,26 @@ public class AdminDAOImpl implements AdminDAO {
 	@Override
 	public List<AsDTO> allStaffList() {
 		return sqlSession.selectList("adminSQL.allStaffList");
+	}
+
+	@Override
+	public int adminBoardWrite(AbDTO abDTO) {
+		return sqlSession.insert("adminSQL.adminBoardWrite", abDTO);
+	}
+
+	@Override
+	public List<AbDTO> adminBoardList() {
+		return sqlSession.selectList("adminSQL.adminBoardList");
+	}
+
+	@Override
+	public AbDTO noticeView(int abNum) {
+		return sqlSession.selectOne("adminSQL.noticeView", abNum);
+	}
+
+	@Override
+	public void hitUp(int abNum) {
+		sqlSession.update("adminSQL.hitUp", abNum);
 	}
 
 }

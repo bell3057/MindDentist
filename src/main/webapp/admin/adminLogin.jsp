@@ -124,7 +124,7 @@ function login(){
 	
 	//관리자 DB에서 조회 후 로그인 성공/실패 구분  - TBL_ADMIN  : 테이블명
 	else {
-		alert("로그인 시도");
+		//alert("로그인 시도");
 		$.ajax({
 			type : "post",
 			url : contextPath + '/admin/loginProcess',

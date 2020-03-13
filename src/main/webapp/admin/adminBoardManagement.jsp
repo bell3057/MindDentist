@@ -64,6 +64,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
 	
 	//메뉴 hover
 	$('#bm-1').click(function(){
@@ -84,7 +85,7 @@ $(document).ready(function(){
 	//게시물 작성
 	$('#cbm').click(function(){
 		//alert("새 글 작성 메소드 입력 예정");
-		location.href="/MindDentist/admin/adminBoardWriteForm";
+		location.href=contextPath + "/admin/adminBoardWriteForm";
 	});
 });
 </script>

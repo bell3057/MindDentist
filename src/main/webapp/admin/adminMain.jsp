@@ -120,7 +120,7 @@ $(document).ready(function(){
 	// 임플란트 식립건수 불러오기
 	$.ajax({
 		type: 'post',
-		url : '/admin/accumulateLoader',
+		url : contextPath + '/admin/accumulateLoader',
 		datatype : 'text',
 		success : function(data){
 			$('#accumulate_count').text(numberWithCommas(data));
@@ -132,7 +132,7 @@ $(document).ready(function(){
 	});
 	
 	$('#main-link').click(function(){
-		location.href ="/main/index";
+		location.href =contextPath + "/main/index";
 	});
 });
 </script>
