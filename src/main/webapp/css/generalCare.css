@@ -19,7 +19,7 @@
 }
 #generalCare_wrap-5{
 	width: 1920px;
-	height: 3124px;
+	height: 3452px;
 }
 }
 @media all and (max-width: 1920px){
@@ -41,7 +41,7 @@
 }
 #generalCare_wrap-5{
 	width: 1920px;
-	height: 3124px;
+	height: 3452px;
 }
 }
 @media all and (max-width: 1600px){
@@ -63,7 +63,7 @@
 }
 #generalCare_wrap-5{
 	width: 1600px;
-	height: 3124px;
+	height: 3452px;
 }
 }
 /* 6-1 자연치아*/
@@ -438,8 +438,8 @@
 	white-space: pre-line;
 }
 #tpGeneral-img-3{
-	margin-top: 60px;
-	width: 800px;
+	margin: 90px auto;
+	width: 960px;
 	height: 400px;
 }
 .tpGeneral-text-4{
@@ -456,6 +456,7 @@
 	width: 800px;
 	height: 400px;
 	background: #8D8D8D 0% 0% no-repeat padding-box;
+	border-radius: 10px;
 }
 #tpGeneral-img-5{
 	margin-top: 60px;

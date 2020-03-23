@@ -83,7 +83,7 @@
 		<div id="menu_dropDown-7" class="dropDown_menu">
 			<a class="menu_dropDown-text" id="mdt-27" href="../serviceCenter/notice">공지사항</a>
 			<a class="menu_dropDown-text" id="mdt-28" href="../serviceCenter/history">마인드 히스토리</a>
-			<a class="menu_dropDown-text" id="mdt-29" href="../serviceCenter/compliment" style="margin-right:0px;">칭찬불만</a>
+			<a class="menu_dropDown-text" id="mdt-29" href="../serviceCenter/compliment" style="margin-right:0px;">칭찬 / 불만</a>
 		</div>
 	</div>
 </div>

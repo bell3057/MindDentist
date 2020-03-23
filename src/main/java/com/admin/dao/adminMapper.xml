@@ -60,7 +60,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	<!-- board list -->
 	<select id="adminBoardList" resultType="abDTO">
-		select abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit from mind_board order by abNum desc
+		select abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit from mind_board 
+		where abType=1 or abType=2
+		order by abNum desc
+	</select>
+	<select id="adminBoardListNormal" resultType="abDTO">
+		select abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit from mind_board 
+		where abType=0
+		order by abNum desc
 	</select>
 	<!-- hit Up -->
 	<update id="hitUp" parameterType="Integer">
@@ -70,4 +77,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="noticeView" parameterType="Integer" resultType="abDTO">
 		select abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit from mind_board where abNum = #{abNum}
 	</select>
+	<!-- getTotalCnt -->
+	<select id="getTotal" resultType="Integer">
+		select count(*) from mind_board where abType=0
+	</select>
+	
+	
 </mapper>

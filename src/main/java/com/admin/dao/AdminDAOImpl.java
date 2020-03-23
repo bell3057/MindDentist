@@ -87,4 +87,14 @@ public class AdminDAOImpl implements AdminDAO {
 		sqlSession.update("adminSQL.hitUp", abNum);
 	}
 
+	@Override
+	public int getTotal() {
+		return sqlSession.selectOne("adminSQL.getTotal");
+	}
+
+	@Override
+	public List<AbDTO> adminBoardListNormal() {
+		return sqlSession.selectList("adminSQL.adminBoardListNormal");
+	}
+
 }

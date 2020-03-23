@@ -5,7 +5,8 @@
 
 <div id="guidance_wrap-4">
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 150px; text-align: center;">
-		<div id="dentistMap-text-1">마인드 치과는 연중무휴 365이 언제나 열려 있습니다.</div>
+		<div id="dentistMap-text-1">마인드 치과는 연중무휴
+		365일 언제나 열려 있습니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 70px auto;"></div>
 		<div id="dentistMap-text-2">주중 매일 야간진료 및 토요일, 일요일 진료로
 		바쁜 현대인들을 위해 언제나 문을 열어 두겠습니다.</div>

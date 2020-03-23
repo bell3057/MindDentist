@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 <style>
 #ab_history_div{
-	width: 960px; height: 100%; float: left;
+	width: 972px; height: 100%; float: left;
 }
 </style>
 <div id="ab_history_div">
@@ -21,9 +21,7 @@ $(document).ready(function(){
 		dataType : 'json',
 		success : function(data){
 			//alert(JSON.stringify(data.list[0].abType));
-			var hCount = 1;
 			
-			//alert(nCount);
 			 $.each(data.list, function(index, items){
 				if(items.abType==2){
 					$('#ab_history_div').append($('<div/>', {
@@ -37,15 +35,14 @@ $(document).ready(function(){
 						text : items.abSubject
 					})));
 					
-					hCount++;
 				}
-				
+				/*
 				if(hCount%3==0){//줄바꿈
 					$('#abNum_'+items.abNum).css('margin-right', '0');
-				}3
-				if(hCount>3){//줄 사이 간격
+				} 
+				if(data.list.length-3>=hCount){//줄 사이 간격
 					$('#abNum_'+items.abNum).css('margin-top', '60px');
-				}
+				}*/
 				if(items.abType == 2){
 					$('#abNum_'+items.abNum).click(function(){
 						location.href= contextPath + "/serviceCenter/historyEvent?abNum="+items.abNum;

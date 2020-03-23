@@ -7,7 +7,7 @@
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
 		<div id="notice-text-1">마인드 공지사항</div>
 		<div id="notice-text-2">언제나 고객님과 함께하는 마인드치과입니다.</div>
-		<div class="notice_table-div">
+		<div class="notice_table-div notice_include">
 			<table id="notice_importance_table" class="notice_table">
 				<tr style="height: 48px; text-align: center;">
 					<th class="notice_table-num">번 호</th>
@@ -16,32 +16,24 @@
 					<th class="notice_table-view">조 회</th>
 				</tr>
 			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">3</td>
-					<td class="notice_table-subject notice_table_iSubject">담당의 별 진료 스케줄 안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.31</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
+			<table id="it_notice02" class="notice_append_table">
 				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">2</td>
-					<td class="notice_table-subject notice_table_iSubject">진료 전 / 후 주의사항 안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.28</td>
-					<td class="notice_table-view notice_table_font">21</td>
+					<td class="notice_table-subject notice_table_iSubject">마인드치과 주차 안내</td>
+					<td class="notice_table-date notice_table_font">2020.3.15</td>
+					<td class="notice_table-view notice_table_font">0</td>
 				<tr>
 			</table>
-			<table class="notice_append_table">
+			<table id="it_notice01" class="notice_append_table">
 				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">1</td>
-					<td class="notice_table-subject notice_table_iSubject">마인드 3주년 이벤트 안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.27</td>
-					<td class="notice_table-view notice_table_font">93</td>
+					<td class="notice_table-subject notice_table_iSubject">코로나19 / 내원 시 주의사항</td>
+					<td class="notice_table-date notice_table_font">2020.3.15</td>
+					<td class="notice_table-view notice_table_font">0</td>
 				<tr>
 			</table>
 		</div>
-		<div class="notice_table-div" style="margin-top: 60px;">
+		<div class="notice_table-div notice_include" style="margin-top: 60px;">
 			<table id="notice_normal_table" class="notice_table" >
 				<tr style="height: 48px; text-align: center;">
 					<th class="notice_table-num">번 호</th>
@@ -50,92 +42,41 @@
 					<th class="notice_table-view">조 회</th>
 				</tr>
 			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">10</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.31</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">9</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.28</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">8</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.27</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">7</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.26</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">6</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.25</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">5</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.24</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
-				<tr class="notice_table-text-tr">
-					<td class="notice_table-num notice_table_font">4</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.23</td>
-					<td class="notice_table-view notice_table_font">23</td>
-				<tr>
-			</table>
-			<table class="notice_append_table">
+			<table id="nm_notice03" class="notice_append_table">
 				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">3</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.22</td>
-					<td class="notice_table-view notice_table_font">23</td>
+					<td class="notice_table-subject notice_table_nSubject">네이버 예약 서비스를 시작합니다.</td>
+					<td class="notice_table-date notice_table_font">2020.3.15</td>
+					<td class="notice_table-view notice_table_font">0</td>
 				<tr>
 			</table>
-			<table class="notice_append_table">
+			<table id="nm_notice02" class="notice_append_table">
 				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">2</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.21</td>
-					<td class="notice_table-view notice_table_font">23</td>
+					<td class="notice_table-subject notice_table_nSubject">마인드치과 제증명 발급 시 수수료 비용 안내</td>
+					<td class="notice_table-date notice_table_font">2020.3.15</td>
+					<td class="notice_table-view notice_table_font">0</td>
 				<tr>
 			</table>
-			<table class="notice_append_table">
+			<table id="nm_notice01" class="notice_append_table">
 				<tr class="notice_table-text-tr">
 					<td class="notice_table-num notice_table_font">1</td>
-					<td class="notice_table-subject notice_table_nSubject">마인드 진료과목 변경안내</td>
-					<td class="notice_table-date notice_table_font">2019.12.20</td>
-					<td class="notice_table-view notice_table_font">23</td>
+					<td class="notice_table-subject notice_table_nSubject">3월 진료일정 안내</td>
+					<td class="notice_table-date notice_table_font">2020.3.15</td>
+					<td class="notice_table-view notice_table_font">0<td>
 				<tr>
 			</table>
 		</div>
-		<div style="width: 280px; height: 40px; margin: 40px auto 100px;">
+		<jsp:include page="/serviceCenter/notice/it_notice02.jsp"></jsp:include>
+		<jsp:include page="/serviceCenter/notice/it_notice01.jsp"></jsp:include>
+		<jsp:include page="/serviceCenter/notice/nm_notice03.jsp"></jsp:include>
+		<jsp:include page="/serviceCenter/notice/nm_notice02.jsp"></jsp:include>
+		<jsp:include page="/serviceCenter/notice/nm_notice01.jsp"></jsp:include>
+		<div class="notice_include" style="width: 168px; height: 40px; margin: 40px auto 100px;">
 			<div class="paging-box"><span>〈</span></div>
 			<div class="paging-box"><span>1</span></div>
-			<div class="paging-box" style="color: #9B948C;"><span>2</span></div>
-			<div class="paging-box" style="color: #9B948C;"><span>3</span></div>
+			<!-- <div class="paging-box" style="color: #9B948C;"><span>2</span></div>
+			<div class="paging-box" style="color: #9B948C;"><span>3</span></div> -->
 			<div class="paging-box" style="margin-right:0;"><span>〉</span></div>
 		</div>
 	</div>

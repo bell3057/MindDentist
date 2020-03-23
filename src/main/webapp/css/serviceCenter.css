@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+*{font-family: 'NanumSquareRound',sans-serif;}
 @media all and (max-width: 2880px){
 #service_wrap-1{
 	width: 1920px;
@@ -139,7 +139,7 @@ opacity: 1;
 	opacity: 1;
 }
 .notice_table-num{
-width: 32px; padding-left: 24px;
+width: 34px; padding-left: 24px;
 }
 .notice_table-subject{
 padding-left: 74px;
@@ -148,7 +148,7 @@ padding-left: 74px;
 width: 62px; padding-right: 45px;
 }
 .notice_table-view{
-width: 32px; padding-right: 24px;
+width: 34px; padding-right: 24px;
 }
 .notice_table-text-tr{
 	height: 40px;
@@ -166,6 +166,7 @@ width: 32px; padding-right: 24px;
 }
 .notice_table_nSubject{
 	text-align: left;
+	font-size: 16px;
 	font-weight: bold;
 }
 .paging-box{
@@ -189,6 +190,53 @@ width: 32px; padding-right: 24px;
 	display: table-cell;
 	vertical-align: middle;
 }
+#ad_notice-wrap{
+	width: 960px;
+}
+/* 가오픈 공지 소스 */
+.notice_wrap{ width: 960px; height: 100%;}
+.notice_none{display: none;}
+.notice_subject{
+	margin-bottom: 60px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 44px;
+	letter-spacing: -0.84px;
+	color: #6E645A;
+	opacity: 1;
+}
+.notice-content_wrap{
+	width: 960px;
+	border: 1px solid #C8500F;
+	border-radius: 10px;
+}
+.notice_content{
+	width: 802px;
+	margin: 78px auto;
+	text-align: left;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: -0.54px;
+	color: #8D8D8D;
+	white-space: pre-line;
+	opacity: 1;
+}
+.notice_btn_wrap{margin-top:80px;  margin-bottom: 100px;  width: 262px; height: 40px;}
+#btn_next{margin-left:18px;}
+
+.no_btn{width: 120px; height: 40px; display: table; text-align: center; float: left; background: #FFFFFF 0% 0% no-repeat padding-box; border: 1px solid #9B948C; opacity: 1; cursor: pointer;}
+.no_btn>span{
+	display:table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	line-hegiht: 36px;
+	letter-spacing: -0.48px;
+	color: #C8500F;
+	opacity: 1;
+}
 
 
 /* 7-2 마인드 히스토리 */
@@ -205,7 +253,7 @@ color: #C8500F;
 opacity: 1;
 }
 .history-text-2{
-margin: 20px auto 60px;
+margin: 20px auto 0;
 text-align: center;
 /* font: Regular 20px/23px NanumSquareRoundOTF; */
 font-size: 20px;
@@ -216,6 +264,7 @@ opacity: 1;
 }
 
 .history-box{
+	margin-top: 60px;
 	margin-right: 6px;
 	width: 316px;
 	height: 342px;
@@ -264,6 +313,26 @@ opacity: 1;
 	opacity: 1;
 	white-space: pre-line;
 }
+.history-event-text img{
+	max-width: 960px;
+}
+/* 가오픈 소스 */
+.history_wrap{ width: 960px; height: 100%; font-family:}
+/*.history_none{ display: none;}*/
+#history_box{width: 972px; height: 100%; display: inline-block; margin-bottom: 152px;}
+.history_contents{ 
+	margin-top: 60px;
+	text-align: center; 
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: -0.54px;
+	color: #6E645A;
+	white-space: pre-line;
+	opacity: 1;
+	margin-bottom: 160px;
+}
+.history-img{max-width: 800px;}
 /* 7-3 칭찬불만 */
 
 #compliment-text-1{

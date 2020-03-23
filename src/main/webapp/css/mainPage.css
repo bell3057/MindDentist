@@ -10,21 +10,19 @@ body{
 	width: 100%;
 	height: 100%;
 }
-#content{
-	height: 100%;
-}
+
 /* index */
 @media all and (max-width: 2880px){
 	#wrap {
-		width: 100%;
+		width: 2880px;
 	}
 	#header{
-		width: 100%;
+		width: 2880px;
 		height: 186px;
 		opacity: 1;
 	}
 	#footer{
-		width: 100%;
+		width: 2880px;
 		height: 240px;
 		background: #FAFAF5 0% 0% no-repeat padding-box;
 		opacity: 1;
@@ -34,16 +32,16 @@ body{
 		height: 4279px;
 }
 	#main_plate{
-		width: 1920px; height: 720px; position: relative;
+		width: 2880px; height: 920px; position: relative;
 	}
 	#slider_wrap{
-		width: 1920px;
-		height: 720px;
+		width: 2880px;
+		height: 920px;
 		opacity: 1;
 	}
 	.slider-img{
-		width: 1920px;
-		height: 720px;
+		width: 2880px;
+		height: 920px;
 	}
 	/* #slide-text{
 		top: 287px;
@@ -77,7 +75,52 @@ body{
 		opacity: 1;
 	}
 }
-
+@media all and (max-width: 2560px){
+	#wrap {
+		width: 2560px;
+	}
+	#header{
+		width: 2560px;
+		height: 186px;
+		opacity: 1;
+	}
+	#footer{
+		width: 2560px;
+		height: 240px;
+		background: #FAFAF5 0% 0% no-repeat padding-box;
+		opacity: 1;
+	}
+	#main_plater_wrap{
+		width: 2560px;
+		height: 4279px;
+}
+	#main_plate{
+		width: 2560px; height: 920px; position: relative;
+	}
+	#slider_wrap{
+		width: 2560px;
+		height: 920px;
+		opacity: 1;
+	}
+	.slider-img{
+		width: 2560px;
+		height: 920px;
+	}
+	#slide_button_box{
+		top: 800px;
+	    left: 923px;
+		width: 75px; 
+		height: 15px;	
+		position: absolute;	
+	}
+	
+	#accumulate_count_div{
+		width: 2560px;
+		height: 174px;
+		background: #9B948C 0% 0% no-repeat padding-box;
+		opacity: 1;
+	}
+}
 @media all and (max-width: 1920px){
 	#wrap {
 		width: 1920px;
@@ -206,8 +249,12 @@ body{
 		opacity: 1;
 	}
 }
-/* mainPlate */
+#content{
+	height: 100%;
+}
 
+/* mainPlate */
+.arrow_css{ position: absolute; top: 45%; z-index: 100; width: 30px;}
 
 .slick-dots li.slick-active button{
 	background: #C8500F;
@@ -324,13 +371,7 @@ body{
 	margin: 0 44px;
 	float: left;
 }
-#main-content-2{
-	width:100%; 
-	height: 1160px; 
-	background: transparent url('../img/Main/D-back.png') 0% 0% no-repeat padding-box; 
-	/* background-size: contain; */
-	background-position: center;
-}
+
 .main-content-text-03{
 	padding-top: 108px;
 	margin: auto;
@@ -402,7 +443,7 @@ body{
 	left: 14px;
 }
 .main-content-text-05{
-	width: 58px;
+	width: 70px;
 	height: 13px;
 	text-align: left;
 	letter-spacing: 0;
@@ -496,13 +537,7 @@ body{
 	/* background: transparent url('img/Mark.png') 0% 0% no-repeat padding-box; */
 	opacity: 1;
 }
-#main-content-4{
-	width:100%; 
-	height: 845px; 
-	background: transparent url('../img/Main/WR-back.png') 0% 0% no-repeat padding-box; 
-	/* background-size: contain;  */
-	background-position: center;
-}
+
 #main-content-text-10{
 	width: 379px;
 	height: 76px;

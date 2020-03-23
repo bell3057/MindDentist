@@ -56,7 +56,7 @@
 		<div id="pg-1" class="includedPage">
 		<jsp:include page="/admin/noticeManagement.jsp"></jsp:include>
 		</div>
-		<div id="pg-2" class="includedPage pageHide">
+		<div id="pg-2" class="includedPage pageHide" style="padding: 0 0 100px 0;">
 		<jsp:include page="/admin/historyManagement.jsp"></jsp:include>
 		</div>
 	</div>

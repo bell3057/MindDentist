@@ -34,4 +34,9 @@ public interface AdminDAO {
 
 	public void hitUp(int abNum);
 
+	public int getTotal();
+
+	public List<AbDTO> adminBoardListNormal();
+
+
 }

@@ -26,18 +26,18 @@
 				<tr class="ctr">
 					<th><span class="cth">일 시</span></th>
 					<td>
-						<input class="ct-year" name="year" type="text"><span class="ctd">년</span>
-						<input class="ct-day" name="month" type="text"><span class="ctd">월</span>
-						<input class="ct-day" name="day" type="text"><span class="ctd" style="margin-right: 0;">일</span>
+						<input id="ct-year" class="ct-year" name="year" type="text" maxlength="4"><span class="ctd">년</span>
+						<input id="ct-month" class="ct-day" name="month" type="text" maxlength="2"><span class="ctd">월</span>
+						<input id="ct-day" class="ct-day" name="day" type="text" maxlength="2"><span class="ctd" style="margin-right: 0;">일</span>
 					</td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">고객성명</span></th>
-					<td><input class="ct-text" name="name" type="text"></td>
+					<td><input id="ct_name" class="ct-text" name="name" type="text" maxlength="10"></td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">연락처</span></th>
-					<td><input class="ct-text" name="phone" type="text"></td>
+					<td><input id="ct_phone" class="ct-text" name="phone" type="text" maxlength="11"></td>
 				</tr>
 				<tr class="ctr">
 					<th><span class="cth">사 유</span>
@@ -79,22 +79,31 @@ $(document).ready(function(){
 	
 	$('#compliment-text-5').click(function(){
 		var formData = new FormData($("#complimentForm")[0]);
-		
-		$.ajax({
-			type : 'post',
-			url : contextPath + "/admin/sendMail",
-			data : formData,
-			processData: false,
-	        contentType: false,
-			success : function(data){
-				if(data == "result"){
-					alert("메일이 발송되었습니다.");
+		if($('#ct-year').val()=='' || $('#ct-month').val()==''||$('#ct-day').val()==''){
+			alert("일시를 입력해주세요");
+		}else if($('#ct_name').val()==''){
+			alert("성명을 입력해주세요");
+		}else if($('#ct_phone').val()==''){
+			alert("연락처를 입력해주세요");
+		}else if($('#ct-th-text').val()==''){
+			alert("사유를 입력해주세요");
+		}else{
+			$.ajax({
+				type : 'post',
+				url : contextPath + "/admin/sendMail",
+				data : formData,
+				processData: false,
+		        contentType: false,
+				success : function(data){
+					if(data == "result"){
+						alert("메일이 발송되었습니다.");
+					}
+				},
+				error:	function(request,status,error){
+		  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 				}
-			},
-			error:	function(request,status,error){
-	  			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-			}
-		});
+			});//ajax
+		}
 	});
 });
 </script>

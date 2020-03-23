@@ -108,6 +108,7 @@
 	margin-top: 25px;
 }
 .ms-text-4{
+	width: 300px;
 	text-align: left;
 	/* font: Regular 15px/26px NanumSquareRoundOTF; */
 	font-size: 15px;
@@ -156,30 +157,7 @@
 	width: 960px;
 	height: 600px;
 }
-.slick-dots{
-width: 240px; height: 15px; margin: 65px auto 0;
-}
-.slick-dots li{
-	width: 15px;
-	height: 15px;
-	float: left;
-	margin-right: 15px;
-}
-.slick-dots li button{
-	width: 15px;
-	height: 15px;
-	font-size: 0;
-	line-height: 0;
-	cursor: pointer;
-	color: transparent;
-    border: 0;
-    outline: none;
-    border-radius: 10px 10px 0 0;
-    background: #B4AAA0;
-}
-.slick-dots li.slick-active button{
-	background: #C8500F;
-}
+
 #facilities-text-2{
 	margin: 70px auto 0;
 	text-align: center;
@@ -227,6 +205,7 @@ width: 240px; height: 15px; margin: 65px auto 0;
 .bg-box{
 	display: none;
 }
+.arrow_css{ position: absolute; top: 41%; z-index: 100; width: 22px;}
 /* IE10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.equipment-img{

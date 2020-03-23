@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
+<link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 <style>
 #noticeView{
 	padding-top: 50px;
@@ -16,7 +17,9 @@
 </style>
 
 <div id="service_wrap-1-1">
-	<div id="noticeView">
+	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center; margin-bottom: 100px;">
+		<div id="notice-text-1">마인드 공지사항</div>
+		<div id="notice-text-2">언제나 고객님과 함께하는 마인드치과입니다.</div>
 		<form id="nv-frm">
 			<table id="nv-tbl">
 				<tr>

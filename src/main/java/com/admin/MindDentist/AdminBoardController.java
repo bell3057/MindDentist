@@ -3,7 +3,9 @@ package com.admin.MindDentist;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -21,12 +23,16 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.admin.bean.AbDTO;
+import com.admin.bean.AbPaging;
 import com.admin.dao.AdminDAO;
 
 @Controller
 public class AdminBoardController {
 	@Autowired
 	private AdminDAO adminDAO;
+	
+	@Autowired
+	private AbPaging abPaging;
 	
 	//게시판 관리 페이지
 	@RequestMapping(value="/admin/adminBoardManagement", method=RequestMethod.GET)
@@ -84,13 +90,42 @@ public class AdminBoardController {
 		else
 			return "ㅜ_ㅜ";
 	}
-	
 	@RequestMapping(value="/admin/adminBoardList", method=RequestMethod.POST)
-	public ModelAndView adminBoardList() {
+	public ModelAndView adminBoard() {
 		List<AbDTO> list = adminDAO.adminBoardList();
 		
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("list", list);
+		mav.setViewName("jsonView");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/admin/adminBoardListNormal", method=RequestMethod.POST)
+	public ModelAndView adminBoardListNormal(@RequestParam(required=false,defaultValue="1") String pg
+			,@RequestParam(required=false,defaultValue="3") String pageNum) {
+		
+		int endNum = Integer.parseInt(pg)*3;
+		int startNum = endNum-2;
+		Map<String,Integer> map = new HashMap<String,Integer>();
+		
+		map.put("startNum", startNum);
+		map.put("pageSize",	3);
+		
+		List<AbDTO> list = adminDAO.adminBoardListNormal();
+		
+		int totalA = adminDAO.getTotal();
+		/*
+		abPaging.setCurrentPage(Integer.parseInt(pg));
+		abPaging.setPageBlock(2);
+		abPaging.setPageSize(Integer.parseInt(pageNum));
+		abPaging.setTotalA(totalA);
+		
+		abPaging.makePagingHTML();*/
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("list", list);
+		mav.addObject("totalA", totalA);
+		//mav.addObject("abPaging", abPaging);
 		mav.setViewName("jsonView");
 		
 		return mav;

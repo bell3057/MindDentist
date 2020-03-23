@@ -28,15 +28,130 @@
     outline: none;
     background: #B4AAA0;
 }
+@media all and (max-width: 2880px){
+	#slick-slide00{
+		background : url(../img/Main/banner/2880/Main_2880_01.png);
+	}
+	#slick-slide01{
+		background : url(../img/Main/banner/2880/Main_2880_02.png);
+	}
+	#slick-slide02{
+		background : url(../img/Main/banner/2880/Main_2880_03.png);
+	}
+	#slick-slide03{
+		background : url(../img/Main/banner/2880/Main_2880_04.png);
+	}
+	#main-content-2{
+	width: 2880px; 
+	height: 1160px; 
+	background: transparent url('../img/Main/D-back 2880.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain; */
+	background-position: center;
+	}
+	#main-content-4{
+	width: 2880px; 
+	height: 845px; 
+	background: transparent url('../img/Main/WR-back 2880.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain;  */
+	background-position: center;
+	}
+}
+@media all and (max-width: 2560px){
+	#slick-slide00{
+		background : url(../img/Main/banner/2560/Main_2560_01.png);
+	}
+	#slick-slide01{
+		background : url(../img/Main/banner/2560/Main_2560_02.png);
+	}
+	#slick-slide02{
+		background : url(../img/Main/banner/2560/Main_2560_03.png);
+	}
+	#slick-slide03{
+		background : url(../img/Main/banner/2560/Main_2560_04.png);
+	}
+	#main-content-2{
+	width: 2560px; 
+	height: 1160px; 
+	background: transparent url('../img/Main/D-back 2560.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain; */
+	background-position: center;
+	}
+	#main-content-4{
+	width: 2560px; 
+	height: 845px; 
+	background: transparent url('../img/Main/WR-back 2560.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain;  */
+	background-position: center;
+	}
+}
+@media all and (max-width: 1920px){
+	#slick-slide00{
+		background : url(../img/Main/banner/1920/Main_1920_01.png);
+	}
+	#slick-slide01{
+		background : url(../img/Main/banner/1920/Main_1920_02.png);
+	}
+	#slick-slide02{
+		background : url(../img/Main/banner/1920/Main_1920_03.png);
+	}
+	#slick-slide03{
+		background : url(../img/Main/banner/1920/Main_1920_04.png);
+	}
+	#main-content-2{
+	width: 1920px; 
+	height: 1160px; 
+	background: transparent url('../img/Main/D-back.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain; */
+	background-position: center;
+	}
+	#main-content-4{
+	width: 1920px; 
+	height: 845px; 
+	background: transparent url('../img/Main/WR-back.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain;  */
+	background-position: center;
+	}
+}
+@media all and (max-width: 1600px){
+	#slick-slide00{
+		background : url(../img/Main/banner/1920/Main_1920_01.png);
+		background-position: center;
+	}
+	#slick-slide01{
+		background : url(../img/Main/banner/1920/Main_1920_02.png);
+		background-position: center;
+	}
+	#slick-slide02{
+		background : url(../img/Main/banner/1920/Main_1920_03.png);
+		background-position: center;
+	}
+	#slick-slide03{
+		background : url(../img/Main/banner/1920/Main_1920_04.png);
+		background-position: center;
+	}
+	#main-content-2{
+	width: 1600px; 
+	height: 1160px; 
+	background: transparent url('../img/Main/D-back.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain; */
+	background-position: center;
+	}
+	#main-content-4{
+	width: 1600px; 
+	height: 845px; 
+	background: transparent url('../img/Main/WR-back.png') 0% 0% no-repeat padding-box; 
+	/* background-size: contain;  */
+	background-position: center;
+	}
+}
 </style>
 <div id="main_plate_wrap">
 	<div id="main_plate"><!-- slider -->
 		<div id="slider_wrap">
-			<img class="slider-img" src="../img/Main/Main_01.png">
-			<img class="slider-img" src="../img/Main/Main_02.png">
-			<img class="slider-img" src="../img/Main/Main_03.png">
-			<img class="slider-img" src="../img/Main/Main_04.png">
-			<img class="slider-img" src="../img/Main/Main_05.png">
+			<div id="banner-img-1" class="slider-img"></div>
+			<div id="banner-img-2" class="slider-img"></div>
+			<div id="banner-img-3" class="slider-img"></div>
+			<div id="banner-img-4" class="slider-img"></div>
 		</div>
 		<!-- <div id="slide-text">안심하세요,
 		마인드치과입니다.
@@ -47,7 +162,7 @@
 			<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
 			<span class="accumulate_count-text">임플란트 누적 식립 건</span>
 			<div style="width: 400px; text-align: right; float: right;">
-				<div id="accumulate_count">12,689</div>
+				<div id="accumulate_count">1,286</div>
 				<span class="accumulate_count-text" style="float: none;">건</span>
 			</div>
 		</div>
@@ -105,32 +220,83 @@
 			<div class="main-content-text-03">전문의 및 석박사 출신 의료진</div>
 			<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 50.5px auto 49.5px;"></div>
 			<div id="main-content-staff">
-				<div class="main-content-D-div" style="background: url(../img/Main/D-01.png); background-size: contain;">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-01.png); background-size: contain;">
 					<div class="main-content-D-inform">
 						<div class="main-content-text-04">양재민</div>
 						<div class="main-content-text-05">ㅣ 대표원장</div>
 						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
-						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+						<div class="main-content-text-06">임플란트 / 심미치료</div>
 					</div>
 				</div>
 			</div>
 			<div id="main-content-staff">
-				<div class="main-content-D-div" style="background: url(../img/Main/D-02.png); background-size: contain;">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-02.png); background-size: contain;">
 					<div class="main-content-D-inform">
 						<div class="main-content-text-04">김인석</div>
 						<div class="main-content-text-05">ㅣ 대표원장</div>
 						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
-						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+						<div class="main-content-text-06">임플란트 / 외과치료</div>
 					</div>
 				</div>
 			</div>
 			<div id="main-content-staff">
-				<div class="main-content-D-div" style="background: url(../img/Main/D-03.png); background-size: contain;">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-03.png); background-size: contain;">
 					<div class="main-content-D-inform">
-						<div class="main-content-text-04">박상우</div>
-						<div class="main-content-text-05">ㅣ 수석원장</div>
+						<div class="main-content-text-04">양형석</div>
+						<div class="main-content-text-05">ㅣ 대표원장</div>
 						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
-						<div class="main-content-text-06">경희대학교 치의학 석사</div>
+						<div class="main-content-text-06">치아교정</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-04.png); background-size: contain; margin-right: 0;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">문서하</div>
+						<div class="main-content-text-05">ㅣ 보철과장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">보철 / 통합진료</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-05.png); background-size: contain; margin-top: 40px;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">이은영</div>
+						<div class="main-content-text-05">ㅣ 보철과장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">보철 / 보존치료</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-06.png); background-size: contain; margin-top: 40px;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">나누리</div>
+						<div class="main-content-text-05">ㅣ 보존과장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">보철 / 근관치료</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-07.png); background-size: contain; margin-top: 40px;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">한정환</div>
+						<div class="main-content-text-05">ㅣ 구강외과장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">외과치료 / 통합진료</div>
+					</div>
+				</div>
+			</div>
+			<div id="main-content-staff">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-08.png); background-size: contain; margin-top: 40px; margin-right: 0;">
+					<div class="main-content-D-inform">
+						<div class="main-content-text-04">임충민</div>
+						<div class="main-content-text-05">ㅣ 외과과장</div>
+						<a class="main-content-arrow" href="../guidance/medicalStaff">〉</a>
+						<div class="main-content-text-06">보철 / 통합진료</div>
 					</div>
 				</div>
 			</div>

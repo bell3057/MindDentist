@@ -16,6 +16,9 @@
 		교합과도 밀접한 관계가 있습니다. 때문에 턱관절 치료는 교합관계를 가장 잘 파악할 수 있는
 		치과에서 이루어 지는 것이 바람직합니다.</div>
 		<img id="tpGeneral-img-3" src="../img/6-5/6501.png">
+		<div class="tpGeneral-text-3">위와 같은 증상이 지속된다면 턱관절 질환을 의심할 수 있습니다.
+		턱관절질환을 방치하면 주변 신경이나 혈관계에 만성적인 영향을 미쳐 이명, 안면비대칭, 개구장애 등
+		2차질환으로 이어질 수 있으므로 조기 진단과 치료가 필요합니다.</div>
 		<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 80px auto;"></div>
 		<div class="tpGeneral-text-4">안산 유일, 턱관절 물리치료실 운영</div>
 		<div class="tpGeneral-text-3" style="margin: 60px auto 68px;">턱관절 장애의 치료를 위해선 턱관절에 무리를 주는 나쁜 습관의 개선, 물리치료, 운동요법 등과 함께

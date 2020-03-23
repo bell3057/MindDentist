@@ -7,48 +7,36 @@
 	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
 		<div class="history-text-1">마인드 히스토리</div>
 		<div class="history-text-2">마인드치과의 다양한 소식을 전합니다.</div>
-		<div style="width: 960px; height: 1206px; margin-bottom: 152px;">
-			<div class="history-box"><!-- 1 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+		<div id="history_box" class="history_include">
+			<div id="htr-1" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt01'">
+				<img class="history-img-3" src="../img/history/History Main/H_06_Main.png">
+				<div class="history-text-3">교정 대표원장님 인터뷰 엿보기</div>
 			</div>
-			<div class="history-box"><!-- 2 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+			<div id="htr-2" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt02'">
+				<img class="history-img-3" src="../img/history/History Main/H_05_Main.png">
+				<div class="history-text-3">코로나 예방교육/ 마스크배부</div>
 			</div>
-			<div class="history-box" style="margin-right: 0px;"><!-- 3 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+			<div id="htr-3" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt03'">
+				<img class="history-img-3" src="../img/history/History Main/H_04_Main.png">
+				<div class="history-text-3">마인드 워크샵 다녀왔습니다!</div>
 			</div>
-			<div class="history-box" style="margin-top: 60px;"><!-- 4 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+			<div id="htr-4" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt04'">
+				<img class="history-img-3" src="../img/history/History Main/H_03_Main.png">
+				<div class="history-text-3">마인드치과 매거진 인터뷰</div>
 			</div>
-			<div class="history-box" style="margin-top: 60px;"><!-- 5 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+			<div id="htr-5" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt05'">
+				<img class="history-img-3" src="../img/history/History Main/H_02_Main.png">
+				<div class="history-text-3">마인드 오늘의 세미나</div>
 			</div>
-			<div class="history-box" style="margin-right: 0px; margin-top: 60px;"><!-- 6 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
+			<div id="htr-6" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt06'">
+				<img class="history-img-3" src="../img/history/History Main/H_01_Main.png">
+				<div class="history-text-3">마인드치과 개원식 스케치</div>
 			</div>
-			<div class="history-box" style="margin-top: 60px;"><!-- 7 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
-			</div>
-			<div class="history-box" style="margin-top: 60px;"><!-- 8 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
-			</div>
-			<div class="history-box" style="margin-right: 0px; margin-top: 60px;"><!-- 9 -->
-				<img class="history-img-3">
-				<div class="history-text-3">이벤트 제목 SAMPLE</div>
-			</div>
-			
 		</div>
 	</div>
 </div>
 <script src="../js/serviceCenter.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
 	$('#menu_bar-7').css("font-weight", "800");
@@ -67,4 +55,5 @@ $(document).ready(function(){
 		$('#mdt-28').css("font-weight", "800");		
 	});
 });
+
 </script>

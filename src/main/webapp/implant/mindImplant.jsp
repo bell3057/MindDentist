@@ -8,7 +8,8 @@
 		<div style="width: 960px; height: 320px; position: relative;">
 			<img id="mImplant-img-1" src="../img/3-1/31_main.png">
 			<img id="mImplant-img-2" src="../img/3-1/31_m_icon.png">
-			<div id="mImplant-text-1">왜 마인드 임플란트 일까?</div>
+			<div id="mImplant-text-1">왜 마인드
+			임플란트 일까?</div>
 		</div>
 		<div id="mImplant-text-2">'임플란트, 정확한 진단과 유지가 중요합니다.'</div>
 		<div style="position: relative;">
