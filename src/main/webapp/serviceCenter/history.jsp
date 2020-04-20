@@ -4,9 +4,9 @@
 <link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 
 <div id="service_wrap-2">
-	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
-		<div class="history-text-1">마인드 히스토리</div>
-		<div class="history-text-2">마인드치과의 다양한 소식을 전합니다.</div>
+	<div class="top-bar top-bar1">
+		<div class="sc-text-1">마인드 히스토리</div>
+		<div class="sc-text-2">마인드치과의 다양한 소식을 전합니다.</div>
 		<div id="history_box" class="history_include">
 			<div id="htr-1" class="history-box" onclick="location.href='${pageContext.request.contextPath}/serviceCenter/hrt01'">
 				<img class="history-img-3" src="../img/history/History Main/H_06_Main.png">

@@ -11,13 +11,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<!-- accumulateLoader -->
-	<select id="accumulateLoader" resultType="Integer">
+	<select id="accumulateLoader" resultType="aiDTO">
 		select * from mind_implant
 	</select>
 	
 	<!-- implant_count -->
 	<update id="implant_count" parameterType="Integer">
-		update mind_implant SET implant_count=#{implant_count}; 
+		update mind_implant SET implant_count=#{implant_count}
+	</update>
+	<!-- implant_date -->
+	<update id="implant_date" parameterType="String">
+		update mind_implant SET implant_date = #{implant_date}
 	</update>
 	
 	<!-- add_staff_exe -->
@@ -55,8 +59,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<!-- insert board -->
 	<insert id="adminBoardWrite" parameterType="abDTO">
-		INSERT INTO mind_board (abSubject, abType, abContent, abFile, abDate) 
-		VALUES ('${abSubject}', ${abType}, '${abContent}', '${abFile}', NOW())
+		insert into mind_board (abSubject, abType, abContent, abFile, abDate) 
+		values ('${abSubject}', ${abType}, '${abContent}', '${abFile}', NOW())
 	</insert>
 	<!-- board list -->
 	<select id="adminBoardList" resultType="abDTO">
@@ -64,10 +68,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where abType=1 or abType=2
 		order by abNum desc
 	</select>
-	<select id="adminBoardListNormal" resultType="abDTO">
-		select abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit from mind_board 
+	<select id="adminBoardListNormal" parameterType="java.util.Map" resultType="abDTO">
+		select * from(select @rownum:= @rownum+1 as rownum, abNum, abSubject, abType, abContent, abFile, DATE_FORMAT(abDate, '%Y.%m.%d') as 'abDate', abHit 
+		from mind_board , (select @rownum:=0) tmp
 		where abType=0
-		order by abNum desc
+		order BY abNum desc, rownum desc
+		) r1
+		limit ${pageSize} offset ${startNum}
 	</select>
 	<!-- hit Up -->
 	<update id="hitUp" parameterType="Integer">
@@ -81,6 +88,90 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getTotal" resultType="Integer">
 		select count(*) from mind_board where abType=0
 	</select>
+	<!-- boardModify -->
+	<update id="boardModify" parameterType="abDTO">
+		update mind_board set 
+			abSubject = '${abSubject}', abType = ${abType}, abContent = '${abContent}', abFile = '${abFile}', abDate = now()
+			where abNum = ${abNum}
+	</update>
 	
+	<!-- next / previos -->
+	<select id="boardNext" parameterType="java.util.Map" resultType="Integer">
+		select
+		    abNum
+		 from
+		    mind_board
+		 where
+		  abNum in ( select * from (
+		    (select abNum from mind_board where abNum &gt; ${abNum} and abType = ${abType} order by abNum limit 1) as tmp)
+		   )
+	</select>
+	<select id="boardPrevious" parameterType="java.util.Map" resultType="Integer">
+		select
+		    abNum
+		 from
+		    mind_board
+		 where
+		  abNum in ( select * from (
+		    (select abNum from mind_board where abNum &lt; ${abNum} and abType = ${abType} order by abNum desc limit 1) as tmp)
+		   )
+	</select>
+	<select id="getMin" resultType="Integer">
+		select min(abNum) from mind_board
+	</select>
+	<!-- boardDelete -->
+	<delete id="boardDelete" parameterType="Integer">
+		delete from mind_board where abNum=#{abNum}
+	</delete>
 	
+	<!-- banner -->
+		<!-- banner Insert -->
+		<insert id="adminBannerAdd_exe" parameterType="abanDTO">
+			insert into mind_banner (ban2880, ban2560, ban1920, banURL)
+			values('${ban2880}', '${ban2560}', '${ban1920}', '${banURL}')
+		</insert>
+		<!-- banner list -->
+		<select id="adminBannerList" resultType="abanDTO">
+			select * from mind_banner order by banIndex
+		</select>
+		<!-- get banner -->
+		<select id="getBanner" parameterType="Integer" resultType="abanDTO">
+			select * from mind_banner where banIndex = #{banIndex}
+		</select>
+		<!-- mod banner -->
+		<update id="modBanner" parameterType="abanDTO">
+			update mind_banner set
+				ban2880 = '${ban2880}', ban2560 = '${ban2560}', ban1920 = '${ban1920}', banURL = '${banURL}'
+				where banIndex = ${banIndex}
+		</update>
+		<!-- del banner -->
+		<delete id="delBanner" parameterType="Integer">
+			delete from mind_banner where banIndex = #{banIndex}
+		</delete>
+		
+	<!-- slide -->
+		<!-- slide insert -->
+		<insert id="addSlide" parameterType="aslideDTO">
+			insert into mind_slide (slideImg) values('${slideImg}')
+		</insert>
+		<!-- slide list -->
+		<select id="getSlideList" resultType="aslideDTO">
+			select * from mind_slide order by slideIndex
+		</select>
+		<!-- get slide -->
+		<select id="getSlide" parameterType="Integer" resultType="aslideDTO">
+			select * from mind_slide where slideIndex = #{slideIndex}
+		</select>
+		<!-- mod slide -->
+		<update id="modSlide" parameterType="aslideDTO">
+			update mind_slide set
+				slideImg = '${slideImg}'
+				where slideIndex = ${slideIndex}
+		</update>
+		<!-- del slide -->
+		<delete id="delSlide" parameterType="Integer">
+			delete from mind_slide where slideIndex = #{slideIndex}
+		</delete>
 </mapper>
+
+

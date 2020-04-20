@@ -4,10 +4,10 @@
 <link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 
 <div id="hrt06" class="history_wrap history_include history_none">
-	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
-		<div class="history-text-1">마인드 히스토리</div>
-		<div class="history-text-2">마인드치과의 다양한 소식을 전합니다.</div>
-		
+	<div class="top-bar top-bar1">
+		<div class="sc-text-1">마인드 히스토리</div>
+		<div class="sc-text-2">마인드치과의 다양한 소식을 전합니다.</div>
+		<div class="margin-bar margin-bar2"></div>
 		<div class="history_contents">안녕하세요! 
 		마음을 다하는 마인드치과입니다. 
 		

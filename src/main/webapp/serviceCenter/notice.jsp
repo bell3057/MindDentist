@@ -4,12 +4,12 @@
 <link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 
 <div id="service_wrap-1">
-	<div style="width: 960px; height: 100%; margin: auto; padding-top: 110px; text-align: center;">
-		<div id="notice-text-1">마인드 공지사항</div>
-		<div id="notice-text-2">언제나 고객님과 함께하는 마인드치과입니다.</div>
+	<div class="top-bar top-bar1">
+		<div class="sc-text-1">마인드 공지사항</div>
+		<div class="sc-text-2">언제나 고객님과 함께하는 마인드치과입니다.</div>
 		<div class="notice_table-div notice_include">
 			<table id="notice_importance_table" class="notice_table">
-				<tr style="height: 48px; text-align: center;">
+				<tr>
 					<th class="notice_table-num">번 호</th>
 					<th class="notice_table-subject">중요 공지사항</th>
 					<th class="notice_table-date">등록일</th>
@@ -35,7 +35,7 @@
 		</div>
 		<div class="notice_table-div notice_include" style="margin-top: 60px;">
 			<table id="notice_normal_table" class="notice_table" >
-				<tr style="height: 48px; text-align: center;">
+				<tr>
 					<th class="notice_table-num">번 호</th>
 					<th class="notice_table-subject">제 목</th>
 					<th class="notice_table-date">등록일</th>
@@ -72,7 +72,7 @@
 		<jsp:include page="/serviceCenter/notice/nm_notice03.jsp"></jsp:include>
 		<jsp:include page="/serviceCenter/notice/nm_notice02.jsp"></jsp:include>
 		<jsp:include page="/serviceCenter/notice/nm_notice01.jsp"></jsp:include>
-		<div class="notice_include" style="width: 168px; height: 40px; margin: 40px auto 100px;">
+		<div class="notice_include notice-paging-div">
 			<div class="paging-box"><span>〈</span></div>
 			<div class="paging-box"><span>1</span></div>
 			<!-- <div class="paging-box" style="color: #9B948C;"><span>2</span></div>

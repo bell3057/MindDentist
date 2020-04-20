@@ -4,8 +4,10 @@ $(document).ready(function(){
 	
 	
 	//푸터
-	$('#inst_logo').click(function(){
+	$('.insta_logo').click(function(){
 		location.href = "https://www.instagram.com/minddental/";
 	});
-	
+	$('.blog_logo').click(function(){
+		location.href = "https://blog.naver.com/minddental";
+	});
 });

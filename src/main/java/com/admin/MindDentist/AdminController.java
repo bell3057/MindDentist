@@ -1,5 +1,8 @@
 package com.admin.MindDentist;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.admin.bean.AdminDTO;
+import com.admin.bean.AiDTO;
 import com.admin.dao.AdminDAO;
 
 @Controller
@@ -32,7 +36,7 @@ public class AdminController {
 		if(adminDTO==null) {
 			return "login_fail";
 		} else {
-			//세션\
+			//세션
 			session.setAttribute("adId",adminDTO.getId());
 			return "login_ok";
 		}
@@ -62,9 +66,10 @@ public class AdminController {
 	//임플란트 식립 건수 불러오기
 	@RequestMapping(value="/admin/accumulateLoader", method=RequestMethod.POST)
 	@ResponseBody
-	public int accumulateLoader() {
-		int accumulateLoader = adminDAO.accumulateLoader();
-		return accumulateLoader;
+	public AiDTO accumulateLoader() {
+		AiDTO aiDTO = adminDAO.accumulateLoader();
+		
+		return aiDTO;
 	}
 	
 	//임플란트 식립건수 입력
@@ -81,4 +86,18 @@ public class AdminController {
 		return mav;
 	}
 	
+	
+	//임플란트 기준 일 입력
+	@RequestMapping(value="/admin/accumulateDate", method=RequestMethod.POST)
+	@ResponseBody
+	public ModelAndView accumulateDate(String implant_date) {
+		ModelAndView mav = new ModelAndView();
+
+		adminDAO.implant_date(implant_date);
+		
+		mav.addObject("display", "/admin/adminMain.jsp");
+		mav.setViewName("/admin/adminIndex");
+		
+		return mav;
+	}
 }

@@ -1,7 +1,37 @@
 @charset "UTF-8";
 *{	font-family: 'NanumSquareRound',sans-serif;}
+.topBarM{display: none;}
+.topBarPC{display: block;}
+.content-box{width: 960px; height: 320px; background-position: center; position: relative;}
+.content-box-img{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+.content-box-text{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	height: 115px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#generalCare_wrap-1{ text-align: center;}
+#generalCare_wrap-2{ text-align: center;}
+#generalCare_wrap-3{ text-align: center;}
+#generalCare_wrap-4{ text-align: center;}
+#generalCare_wrap-5{ text-align: center;}
+
 @media all and (max-width: 2880px){
-	#generalCare_wrap-1{
+#generalCare_wrap-1{
 	width: 1920px;
 	height: 3100px;
 }
@@ -66,37 +96,21 @@
 	height: 3452px;
 }
 }
+
+.content-background-1{background: url('../img/6-1/61_main.png'); background-position: center; background-size: contain;}
+.content-background-2{background: url('../img/6-2/62_main.png'); background-position: center; background-size: contain;}
+.content-background-3{background: url('../img/6-3/63_main.png'); background-position: center; background-size: contain;}
+.content-background-4{background: url('../img/6-4/64_main.png'); background-position: center; background-size: contain;}
+.content-background-5{background: url('../img/6-5/65_main.png'); background-position: center; background-size: contain;}
+
+
+
 /* 6-1 자연치아*/
 
-#ntGeneral-img-1{
-	width: 960px;
-	height: 320px;
-}
-#ntGeneral-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#ntGeneral-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 517px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#ntGeneral-text-2{
+.margin-bar1{margin:100px auto 96px;}
+.margin-bar1-2{margin:100px auto;}
+
+.ntGeneral-text-2{
 	margin: 100px auto 50px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -132,7 +146,7 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#ntGeneral-img-3{
+.ntGeneral-img-3{
 	margin-top: 38px;
 	width: 960px;
 	height: 390px;
@@ -142,7 +156,7 @@
 	height: 312px;
 	float: left;
 }
-#ntGeneral-text-5{
+.ntGeneral-text-5{
 	text-align: center;
 	/* font: Regular 28px/40px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound',sans-serif;
@@ -155,36 +169,8 @@
 }
 
 /* 6-2 충치*/
-
-#tdGeneral-img-1{
-	width: 960px;
-	height: 320px;
-}
-#tdGeneral-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#tdGeneral-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 517px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#tdGeneral-text-2{
+.margin-bar2{margin: 81px auto;}
+.tdGeneral-text-2{
 	margin: 71px auto 50px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -197,7 +183,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#tdGeneral-text-3{
+.tdGeneral-text-3{
 	text-align: center;
 	/* font: Regular 24px/40px NanumSquareRoundOTF; */
 	font-size: 24px;
@@ -206,7 +192,7 @@
 	color: #6E645A;
 	white-space: pre-line;
 }
-#tdGeneral-img-3{
+.tdGeneral-img-3{
 	margin-top: 86px;
 	width: 800px;
 	height: 213px;
@@ -234,35 +220,9 @@
 }
 
 /* 6-3 신경*/
-
-#neGeneral-img-1{
-	width: 960px;
-	height: 320px;
-}
-#neGeneral-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#neGeneral-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 517px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#neGeneral-text-2{
+.margin-bar3{margin: 100px auto;}
+.margin-bar3-2{margin: 95px auto 100px;}
+.neGeneral-text-2{
 	margin: 71px auto 50px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -303,46 +263,19 @@
 	height: 352px;
 	float: left;
 }
-#neGeneral-img-5{
+.neGeneral-img-5{
 	width: 960px;
 	height: 342px;
 }
-#neGeneral-img-6{
+.neGeneral-img-6{
 	margin-top: 80px;
 	width: 960px;
 	height: 400px;
 }
 
 /* 6-4 잇몸*/
-
-#gtGeneral-img-1{
-	width: 960px;
-	height: 320px;
-}
-#gtGeneral-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#gtGeneral-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 517px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#gtGeneral-text-2{
+.margin-bar4{margin: 100px auto;}
+.gtGeneral-text-2{
 	margin: 71px auto 50px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -363,7 +296,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#gtGeneral-img-3{
+.gtGeneral-img-3{
 	width: 800px;
 	height: 520px;
 }
@@ -377,7 +310,7 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#gtGeneral-img-4{
+.gtGeneral-img-4{
 	width: 800px;
 	height: 368px;
 }
@@ -388,35 +321,8 @@
 }
 
 /* 6-5 턱관절*/
-
-#tpGeneral-img-1{
-	width: 960px;
-	height: 320px;
-}
-#tpGeneral-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#tpGeneral-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 517px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#tpGeneral-text-2{
+.margin-bar5{margin: 80px auto;}
+.tpGeneral-text-2{
 	margin: 100px auto 53px;
 	text-align: center;
 	/* font: Bold 42px/44px NanumSquareRoundOTF; */
@@ -437,7 +343,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#tpGeneral-img-3{
+.tpGeneral-img-3{
 	margin: 90px auto;
 	width: 960px;
 	height: 400px;
@@ -452,14 +358,108 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#tpGeneral-img-4{
+.tpGeneral-img-4{
 	width: 800px;
 	height: 400px;
-	background: #8D8D8D 0% 0% no-repeat padding-box;
 	border-radius: 10px;
 }
-#tpGeneral-img-5{
+.tpGeneral-img-5{
 	margin-top: 60px;
 	width: 800px;
 	height: 280px;
+}
+
+
+@media screen and (max-width: 960px){
+
+#generalCare_wrap-1{
+	width: 360px;
+	height: 2876px;
+}
+#generalCare_wrap-2{
+	width: 360px;
+	height: 3114px;
+}
+#generalCare_wrap-3{
+	width: 360px;
+	height: 3290px;
+}
+#generalCare_wrap-4{
+	width: 360px;
+	height: 2489px;
+}
+#generalCare_wrap-5{
+	width: 360px;
+	height: 2724px;
+}
+
+.top-bar{width: 360px; height: 100%; padding-top: 48px;}
+.topBarM{display: block;}
+.topBarPC{display: none;}
+.content-box{width: 320px; height: 180px; border-radius: 3px;}
+.content-box-img{max-width: 32px; height: 32px; top: 20px; left: 20px;}
+.content-box-text{font-size: 26px; line-height: 34px; letter-spacing: -1.3px; top: 78px; left: 20px;}
+
+.content-background-1{background: url('../img_m/6/61 main.png'); background-position: center; background-size: contain;}
+.content-background-2{background: url('../img_m/6/62 main.png'); background-position: center; background-size: contain;}
+.content-background-3{background: url('../img_m/6/63 main.png'); background-position: center; background-size: contain;}
+.content-background-4{background: url('../img_m/6/64 main.png'); background-position: center; background-size: contain;}
+.content-background-5{background: url('../img_m/6/65 main.png'); background-position: center; background-size: contain;}
+
+
+
+/* 6-1 */
+.ntGeneral-text-2{margin: 42px auto 32px; font-size:24px; line-height: 36px; letter-spacing: -0.72px;}
+.ntGeneral-text-3{margin: 32px auto 0; font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.margin-bar1{width: 40px; margin: 48px auto;}
+.ntGeneral-text-4{font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.ntGeneral-img-3{margin-top: 32px; width: 320px; height: 966px;}
+.ntGeneral-img-4{width: 320px; max-height: 210px; float: none;}
+.ntGeneral-text-5{font-size: 16px; line-height: 28px; letter-spacing: -0.96px;}
+
+
+
+/* 6-2 */
+.tdGeneral-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.tdGeneral-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.tdGeneral-img-3{margin-top: 32px; width: 320px; height: 85px; }
+.margin-bar2{width: 40px; margin: 48px auto;}
+.tdGeneral-text-4{margin-bottom: 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.tdGeneral-img-5{width: 320px; height: 236px; float: none;}
+.tdGeneral-img-4{width: 300px; height: 500px; float: none;}
+
+
+
+/* 6-3 */
+.neGeneral-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.neGeneral-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.margin-bar3{width: 40px; margin: 48px auto;}
+.neGeneral-text-4{font-size: 24px; line-height: 36px; letter-spacing: -0.72px; }
+.neGeneral-img-3{width: 303px; height: 99px;}
+.neGeneral-img-4{width: 320px; height: 235px; float: none;}
+.neGeneral-img-5{width: 320px; height: 380px;}
+.neGeneral-img-6{margin-top: 32px; width: 320px; height: 862px;}
+
+
+/* 6-4 */
+.gtGeneral-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px; white-space: pre-line;}
+.gtGeneral-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.gtGeneral-img-3{width: 320px; height: 380px;}
+.margin-bar4{width: 40px; margin: 48px auto;}
+.gtGeneral-img-4{width: 320px; height: 308px;}
+.gtGeneral-img-5{width: 320px; height: 236px; float: none;}
+
+
+/* 6-5 */
+.tpGeneral-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px; white-space: pre-line;}
+.tpGeneral-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.tpGeneral-img-3{margin: 0 auto 32px; width: 320px; height: 584px;}
+.tpGeneral-img-4{margin-top: 32px; width: 320px; height: 220px;}
+.margin-bar5{width: 40px; margin: 48px auto;}
+
+
+
+
+
+
 }

@@ -47,7 +47,7 @@
 </style>
 
 <div id="content-wrap">
-	<div style="width: 960px; height: 100%; padding: 50px 0;">
+	<div style="width: 960px; padding: 50px 0;">
 		<div id="boardMenuSelect">
 			<div id="bm-1" class="boardMenu selectedMenu"><span>공지사항</span></div>
 			<div id="bm-2" class="boardMenu"><span>히스토리</span></div>

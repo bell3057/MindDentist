@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
-
 <div id="notice03" class="notice_wrap notice_include notice_none">
-	<div style="width: 40px; height: 2px; background: #C8500F 0% 0% no-repeat padding-box; opacity: 1; margin: 60px auto;"></div>
+	<div class="margin-bar"></div>
 	<div class="notice_subject">3월 진료일정 안내</div>
 	<div class="notice-content_wrap">
 		<div class="notice_content">안녕하세요 마인드치과입니다. 

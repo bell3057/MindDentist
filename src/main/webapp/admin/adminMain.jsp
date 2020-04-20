@@ -39,22 +39,29 @@
 	height: 174px;
 	background: #fff7f2;
 }
-#implant_count{
+#accumulate_date_form{
+	width: 1280px; 
+	height: 174px;
+	background: #e9e9e9;
+}
+.implant_input{
 	width: 200px;
 	height: 45px;
     margin: 20px 13px 20px 0;
     padding-right: 3px;
     text-align: right;
-    font-size: 50px;
+    font-size: 25px;
     color: #6E645A;
     float: left;
 }
+.accumulate_date{float: left; margin-top:30px; margin-left: 30px; font-size: 18px; line-height: 40px; color: #fff; }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-#implant_submit{
+.implant_btn{
 	margin-top: 19px;
 	width: 50px;
 	height: 50px;
@@ -78,21 +85,32 @@ input[type="number"]::-webkit-inner-spin-button {
 <div id="content-wrap">
 	<div style="padding-top: 150px;">
 		<div id="accumulate_count_div"><!-- 누적 시립건 -->
-			<div style="width: 930px; height: 80px; margin:auto; padding: 47px 0;">
+			<div style="width: 960px; height: 80px; margin:auto; padding: 47px 0;">
 				<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
-				<span class="accumulate_count-text">현재 임플란트 누적 식립 건</span>
-				<div style="width: 300px; text-align: right; float: right;">
+				<span class="accumulate_count-text">임플란트 누적 식립 건</span>
+				<div style="width: 300px; text-align: right; float: left;">
 					<div id="accumulate_count">0</div>
 					<span class="accumulate_count-text" style="float: none;">건</span>
 				</div>
+				<div class="accumulate_date">(<span class="date_span"></span> 기준)</div>
 			</div>
+			
 		</div>
-		<form id="accumulate_input_form" name="aif" method="post" action="/admin/accumulateCounting" onsubmit='return submitChk()'>
-			<div style="width: 930px; height: 80px; margin:auto; padding: 47px 0;">
+		<form id="accumulate_input_form" name="aif" method="post" action="${pageContext.request.contextPath}/admin/accumulateCounting" onsubmit='return submitChk()'>
+			<div style="width: 900px; height: 80px; margin:auto; padding: 47px 0;">
 				<span class="accumulate_count-text" style="margin-left: 100px; color: #6E645A;">식립 건 수 입력 : </span>
 				<div style="float: right;">
-					<input type="number" id="implant_count" name="implant_count">
-					<input type="submit" id="implant_submit" value="입력">
+					<input type="number" id="implant_count" class="implant_input" name="implant_count">
+					<input type="submit" id="implant_submit" class="implant_btn" value="입력">
+				</div> 
+			</div>
+		</form>
+		<form id="accumulate_date_form" name="adf" method="post" action="${pageContext.request.contextPath}/admin/accumulateDate" onsubmit='return submitDate()'>
+			<div style="width: 900px; height: 80px; margin:auto; padding: 47px 0;">
+				<span class="accumulate_count-text" style="margin-left: 100px; color: #6E645A;">식립 일자 입력 : </span>
+				<div style="float: right;">
+					<input type="text" id="implant_date" class="implant_input" name="implant_date" placeholder="예)2020년 4월 1일">
+					<input type="submit" id="implant_date_submit" class="implant_btn" value="입력">
 				</div> 
 			</div>
 		</form>
@@ -113,7 +131,14 @@ function submitChk(){
 	}
 	
 }
-
+function submitDate(){
+	if(document.adf.implant_date.value==""){
+		alert("값을 입력해주세요");
+		return false;
+	}else{
+		return true;
+	}
+}
 $(document).ready(function(){
 	var contextPath = "${pageContext.request.contextPath}"
 
@@ -123,8 +148,8 @@ $(document).ready(function(){
 		url : contextPath + '/admin/accumulateLoader',
 		datatype : 'text',
 		success : function(data){
-			$('#accumulate_count').text(numberWithCommas(data));
-			
+			$('#accumulate_count').text(numberWithCommas(data.implant_count));
+			$('.date_span').text(data.implant_date);
 			function numberWithCommas(data) {
 			    return data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			}

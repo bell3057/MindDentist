@@ -26,7 +26,7 @@ height: 100%;
 	color: #C8500F;
 }
 #asTable{
-	width: 800px;
+	/* width: 800px; */
 	height: 460px;
 	border: 1.5px solid #C8500F;
 	border-radius: 5px;

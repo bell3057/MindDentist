@@ -29,7 +29,7 @@ height: 100px;
 }
 #content{
 width: 100%;
-height: 100%;
+height: 115%;
 }
 </style>
 <meta charset="UTF-8">

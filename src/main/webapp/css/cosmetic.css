@@ -2,6 +2,34 @@
 *{
 	font-family: 'NanumSquareRound',sans-serif;
 }
+.topBarM{display: none;}
+.topBarPC{display: block;}
+.content-box{width: 960px; height: 320px; background-position: center; position: relative;}
+.content-box-img{
+	position: absolute;
+	top: 61px;
+	left: 80px;
+	width: 42px;
+	height: 42px;
+}
+.content-box-text{
+	position: absolute;
+	top: 134px;
+	left: 80px;
+	height: 115px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: -2.4px;
+	color: #C8500F;
+	opacity: 1;
+	white-space: pre-line;
+}
+#cosmetic_wrap-1{ text-align: center;}
+#cosmetic_wrap-2{ text-align: center;}
+#cosmetic_wrap-3{ text-align: center;}
+#cosmetic_wrap-4{ text-align: center;}
 @media all and (max-width: 2880px){
 #cosmetic_wrap-1{
 	width: 1920px;
@@ -56,38 +84,18 @@
 	height: 3877px;
 }
 }
+
+.content-background-1{background: url('../img/5-1/51_main.png'); background-position: center; background-size: contain;}
+.content-background-2{background: url('../img/5-2/52_main.png'); background-position: center; background-size: contain;}
+.content-background-3{background: url('../img/5-3/53_main.png'); background-position: center; background-size: contain;}
+.content-background-4{background: url('../img/5-4/54_main.png'); background-position: center; background-size: contain;}
+
+.margin-bar1{margin: 100px auto;}
+.margin-bar1-2{margin: 96px auto 80px;}
+
 /* 5-1 */
 
-
-#lCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#lCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#lCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 260px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#lCosmetic-text-2{
+.lCosmetic-text-2{
 	margin: 100px auto 33px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -100,7 +108,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#lCosmetic-text-3{
+.lCosmetic-text-3{
 	text-align: center;
 	/* font: Regular 24px/40px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound',sans-serif;
@@ -111,7 +119,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#lCosmetic-text-4{
+.lCosmetic-text-4{
 	margin-bottom: 100px;
 	text-align: center;
 	/* font: Bold 36px/44px NanumSquareRoundOTF; */
@@ -128,7 +136,7 @@
 	width: 960px;
 	height: 366px;
 }
-#lCosmetic-text-5{
+.lCosmetic-text-5{
 	text-align: center;
 	/* font: Regular 28px/40px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound',sans-serif;
@@ -141,41 +149,14 @@
 
 
 /* 5-2 */
-
-#mCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#mCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#mCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;
-	width: 384px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#mCosmetic-img-3{
+.margin-bar2{margin: 90px auto 80px;}
+.margin-bar2-2{margin: 100px auto;}
+.mCosmetic-img-3{
 	margin-top: 100px;
 	width: 800px;
 	height: 340px;
 }
-#mCosmetic-text-2{
+.mCosmetic-text-2{
 	text-align: center;
 	/* font: Regular 32px/48px NanumSquareRoundOTF; */
 	font-family: 'NanumSquareRound',sans-serif;
@@ -186,7 +167,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#mCosmetic-text-3{
+.mCosmetic-text-3{
 	margin: 36px auto 96px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -198,7 +179,7 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#mCosmetic-img-4{
+.mCosmetic-img-4{
 	width: 800px;
 	height: 495px;
 }
@@ -213,43 +194,17 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#mCosmetic-img-5{
+.mCosmetic-img-5{
 	width: 960px;
 	height: 456px;
 }
 
 
 /* 5-3 */
+.margin-bar3{margin:70px auto;}
+.margin-bar3-2{margin: 109.5px auto 90.5px;}
 
-#wCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#wCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#wCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;;
-	width: 301px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
-#wCosmetic-text-2{
+.wCosmetic-text-2{
 	margin: 100px auto 51px;
 	text-align: center;
 	/* font: Bold 42px/56px NanumSquareRoundOTF; */
@@ -273,7 +228,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#wCosmetic-text-4{
+.wCosmetic-text-4{
 	margin: 70px auto 60px;
 	text-align: center;
 	/* font: Bold 36px/44px NanumSquareRoundOTF; */
@@ -285,49 +240,23 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#wCosmetic-img-3{
+.wCosmetic-img-3{
 	margin: auto;
 	width: 800px;
 	height: 915px;
 }
-#wCosmetic-img-4{
+.wCosmetic-img-4{
 	margin-bottom: 91px;
 	width: 960px;
 	height: 300px;
 }
 
 /* 5-4 */
+.margin-bar4{margin: 80px auto;}
+.margin-bar4-2{margin: 100px auto 80px;}
 
-#cCosmetic-img-1{
-	width: 960px;
-	height: 320px;
-}
-#cCosmetic-img-2{
-	position: absolute;
-	top: 61px;
-	left: 80px;
-	width: 42px;
-	height: 42px;
-}
-#cCosmetic-text-1{
-	position: absolute;
-	top: 134px;
-	left: 80px;;
-	width: 301px;
-	height: 115px;
-	text-align: left;
-	/* font: Bold 48px/62px NanumSquareRoundOTF; */
-	font-family: 'NanumSquareRound',sans-serif;
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 62px;
-	letter-spacing: -2.4px;
-	color: #C8500F;
-	opacity: 1;
-	white-space: pre-line;
-}
 
-#cCosmetic-text-2{
+.cCosmetic-text-2{
 	margin: 100px 0 51px;
 	height: 103px;
 	text-align: center;
@@ -340,7 +269,6 @@
 	white-space: pre-line;
 }
 .cCosmetic-text-3{
-	height: 231px;
 	text-align: center;
 	/* font: Regular 28px/40px NanumSquareRoundOTF; */
 	font-size: 28px;
@@ -350,7 +278,7 @@
 	opacity: 1;
 	white-space: pre-line;
 }
-#cCosmetic-img-3{
+.cCosmetic-img-3{
 	width: 960px;
 	height: 252px;
 }
@@ -365,11 +293,88 @@
 	color: #C8500F;
 	opacity: 1;
 }
-#cCosmetic-img-4{
+.cCosmetic-img-4{
 	width: 960px;
 	height: 416px;
 }
 .cCosmetic-img-5{
 	width: 960px;
 	height: 370px;
+}
+
+
+@media screen and (max-width: 960px){
+#cosmetic_wrap-1{
+	width: 360px;
+	height: 1514px;
+}
+#cosmetic_wrap-2{
+	width: 360px;
+	height: 1686px;
+}
+#cosmetic_wrap-3{
+	width: 360px;
+	height: 2267px;
+}
+#cosmetic_wrap-4{
+	width: 360px;
+	height: 2282px;
+}
+.top-bar{width: 360px; height: 100%; padding-top: 48px;}
+.topBarM{display: block;}
+.topBarPC{display: none;}
+.content-box{width: 320px; height: 180px; border-radius: 3px;}
+.content-box-img{max-width: 32px; height: 32px; top: 20px; left: 20px;}
+.content-box-text{font-size: 26px; line-height: 34px; letter-spacing: -1.3px; top: 78px; left: 20px;}
+	
+.content-background-1{background: url('../img_m/5/51 main.png'); background-position: center; background-size: contain;}
+.content-background-2{background: url('../img_m/5/52 main.png'); background-position: center; background-size: contain;}
+.content-background-3{background: url('../img_m/5/53 main.png'); background-position: center; background-size: contain;}
+.content-background-4{background: url('../img_m/5/54 main.png'); background-position: center; background-size: contain;}
+	
+
+/* 5-1 */
+.lCosmetic-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.lCosmetic-text-3{font-size: 14px; line-height:24px; letter-spacing: -0.7px;}
+.margin-bar1{width: 40px; margin: 48px auto;}
+.lCosmetic-text-4{font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.lCosmetic-img-3{width: 320px; height: 131px; margin-bottom: 12px;}
+.lCosmetic-text-5{font-size: 22px; line-height: 36px; letter-spacing: -1.1px; white-space: pre-line;}	
+	
+	
+/* 5-2 */
+.mCosmetic-img-3{margin-top: 42px; width: 320px; height: 136px;}
+.margin-bar2{width: 40px; margin: 48px auto 46px;}
+.mCosmetic-text-2{font-size: 16px; line-height: 26px; letter-spacing: -0.8px;}
+.mCosmetic-text-3{margin: 22px auto 36px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.mCosmetic-img-4{width: 272px; height: 376px;}
+.mCosmetic-text-4{font-size: 16px; line-height: 26px; line-height: -0.8px;}
+.mCosmetic-img-5{margin-top: 48px; width: 320px; height:170px;}
+	
+	
+	
+/* 5-3 */
+.wCosmetic-text-2{margin: 42px auto 32px; font-size:24px; line-height: 36px; letter-spacing: -0.72px;}
+.wCosmetic-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.margin-bar3{width: 40px; margin: 48px auto;}
+.wCosmetic-text-4{font-size: 24px; line-height: 36px; letter-spcing: -0.72px;}
+.wCosmetic-img-3{width: 320px; height: 799px;}
+.wCosmetic-img-4{width: 320px; height: 410px; margin-bottom: 32px;}
+	
+	
+	
+/* 5-4 */
+.cCosmetic-text-2{margin: 42px auto 32px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.cCosmetic-text-3{font-size: 14px; line-height: 24px; letter-spacing: -0.7px;}
+.margin-bar4{width: 40px; margin: 48px auto;}
+.cCosmetic-img-3{width: 320px; height: 84px;}
+.cCosmetic-text-4{height: 30px; font-size: 24px; line-height: 36px; letter-spacing: -0.72px;}
+.cCosmetic-img-4{width: 320px; height: 582px;}
+.cCosmetic-img-5{width: 320px; height: 134px;}
+
+	
+	
+	
+	
+	
 }

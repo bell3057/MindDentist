@@ -16,5 +16,25 @@ public class MainController {
 				
 		return mav;
 	}
+	
+	//테스트용 메인페이지
+	@RequestMapping(value="/main/index2", method=RequestMethod.GET)
+	public ModelAndView index2() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/main/mainPlate2.jsp");
+		mav.setViewName("/main/index");
+				
+		return mav;
+	}
+	
+	//모바일 테스트용 메인페이지
+	@RequestMapping(value="/main/indexM", method=RequestMethod.GET)
+	public ModelAndView indexM() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("displayM", "/main/mainPlateM.jsp");
+		mav.setViewName("/main/indexM");
+				
+		return mav;
+	}
 }
 

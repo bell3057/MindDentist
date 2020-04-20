@@ -23,10 +23,10 @@
 			</tr>
 		</table>
 	</div>
-	<div style="width: 168px; height: 40px; margin: 40px auto 100px;">
-				<div class="paging-box"><span>〈</span></div>
-				<div class="paging-box"><span>1</span></div>
-				<div class="paging-box" style="margin-right:0;"><span>〉</span></div>
+	<div id="abPaging">
+	<!-- 	<div class="paging-box"><span>〈</span></div>
+		<div class="paging-box"><span>1</span></div>
+		<div class="paging-box" style="margin-right:0;"><span>〉</span></div> -->
 	</div>
 </div>
 <script>
@@ -94,22 +94,11 @@ $(document).ready(function(){
 		dataType : 'json',
 		success : function(data){
 			var nCount = data.totalA;
-			/* 
-			$.ajax({//일반공지사항 전체목록
-				type : 'post',
-				url : contextPath + '/admin/getTotal',
-				dataType : 'text',
-				success : function(data){
-					nCount = data;
-					console.log(nCount);
-					return nCount;
-				}
-			});//ajax
-			 */
+			
 			 console.log(nCount);
 			$.each(data.list, function(index, items){//일반 공지사항
 				$('#notice_normal_div').append($('<table/>', {
-					class : 'notice_append_table',
+					class : 'notice_append_table notice_normal_append',
 					}).append($('<tr/>', {
 						class : 'notice_table-text-tr',
 						id : 'abNum_' + items.abNum
@@ -136,7 +125,68 @@ $(document).ready(function(){
 				});
 				
 			});//each
+
+			
+			$('#abPaging').append($('<div/>',{
+				html : data.abPaging.pagingHTML
+			}));
+			
+			//alert($('.paging').length);
+			var pageWidth = ($('.paging').length + 1) * 53;
+			$('#abPaging').css('width', pageWidth); 
 		}
 	});//ajax
 });
+//기본페이징
+function boardPaging(pg){
+	var contextPath = "${pageContext.request.contextPath}"
+	
+	$.ajax({
+		type :'POST',
+		url : contextPath+'/admin/adminBoardListNormal',
+		data : {'pg' : pg},
+		dataType : 'json',
+		success : function(data){
+			
+			$('.notice_normal_append').remove();
+			$('#abPaging').children().remove();
+			
+			var nCount = data.totalA - (pg - 1) * data.abPaging.pageSize;
+			
+			console.log(nCount);
+			$.each(data.list, function(index, items){//일반 공지사항
+				$('#notice_normal_div').append($('<table/>', {
+					class : 'notice_append_table notice_normal_append',
+					}).append($('<tr/>', {
+						class : 'notice_table-text-tr',
+						id : 'abNum_' + items.abNum
+						}).append($('<td/>',{
+							class : 'notice_table-num notice_table_font',
+							text : nCount
+							/* }).append($('<input/>',{
+								type : 'hidden',
+								value : items.abNum */
+						})).append($('<td/>',{
+							class : 'notice_table-subject notice_table_nSubject',
+							text : items.abSubject
+						})).append($('<td/>',{
+							class : 'notice_table-date notice_table_font',
+							text : items.abDate
+						})).append($('<td/>',{
+							class : 'notice_table-view notice_table_font',
+							text : items.abHit
+						}))));
+				nCount = nCount-1;//인덱스 내림차순
+				
+				$('#abNum_'+items.abNum).click(function(){//클릭 링크
+					location.href= contextPath + "/serviceCenter/noticeView?abNum="+items.abNum;
+				});
+				
+			});//each
+			$('#abPaging').append($('<div/>',{
+				html : data.abPaging.pagingHTML
+			}));
+		}
+	});
+}
 </script>

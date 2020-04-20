@@ -65,11 +65,10 @@ public class AdminBoardController {
 	public String adminBoardWrite(@ModelAttribute AbDTO abDTO, HttpServletRequest request,
 			@RequestParam MultipartFile abFileU) {
 		
-		//파일 이름 지정 - 경로 - 카피 - 이름 부여
-		
+		//파일 지정
+		String abFilePath = request.getSession().getServletContext().getRealPath("/") + "/upload/board";
+				
 		String abFileName = "board_" + abFileU.getOriginalFilename();
-		String abFilePath = request.getSession().getServletContext().getRealPath("/") + "upload\\board";
-		//String abFilePath = request.getSession().getServletContext().getRealPath("/") + "upload\\board";
 		File abFileCopy = new File(abFilePath, abFileName);
 		
 		abDTO.setAbFile(abFileName);
@@ -81,7 +80,7 @@ public class AdminBoardController {
 			e.printStackTrace();
 		}
 		
-		System.out.println(abDTO);
+		//System.out.println(abDTO);
 		
 		int su = adminDAO.adminBoardWrite(abDTO);
 		
@@ -106,26 +105,27 @@ public class AdminBoardController {
 			,@RequestParam(required=false,defaultValue="3") String pageNum) {
 		
 		int endNum = Integer.parseInt(pg)*3;
-		int startNum = endNum-2;
+		int startNum = endNum-3;
 		Map<String,Integer> map = new HashMap<String,Integer>();
 		
 		map.put("startNum", startNum);
 		map.put("pageSize",	3);
 		
-		List<AbDTO> list = adminDAO.adminBoardListNormal();
+		List<AbDTO> list = adminDAO.adminBoardListNormal(map);
+		//System.out.println(list);
 		
 		int totalA = adminDAO.getTotal();
-		/*
+		
 		abPaging.setCurrentPage(Integer.parseInt(pg));
 		abPaging.setPageBlock(2);
 		abPaging.setPageSize(Integer.parseInt(pageNum));
 		abPaging.setTotalA(totalA);
 		
-		abPaging.makePagingHTML();*/
+		abPaging.makePagingHTML();
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("list", list);
 		mav.addObject("totalA", totalA);
-		//mav.addObject("abPaging", abPaging);
+		mav.addObject("abPaging", abPaging);
 		mav.setViewName("jsonView");
 		
 		return mav;
@@ -140,10 +140,9 @@ public class AdminBoardController {
 		
 		adminDAO.hitUp(abNum);
 		AbDTO abDTO = adminDAO.noticeView(abNum);
-		System.out.println(abDTO);
+		//System.out.println(adId);
 		
-		//model.addAttribute("AbDTO", abDTO);
-		model.addAttribute("session", adId);
+		mav.addObject("session", adId);
 		mav.addObject("abDTO", abDTO);
 		mav.addObject("display", "/serviceCenter/noticeView.jsp");
 		mav.setViewName("/main/index");
@@ -158,7 +157,7 @@ public class AdminBoardController {
 		String adId = (String) session.getAttribute("adId");
 		
 		AbDTO abDTO = adminDAO.noticeView(abNum);
-		System.out.println(abDTO);
+		//System.out.println(abDTO);
 		
 		model.addAttribute("abDTO", abDTO);
 		model.addAttribute("session", adId);
@@ -166,6 +165,95 @@ public class AdminBoardController {
 		mav.setViewName("/main/index");
 		
 		return mav;
+	}
+	
+	@RequestMapping(value="/admin/boardModifyForm", method=RequestMethod.GET)
+	public ModelAndView boardModifyForm(@RequestParam int abNum) {
+		
+		ModelAndView mav= new ModelAndView();
+		
+		AbDTO abDTO = adminDAO.noticeView(abNum);
+		
+		mav.addObject("abDTO", abDTO);
+		mav.addObject("display", "/admin/boardModifyForm.jsp");
+		mav.setViewName("/admin/adminIndex");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/admin/boardModify", method=RequestMethod.POST)
+	@ResponseBody
+	public String boardModify(@ModelAttribute AbDTO abDTO, HttpServletRequest request,
+			@RequestParam MultipartFile abFileU) {
+		if(abFileU.isEmpty()==false) {
+			String abFilePath = request.getSession().getServletContext().getRealPath("/") + "/upload/board";
+			
+			String abFileName = "board_" + abFileU.getOriginalFilename();
+			File abFileCopy = new File(abFilePath, abFileName);
+			
+			try {
+				FileCopyUtils.copy(abFileU.getInputStream(), new FileOutputStream(abFileCopy));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			abDTO.setAbFile(abFileName);
+			
+		}
+		int su = adminDAO.boardModify(abDTO);
+		
+		if(su==1)
+			return "good";
+		else
+			return "ㅜ_ㅜ";
+		
+	}
+	
+	@RequestMapping(value="/admin/boardNP", method=RequestMethod.POST)
+	@ResponseBody
+	public int boardNP(@RequestParam int page, @RequestParam int abNum, @RequestParam int abType) {
+		int pgNum = 0;
+		//System.out.println("abNum = " + abNum);
+		//System.out.println("abType = " + abType);
+		
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		map.put("abNum", abNum);
+		map.put("abType", abType);
+		
+		int totalA = adminDAO.getTotal();
+		int minT = adminDAO.getMin();
+		
+		if(page == 0 && abNum > minT) {
+			pgNum = adminDAO.boardPrevious(map);
+			//System.out.println(pgNum);
+		}else if (page == 1 && totalA > abNum) {
+			pgNum = adminDAO.boardNext(map);
+			//System.out.println(pgNum);
+		}
+		
+		return pgNum;
+	}
+	
+	@RequestMapping(value="/admin/boardDelete", method=RequestMethod.POST)
+	@ResponseBody
+	public String boardDelete(@RequestParam int abNum, HttpServletRequest request) {
+		
+		AbDTO abDTO = adminDAO.noticeView(abNum);
+		
+		String abFilePath = request.getSession().getServletContext().getRealPath("/") + "upload/board" + abDTO.getAbFile();
+		
+		File delAbFile = new File(abFilePath);
+		
+		if(delAbFile.exists() && delAbFile.isFile())
+			delAbFile.delete();
+
+		int su = adminDAO.boardDelete(abNum);
+		
+		if(su==1)
+			return "good";
+		else
+			return "ㅜ_ㅜ";
+		
 	}
 }
 

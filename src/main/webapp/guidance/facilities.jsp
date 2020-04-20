@@ -3,36 +3,13 @@
 
 <link rel="stylesheet" type="text/css" href="../css/guidance.css">
 <style>
-.slick-dots{
-width: 360px; height: 15px; margin: 65px auto 0;
-}
-.slick-dots li{
-	width: 15px;
-	height: 15px;
-	float: left;
-	margin-right: 15px;
-}
-.slick-dots li button{
-	width: 15px;
-	height: 15px;
-	font-size: 0;
-	line-height: 0;
-	cursor: pointer;
-	color: transparent;
-    border: 0;
-    outline: none;
-    border-radius: 10px 10px 0 0;
-    background: #B4AAA0;
-}
-.slick-dots li.slick-active button{
-	background: #C8500F;
-}
+
 </style>
 <div id="guidance_wrap-2">
-	<div style="width: 960px; height: 100%;  margin: auto;">
+	<div class="top-bar top-bar2">
 		<div id="facilities-text-1">마인드 치과 시설안내</div>
-		<div style="width: 40px; height: 2px; background: #C8500F; opacity: 1; margin: 70px auto;"></div>
-		<div style="width: 960px; height: 685px; margin: auto;">
+		<div class="margin-bar margin-bar2"></div>
+		<div class="facilities-box">
 			<div id="facilities-slide-wrap">
 				<img class="facilities-img" src="../img/2-2/01.png">
 				<img class="facilities-img" src="../img/2-2/02.png">
@@ -48,7 +25,6 @@ width: 360px; height: 15px; margin: 65px auto 0;
 				<img class="facilities-img" src="../img/2-2/12.png">
 			</div>		
 		</div>
-		<!-- <div id="facilities-text-2">안산최대 치과시설 (300평 규모)</div> -->
 	</div>
 </div>
 <script src="../js/guidance.js"></script>

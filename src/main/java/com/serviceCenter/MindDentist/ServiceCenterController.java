@@ -35,4 +35,23 @@ public class ServiceCenterController {
 		
 		return mav;
 	}
+	
+	
+	//테스트용
+	@RequestMapping(value="/serviceCenter/notice2", method=RequestMethod.GET)
+	public ModelAndView notice2() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/serviceCenter/notice2.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
+	@RequestMapping(value="/serviceCenter/history2", method=RequestMethod.GET)
+	public ModelAndView history2() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/serviceCenter/history2.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }

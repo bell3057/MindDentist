@@ -5,6 +5,7 @@
 	width: 960px;
 	height: 100%;
 	padding-top: 50px;
+	margin-bottom: 50px;
 }
 #ab_title{
 	width: 800px;
@@ -87,7 +88,7 @@
 			<tr>
 				<th>글 종류</th>
 				<td>
-					<select name="abType" style="width: 150px; font-size: 15px; height: 30px;">
+					<select name="abType" style="width: 150px; font-size: 15px; height: 30px;" >
 						<option value="0">일반 공지사항</option>
 						<option value="1">중요 공지사항</option>
 						<option value="2">히스토리</option>
@@ -95,22 +96,23 @@
 				</td>
 			</tr>
 			<tr>
-				<th style="height: 300px;">내용</th>
+				<th style="height: 500px;">내용</th>
 				<td><textarea name="abContent" id="abContent" rows="10" cols="100" style="width: 100%;"></textarea></td>
 			</tr>
 			<tr>
-				<th>파일 업로드</th>
+				<th>썸네일 이미지</th>
 				<td>
 					<input type="file" id="abFileU" name="abFileU" style="width: 300px; height: 25px;">
 					<span style="margin-left: 10px; font-size: 14px; color:#9B948C;">※히스토리 작성의 경우 반드시 파일을 삽입해주세요.</span>
 				</td>
 			</tr>
 		</table>
+		<div id="ab_btn_div">
+			<a id="ab_submit" class="ab_btn" style="margin-right: 15px;"><span>등록</span></a>
+			<a id="ab_cancel" class="ab_btn"><span>취소</span></a>
+		</div>
 	</form>
-	<div id="ab_btn_div">
-		<a id="ab_submit" class="ab_btn" style="margin-right: 15px;"><span>등록</span></a>
-		<a id="ab_cancel" class="ab_btn"><span>취소</span></a>
-	</div>
+	
 </div>
 
 <script type="text/javascript"> 
@@ -147,7 +149,7 @@ function submitContents(elClickedObj) {
  
 // textArea에 이미지 첨부
 function pasteHTML(filepath){
-    var sHTML = '<img src="<%=request.getContextPath()%>/upload/'+filepath+'">';
+    var sHTML = '<img src="<%=request.getContextPath()%>/upload/history/'+filepath+'">';
     oEditors.getById["abContent"].exec("PASTE_HTML", [sHTML]);
 }
 </script>
@@ -175,8 +177,10 @@ $(document).ready(function(){
 		        contentType: false,
 				data: formData,
 				success : function(data){
-					alert(data);
+					//alert(data);
 					if(data == 'good'){
+						alert("성공적으로 작성되었습니다.");
+						location.href = document.referrer;
 						history.back();
 					}else{
 						alert('데이터 입력 실패');

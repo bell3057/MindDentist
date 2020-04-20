@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../css/serviceCenter.css">
 <style>
 #ab_history_div{
-	width: 972px; height: 100%; float: left;
+	width: 972px; padding-bottom: 130px; float: left;
 }
 </style>
 <div id="ab_history_div">
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	$.ajax({
 		type : 'post',
-		url : '/MindDentist/admin/adminBoardList',
+		url : contextPath + '/admin/adminBoardList',
 		dataType : 'json',
 		success : function(data){
 			//alert(JSON.stringify(data.list[0].abType));
@@ -36,13 +36,7 @@ $(document).ready(function(){
 					})));
 					
 				}
-				/*
-				if(hCount%3==0){//줄바꿈
-					$('#abNum_'+items.abNum).css('margin-right', '0');
-				} 
-				if(data.list.length-3>=hCount){//줄 사이 간격
-					$('#abNum_'+items.abNum).css('margin-top', '60px');
-				}*/
+				
 				if(items.abType == 2){
 					$('#abNum_'+items.abNum).click(function(){
 						location.href= contextPath + "/serviceCenter/historyEvent?abNum="+items.abNum;

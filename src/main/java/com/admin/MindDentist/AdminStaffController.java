@@ -55,12 +55,8 @@ public class AdminStaffController {
 	public String add_staff_exe(@ModelAttribute AsDTO asDTO, HttpServletRequest request
 						, @RequestParam MultipartFile mainImg, @RequestParam MultipartFile pageImg) {
 		//파일경로 설정
-		//리눅스 경로
-		//String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
-		//String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
-		//윈도우 경로
-		String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "upload\\staff";
-		String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "upload\\staff";
+		String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
+		String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
 		
 		//파일 이름 지정
 		String mainImgName = mainImg.getOriginalFilename();
@@ -119,13 +115,15 @@ public class AdminStaffController {
 	
 	//수정
 	@RequestMapping(value="/admin/modify_staff_exe", method=RequestMethod.POST)
-	public String modify_staff_exe(@ModelAttribute AsDTO asDTO
+	public String modify_staff_exe(@ModelAttribute AsDTO asDTO, HttpServletRequest request
 			, @RequestParam MultipartFile mainImg, @RequestParam MultipartFile pageImg) {
 		
 		if(mainImg.isEmpty()==false) {//썸네일 있을때 이미지 수정
+			//리눅스 경로
+			String mainImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
+			
 			String mainImgName = mainImg.getOriginalFilename();
-			//String mainImgPath = "D:\\coding\\java_ee\\workspace\\MindDentist\\src\\main\\webapp\\upload";
-			String mainImgPath = "/upload";
+			//String mainImgPath = "/upload";
 			File mainImgFile = new	File(mainImgPath, mainImgName); 
 			try {
 				FileCopyUtils.copy(mainImg.getInputStream(), new FileOutputStream(mainImgFile));
@@ -138,8 +136,9 @@ public class AdminStaffController {
 		
 		if(pageImg.isEmpty()==false) {//상세이미지 있을때 이미지 수정
 			String pageImgName = pageImg.getOriginalFilename();
-			//String pageImgPath = "D:\\coding\\java_ee\\workspace\\MindDentist\\src\\main\\webapp\\upload";
-			String pageImgPath = "/upload";
+			
+			String pageImgPath = request.getSession().getServletContext().getRealPath("/") + "/upload/staff";
+			
 			File detailedImgFile = new File(pageImgPath, pageImgName);
 			try {
 				FileCopyUtils.copy(pageImg.getInputStream(), new FileOutputStream(detailedImgFile));

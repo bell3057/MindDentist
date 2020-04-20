@@ -1,18 +1,12 @@
 * {
 	margin: auto; padding:0;
 	list-style-type:none;
+	font-family: 'NanumSquareRound',sans-serif;
 }
-html{
-	width: 100%;
-	height: 100%;
-}
-body{
-	width: 100%;
-	height: 100%;
-}
+html, body{height: 100%;}
 
 /* index */
-@media all and (max-width: 2880px){
+@media all and (max-width: 2880px) and (min-width: 2561px){
 	#wrap {
 		width: 2880px;
 	}
@@ -75,7 +69,7 @@ body{
 		opacity: 1;
 	}
 }
-@media all and (max-width: 2560px){
+@media all and (max-width: 2560px) and (min-width: 1921px){
 	#wrap {
 		width: 2560px;
 	}
@@ -121,7 +115,7 @@ body{
 		opacity: 1;
 	}
 }
-@media all and (max-width: 1920px){
+@media all and (max-width: 1920px) and (min-width: 1601px){
 	#wrap {
 		width: 1920px;
 	}
@@ -185,7 +179,7 @@ body{
 		opacity: 1;
 	}
 }
-@media all and (max-width: 1600px){
+@media all and (max-width: 1600px) and (min-width: 961px){
 	#wrap {
 		width: 1600px;
 	}
@@ -249,17 +243,25 @@ body{
 		opacity: 1;
 	}
 }
+@media screen and (min-width: 961px){
+.margin-bar{width: 40px; height: 1.5px;  background: #C8500F 0% 0% no-repeat padding-box;}
+.top-bar{padding-top: 130px; width: 960px; height: 100%;}
+}
 #content{
 	height: 100%;
 }
-
+@media screen and (min-width: 960px){
+	
+#content_mobile{display: none;}
+	
+}
 /* mainPlate */
 .arrow_css{ position: absolute; top: 45%; z-index: 100; width: 30px;}
 
 .slick-dots li.slick-active button{
 	background: #C8500F;
 }
-
+.slider-img{cursor: pointer;}
 .slide_button{
 	width: 15px;
 	height: 15px;
@@ -283,12 +285,14 @@ body{
 	font-family: 'NanumSquareRound',sans-serif;
 	font-weight: bold;
 	font-size: 60px;
-	/* line-height: 40px; */
+	line-height: 75px;
 	letter-spacing: 0;
 	color: #FFFFFF;
 	display: inline;
 	opacity: 1;
 }
+.accumulate_date{float: left; margin-top:30px; margin-left: 30px; font-size: 18px; line-height: 40px; color: #fff; }
+
 #kcsi-text{
 	margin: 23px 0 0 27px;
 	text-align: left;
@@ -413,6 +417,7 @@ body{
 	opacity: 1;
 	position: relative;
     top: 294px;
+    cursor: pointer;
 }
 /* IE10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

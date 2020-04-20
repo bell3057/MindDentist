@@ -43,4 +43,14 @@ public class GuidanceController {
 		
 		return mav;			
 	}
+	
+	//시설 테스트 페이지
+	@RequestMapping(value="/guidance/facilities2", method=RequestMethod.GET)
+	public ModelAndView facilities2() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("display", "/guidance/facilities2.jsp");
+		mav.setViewName("/main/index");
+		
+		return mav;
+	}
 }

@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function(){
-	
+	//칭찬불만 이벤트
 	$('#cb-1').click(function(){
 		$('.compliment-box-2').removeClass('cb-check');
 		$('#cb-1').addClass('cb-check');
@@ -17,6 +17,21 @@ $(document).ready(function(){
 		//alert($('#cpl').val());
 		$('#cpl').empty();
 		$("#cpl").val("불만");
+	});
+	
+	$('#cb-1m').click(function(){
+		$('.compliment-box-2').removeClass('cb-check');
+		$('#cb-1m').addClass('cb-check');
+		//alert($('#cpl').val());
+		$('#cplm').empty();
+		$('#cplm').val("칭찬");
+	});
+	$('#cb-2m').click(function(){
+		$('.compliment-box-2').removeClass('cb-check');
+		$('#cb-2m').addClass('cb-check');
+		//alert($('#cpl').val());
+		$('#cplm').empty();
+		$("#cplm").val("불만");
 	});
 	
 	//공지 가오픈 소스
@@ -67,6 +82,7 @@ $(document).ready(function(){
 		$('#hrt01').show();
 	});
 	*/
+	
 	//칭찬불만 키보드 제한
 	$('.ct-year').keyup(function(event){
 		var inputVal = $(this).val();
@@ -99,6 +115,8 @@ $(document).ready(function(){
 		var inputVal = $(this).val();
 		$(this).val(inputVal.replace(/[^0-9]/gi, ''));
 	});
+	
+	
 });
 
 function notice_next(num){

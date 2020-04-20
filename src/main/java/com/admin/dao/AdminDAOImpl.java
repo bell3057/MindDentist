@@ -11,8 +11,11 @@ import org.springframework.stereotype.Repository;
 import org.springframework.util.FileCopyUtils;
 
 import com.admin.bean.AbDTO;
+import com.admin.bean.AbanDTO;
 import com.admin.bean.AdminDTO;
+import com.admin.bean.AiDTO;
 import com.admin.bean.AsDTO;
+import com.admin.bean.AslideDTO;
 
 @Repository
 public class AdminDAOImpl implements AdminDAO {
@@ -28,7 +31,7 @@ public class AdminDAOImpl implements AdminDAO {
 	}
 
 	@Override
-	public int accumulateLoader() {
+	public AiDTO accumulateLoader() {
 		return sqlSession.selectOne("adminSQL.accumulateLoader");
 	}
 
@@ -36,7 +39,12 @@ public class AdminDAOImpl implements AdminDAO {
 	public void implant_count(int implant_count) {
 		sqlSession.update("adminSQL.implant_count", implant_count);
 	}
-
+	
+	@Override
+	public void implant_date(String implant_date) {
+		sqlSession.update("adminSQL.implant_date", implant_date);
+	}
+	
 	@Override
 	public int add_staff_exe(AsDTO asDTO) {
 		return sqlSession.insert("adminSQL.add_staff_exe", asDTO);
@@ -93,8 +101,88 @@ public class AdminDAOImpl implements AdminDAO {
 	}
 
 	@Override
-	public List<AbDTO> adminBoardListNormal() {
-		return sqlSession.selectList("adminSQL.adminBoardListNormal");
+	public List<AbDTO> adminBoardListNormal(Map<String,Integer> map) {
+		return sqlSession.selectList("adminSQL.adminBoardListNormal", map);
 	}
+
+	@Override
+	public int boardModify(AbDTO abDTO) {
+		return sqlSession.update("adminSQL.boardModify", abDTO);
+	}
+
+	@Override
+	public int boardPrevious(Map<String, Integer> map) {
+		return sqlSession.selectOne("adminSQL.boardPrevious", map);
+	}
+
+	@Override
+	public int boardNext(Map<String, Integer> map) {
+		return sqlSession.selectOne("adminSQL.boardNext", map);
+	}
+
+	@Override
+	public int boardDelete(int abNum) {
+		return sqlSession.delete("adminSQL.boardDelete", abNum);
+	}
+
+	@Override
+	public int getMin() {
+		return sqlSession.selectOne("adminSQL.getMin");
+	}
+	
+	//배너
+	@Override
+	public int adminBannerAdd_exe(AbanDTO abanDTO) {
+		return sqlSession.insert("adminSQL.adminBannerAdd_exe", abanDTO);
+	}
+
+	@Override
+	public List<AbanDTO> getBannerList() {
+		return sqlSession.selectList("adminSQL.adminBannerList");
+	}
+
+	@Override
+	public AbanDTO getBanner(int banIndex) {
+		return sqlSession.selectOne("adminSQL.getBanner", banIndex);
+	}
+
+	@Override
+	public int adminBannerMod_exe(AbanDTO abanDTO) {
+		return sqlSession.update("adminSQL.modBanner", abanDTO);
+	}
+
+	@Override
+	public int delBanner(int banIndex) {
+		return sqlSession.delete("adminSQL.delBanner", banIndex);
+	}
+	
+	//슬라이드
+	@Override
+	public int adminSlideAdd_exe(AslideDTO aslideDTO) {
+		return sqlSession.insert("adminSQL.addSlide", aslideDTO);
+	}
+
+	@Override
+	public List<AslideDTO> getSlideList() {		
+		return sqlSession.selectList("adminSQL.getSlideList");
+	}
+
+	@Override
+	public AslideDTO getSlide(int slideIndex) {		
+		return sqlSession.selectOne("adminSQL.getSlide", slideIndex);
+	}
+
+	@Override
+	public int adminSlideMod_exe(AslideDTO aslideDTO) {		
+		return sqlSession.update("adminSQL.modSlide", aslideDTO);
+	}
+
+	@Override
+	public int delSlide(int slideIndex) {		
+		return sqlSession.delete("adminSQL.delSlide", slideIndex);
+	}
+
+	
+
 
 }

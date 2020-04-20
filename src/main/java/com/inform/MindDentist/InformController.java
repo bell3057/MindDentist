@@ -3,6 +3,7 @@ package com.inform.MindDentist;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -36,9 +37,11 @@ public class InformController {
 	}
 	
 	@RequestMapping(value="/inform/principleSystem", method=RequestMethod.GET)
-	public ModelAndView principleSystem() {
+	public ModelAndView principleSystem(@RequestParam(required=false) String principle) {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("display", "/inform/principleSystem.jsp");
+		mav.addObject("principle", principle);
+		System.out.println(principle);
 		mav.setViewName("/main/index");
 		
 		return mav;		
