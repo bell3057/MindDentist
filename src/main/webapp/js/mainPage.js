@@ -78,8 +78,8 @@ $(document).ready(function(){
 		slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
 		autoplay: false, /* 자동으로 다음이미지 보여주기 */
 		arrows: true, /* 화살표 */
-		prevArrow : "<img src='../img/2-2/arrow left 01.png' class='arrow_css' style='left:2.4%;'>",		// 이전 화살표 모양 설정
-		nextArrow : "<img src='../img/2-2/arrow right 01.png' class='arrow_css' style='right:2.4%;'>",	// 다음 화살표 모양 설정
+		prevArrow : "<div class='arrow_div' style='left: 0;'><img src='../img/2-2/arrow left 01.png' class='arrow_css'><div>",		// 이전 화살표 모양 설정
+		nextArrow : "<div class='arrow_div' style='right: 0;'><img src='../img/2-2/arrow right 01.png' class='arrow_css'></div>",	// 다음 화살표 모양 설정
 		dots: true, /* 아래점 */
 		autoplaySpeed: 3000,/* 다음이미지로 넘어갈 시간 */
 		speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */

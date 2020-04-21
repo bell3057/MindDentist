@@ -10,7 +10,7 @@
 		<div id="facilities-text-1">마인드 치과 시설안내</div>
 		<div class="margin-bar margin-bar2"></div>
 		<div class="facilities-box">
-			<div id="facilities-slide-wrap">
+			<div id="facilities-slide-wrap" class="topBarPC">
 				<img class="facilities-img" src="../img/2-2/01.png">
 				<img class="facilities-img" src="../img/2-2/02.png">
 				<img class="facilities-img" src="../img/2-2/03.png">
@@ -24,6 +24,21 @@
 				<img class="facilities-img" src="../img/2-2/11.png">
 				<img class="facilities-img" src="../img/2-2/12.png">
 			</div>		
+			
+			<div id="facilities-slide-wrapM" class="topBarM">
+				<img class="facilities-img" src="../img_m/fa_mo/01.png">
+				<img class="facilities-img" src="../img_m/fa_mo/02.png">
+				<img class="facilities-img" src="../img_m/fa_mo/03.png">
+				<img class="facilities-img" src="../img_m/fa_mo/04.png">
+				<img class="facilities-img" src="../img_m/fa_mo/05.png">
+				<img class="facilities-img" src="../img_m/fa_mo/06.png">
+				<img class="facilities-img" src="../img_m/fa_mo/07.png">
+				<img class="facilities-img" src="../img_m/fa_mo/08.png">
+				<img class="facilities-img" src="../img_m/fa_mo/09.png">
+				<img class="facilities-img" src="../img_m/fa_mo/10.png">
+				<img class="facilities-img" src="../img_m/fa_mo/11.png">
+				<img class="facilities-img" src="../img_m/fa_mo/12.png">
+			</div>
 		</div>
 	</div>
 </div>

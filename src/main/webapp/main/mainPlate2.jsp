@@ -1,13 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<link rel="stylesheet" type="text/css" href="../css/mainPage.css"/>
 <style>
 .slick-dots{
-	top: 88.28%;
+	top: 85.28%;
     left: 50%;
 	height: 15px;	
-	position: absolute;	
-	transform: translate(-50%, -50%);
+	position: absolute;
+	transform: translate(-50%, -50%);	
 }
 .slick-dots li{
 	width: 15px;
@@ -28,13 +29,6 @@
     background: #B4AAA0;
 }
 @media all and (max-width: 2880px){
-	#slick-slide00{ background : url(../img/Main/banner/2880/Main_2880_05.png);	}
-	#slick-slide01{background : url(../img/Main/banner/2880/Main_2880_02.png);  }
-	#slick-slide02{background : url(../img/Main/banner/2880/Main_2880_04.png);	}
-	#slick-slide03{background : url(../img/Main/banner/2880/Main_2880_06.png);	}
-	#slick-slide04{background : url(../img/Main/banner/2880/Main_2880_08.png);	}
-	#slick-slide05{background : url(../img/Main/banner/2880/Main_2880_03.png);	}
-	#slick-slide06{background : url(../img/Main/banner/2880/Main_2880_07.png);	}
 	
 	#main-content-2{
 	width: 2880px; 
@@ -52,13 +46,6 @@
 	}
 }
 @media all and (max-width: 2560px){
-	#slick-slide00{background : url(../img/Main/banner/2560/Main_2560_05.png);	}
-	#slick-slide01{background : url(../img/Main/banner/2560/Main_2560_02.png);  }
-	#slick-slide02{background : url(../img/Main/banner/2560/Main_2560_04.png);	}
-	#slick-slide03{background : url(../img/Main/banner/2560/Main_2560_06.png);	}
-	#slick-slide04{background : url(../img/Main/banner/2560/Main_2560_08.png);	}
-	#slick-slide05{background : url(../img/Main/banner/2560/Main_2560_03.png);	}
-	#slick-slide06{background : url(../img/Main/banner/2560/Main_2560_07.png);	}
 	
 	#main-content-2{
 	width: 2560px; 
@@ -76,13 +63,6 @@
 	}
 }
 @media all and (max-width: 1920px){
-	#slick-slide00{background : url(../img/Main/banner/1920/Main_1920_05.png);	}
-	#slick-slide01{background : url(../img/Main/banner/1920/Main_1920_02.png);  }
-	#slick-slide02{background : url(../img/Main/banner/1920/Main_1920_04.png);	}
-	#slick-slide03{background : url(../img/Main/banner/1920/Main_1920_06.png);	}
-	#slick-slide04{background : url(../img/Main/banner/1920/Main_1920_08.png);	}
-	#slick-slide05{background : url(../img/Main/banner/1920/Main_1920_03.png);	}
-	#slick-slide06{background : url(../img/Main/banner/1920/Main_1920_07.png);	}
 	
 	#main-content-2{
 	width: 1920px; 
@@ -100,13 +80,6 @@
 	}
 }
 @media all and (max-width: 1600px){
-	#slick-slide00{background : url(../img/Main/banner/1920/Main_1920_05.png);background-position: center;	}
-	#slick-slide01{background : url(../img/Main/banner/1920/Main_1920_02.png);background-position: center;  }
-	#slick-slide02{background : url(../img/Main/banner/1920/Main_1920_04.png);background-position: center;	}
-	#slick-slide03{background : url(../img/Main/banner/1920/Main_1920_06.png);background-position: center;	}
-	#slick-slide04{background : url(../img/Main/banner/1920/Main_1920_08.png);background-position: center;	}
-	#slick-slide05{background : url(../img/Main/banner/1920/Main_1920_03.png);background-position: center;	}
-	#slick-slide06{background : url(../img/Main/banner/1920/Main_1920_07.png);background-position: center;	}
 	
 	#main-content-2{
 	width: 1600px; 
@@ -122,65 +95,23 @@
 	/* background-size: contain;  */
 	background-position: center;
 	}
-
-@media all and (max-width: 960px){
-#slick-slide10{background : url('../img_m/banner/960/Mobile Main 01 960x600.png');background-position: center;	background-size: cover;}
-	#slick-slide11{background : url('../img_m/banner/960/Mobile Main 04 960x600.png');background-position: center;  background-size: cover;}
-	#slick-slide12{background : url('../img_m/banner/960/Mobile Main 05 960x600.png');background-position: center;	background-size: cover;}
-	#slick-slide13{background : url('../img_m/banner/960/Mobile Main 07 960x600.png');background-position: center;	background-size: cover;}
-	#slick-slide14{background : url('../img_m/banner/960/Mobile Main 06 960x600.png');background-position: center;	background-size: cover;}
-	#slick-slide15{background : url('../img_m/banner/960/Mobile Main 03 960x600.png');background-position: center;	background-size: cover;}
-	#slick-slide16{background : url('../img_m/banner/960/Mobile Main 08 960x600.png');background-position: center;	background-size: cover;}
-	
-.slick-dots{ top: 88.28%; height: 8px;}
-.slick-dots li{	width: 8px;	height: 8px; margin-right: 8px;}
-.slick-dots li button{ width: 8px; height: 8px;}
 }
-@media all and (max-width: 720px){
-	#slick-slide10{background : url('../img_m/banner/Mobile Main 01@2x.png');background-position: center;	background-size: cover;}
-	/* #slick-slide11{background : url('../img_m/banner/Mobile Main 04@2x.png');background-position: center;  background-size: cover;} */
-	#slick-slide12{background : url('../img_m/banner/Mobile Main 05@2x.png');background-position: center;	background-size: cover;}
-	#slick-slide13{background : url('../img_m/banner/Mobile Main 07@2x.png');background-position: center;	background-size: cover;}
-	#slick-slide14{background : url('../img_m/banner/Mobile Main 06@2x.png');background-position: center;	background-size: cover;}
-	#slick-slide15{background : url('../img_m/banner/Mobile Main 03@2x.png');background-position: center;	background-size: cover;}
-	#slick-slide16{background : url('../img_m/banner/Mobile Main 08@2x.png');background-position: center;	background-size: cover;}
-}
-/* 
-@media all and (max-width: 400px){
-#slick-slide10{background : url('../img_m/banner/Mobile Main 01.png');background-position: center;	background-size: cover;}
-	#slick-slide11{background : url('../img_m/banner/Mobile Main 04.png');background-position: center;  background-size: cover;}
-	#slick-slide12{background : url('../img_m/banner/Mobile Main 05.png');background-position: center;	background-size: cover;}
-	#slick-slide13{background : url('../img_m/banner/Mobile Main 07.png');background-position: center;	background-size: cover;}
-	#slick-slide14{background : url('../img_m/banner/Mobile Main 06.png');background-position: center;	background-size: cover;}
-	#slick-slide15{background : url('../img_m/banner/Mobile Main 03.png');background-position: center;	background-size: cover;}
-	#slick-slide16{background : url('../img_m/banner/Mobile Main 08.png');background-position: center;	background-size: cover;}
-
-} */
 </style>
 <div id="main_plate_wrap">
 	<div id="main_plate"><!-- slider -->
 		<div id="slider_wrap">
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
-			<div class="slider-img"></div>
+			
 		</div>
-		<!-- <div id="slide-text">안심하세요,
-		마인드치과입니다.
-		</div> -->
-	</div><!-- slider -->	
+	</div><!-- slider -->
 	<div id="accumulate_count_div"><!-- 누적 시립건 -->
 		<div style="width: 960px; height: 80px; margin:auto; padding: 47px 0;">
 			<img src="../img/mainicon01.png" style="width: 80px; height: 80px; margin-right: 20px; float: left;">
 			<span class="accumulate_count-text">임플란트 누적 식립 건</span>
 			<div style="width: 310px; text-align: right; float: left;">
-				<div id="accumulate_count">1,286</div>
+				<div id="accumulate_count">0</div>
 				<span class="accumulate_count-text" style="float: right;">건</span>
 			</div>
-			<div class="accumulate_date">(2020년 4월 1일 기준)</div>
+			<div class="accumulate_date">(<span class="date_span"></span> 기준)</div>
 		</div>
 	</div>
 	<div style="width:100%; height: 830px;"><!-- main content-1 -->
@@ -246,7 +177,7 @@
 				</div>
 			</div>
 			<div id="main-content-staff">
-				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-02.png); background-size: contain;">
+				<div class="main-content-D-div" style="background: url(../img/Main/staff/D-02t.png); background-size: contain;">
 					<div class="main-content-D-inform">
 						<div class="main-content-text-04">김인석</div>
 						<div class="main-content-text-05">ㅣ 대표원장</div>
@@ -353,151 +284,125 @@
 		</div>
 	</div>
 </div>
-<!-- 모바일페이지 -->
-<div id="content_mobile">
-	<div id="main_plateM"><!-- slider -->
-		<div id="slider_wrapM">
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-			<div class="slider-imgM"></div>
-		</div>
-	</div><!-- slider -->
-	<div id="accumulate_count_divM"><!-- 누적 시립건 -->
-		<div class="plate_arrange ac_plate">
-			<img src="../img/mainicon01.png">
-			<span class="act1">임플란트 누적 식립 건</span>
-			<div>
-				<div id="accumulate_countM">1,286</div>
-				<span class="act2">건</span>
-			</div>
-		</div>
-		<!-- <div class="accumulate_date">(2020년 4월 1일 기준)</div> -->
-	</div>
-	<div id="main_content-1">
-		<div class="mc1d1">
-			<img src="../img/KCSI.png">
-			<img src="../img/Main/Main_Sub_logo.png">
-		</div>
-		<div class="mc1d2">
-			<img src="../img/Mainimg01.png">
-			<div class="mc1d3">
-				<span>분야별 진료센터 운영</span>
-				<div class="margin-bar"></div>
-				<span>임플란트, 심미교정, 일반진료 등
-				분과별 전문센터를 운영, 협진을
-				통해 보다 체계적인 환자 중심
-				맞춤 진료를 제공합니다.</span>
-			</div>
-		</div>
-	</div>
-	<div id="main_content-2">
-		<div id="mc2d1">전문의 및 석박사 출신 의료진</div>
-		<div class="margin-bar"></div>
-		<div id="mc2d2">
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>양재민</div>
-					<div>ㅣ 대표원장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>임플란트, 심미치료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>김인석</div>
-					<div>ㅣ 대표원장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>임플란트, 외과치료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>양형석</div>
-					<div>ㅣ 대표원장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>치아교정</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>문서하</div>
-					<div>ㅣ 보철과장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>보철, 통합진료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>이은영</div>
-					<div>ㅣ 보존과장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>통합, 보존치료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>나누리</div>
-					<div>ㅣ 보존과장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>보존, 근관치료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>한정환</div>
-					<div>ㅣ 구강외과장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>외과치료, 통합진료</div>
-				</div>
-			</div>
-			<div class="main-content-D-div">
-				<div class="main-content-D-inform">
-					<div>임충민</div>
-					<div>ㅣ 보철과장</div>
-					<div><img class="ms-arrows" src="../img/Main/ms-arrow.png"></div>
-					<div>보철, 통합진료</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<div id="main_content-3">
-		<div class="plate_arrange">
-			<div id="mc3d1">
-				<span class="mc3dt1">언제나 문을
-				열어두겠습니다.</span>
-				<div class="margin-bar"></div>
-				<div class="mc3dt2"><span>매일 야간진료, 일요일 진료
-					연중 무휴</span>
-					
-					<span><b>평 일</b> 10:00 ~ 21:00</span>
-					<span><b>주말 및 공휴일</b> 10:00 ~ 17:00</span>
-				</div>
-			</div>
-			<img src="../img/24hour.png">
-		</div>
-	</div>
-	<div id="main_content-4">
-		<div class="plate_arrange">
-			<div class="mc4d1">마인드 책임 진료 프로그램</div>
-			<div class="margin-bar"></div>
-			<img src="../img/Main/WR.png">
-			<div class="mc4d2">
-				<img src="../img/Main/Mark.png">
-				<div>마인드만의 책임진료
-				보증서를 발급해드립니다.</div>
-				<div>치료 중 뿐만 아니라
-				치료 후 사후관리까지
-				책임지고 보증해 드립니다.</div>
-			</div>
-		</div>
-	</div>
-</div>
-<script type="text/javascript" src="../js/mainPage.js"></script>
 <script>
-
+$(document).ready(function(){
+	var contextPath = "${pageContext.request.contextPath}"
+	
+	//식립건수
+	$.ajax({
+		type: 'post',
+		url : contextPath + '/admin/accumulateLoader',
+		datatype : 'text',
+		success : function(data){
+			$('#accumulate_count').text(numberWithCommas(data.implant_count));
+			$('.date_span').text(data.implant_date);
+			function numberWithCommas(data) {
+			    return data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			}	
+		}		
+	});
+	
+	//배너 슬라이더
+	$.ajax({
+		type : 'post',
+		url : contextPath + "/admin/adminBannerList",
+		dataType : 'json',
+		success : function(data){
+			
+			$.each(data.list, function(index, items){
+				$('#slider_wrap').prepend($('<div/>',{
+					class : 'slider-img'
+				}));
+				
+				
+			});
+			$("#slider_wrap").slick({
+				infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+				slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/
+				slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
+				autoplay: true, /* 자동으로 다음이미지 보여주기 */
+				arrows: true, /* 화살표 */
+				prevArrow : "<img src='../img/2-2/arrow left 01.png' class='arrow_css' style='left:3%;'>",		// 이전 화살표 모양 설정
+				nextArrow : "<img src='../img/2-2/arrow right 01.png' class='arrow_css' style='right:3%;'>",	// 다음 화살표 모양 설정
+				dots: true, /* 아래점 */
+				autoplaySpeed: 3000,/* 다음이미지로 넘어갈 시간 */
+				speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */
+				pauseOnHover: false, /* 마우스 호버시 슬라이드 이동 멈춤 */
+				//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
+			});
+			
+			$.each(data.list, function(index, items){
+				//윈도우 사이즈에 맞춰 이미지 불러오기
+				/* if ($(window).width() < 1601) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920)
+					  .css('background-position', 'center');
+				}else if (1600 < $(window).width() < 1921) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920)
+					  .css('background-position', 'center');
+				}else if (1920 < $(window).width() < 2561) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2560)
+					  .css('background-position', 'center');
+				}else if (2560 < $(window).width() < 2881) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2880)
+					  .css('background-position', 'center');
+				}
+				$(window).resize(function(){// 윈도우 리사이즈
+					if ($(window).width() < 1601) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920)
+						  .css('background-position', 'center');
+					}else if (1600 < $(window).width() < 1921) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920)
+						  .css('background-position', 'center');
+					}else if (1920 < $(window).width() < 2561) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2560)
+						  .css('background-position', 'center');
+					}else if (2560 < $(window).width() < 2881) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2880)
+						  .css('background-position', 'center');
+					}
+				}); */
+				if (matchMedia("screen and (max-width: 1600px)").matches) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920+')')
+					  .css('background-position', 'center');
+				}else if (matchMedia("screen and (max-width: 1920px)").matches) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920+')')
+					  .css('background-position', 'center');
+				}else if (matchMedia("screen and (max-width: 2560px)").matches) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2560+')')
+					  .css('background-position', 'center');
+				}else if (matchMedia("screen and (max-width: 2880px)").matches) {
+					  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2880+')')
+					  .css('background-position', 'center');
+				}
+				$(window).resize(function(){// 윈도우 리사이즈
+					if (matchMedia("screen and (max-width: 1920px)").matches) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920+')')
+						  .css('background-position', 'center');
+					}else if (matchMedia("screen and (max-width: 1920px)").matches) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban1920+')')
+						  .css('background-position', 'center');
+					}else if (matchMedia("screen and (max-width: 2560px)").matches) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2560+')')
+						  .css('background-position', 'center');
+					}else if (matchMedia("screen and (max-width: 2880px)").matches) {
+						  $('#slick-slide0'+index).css('background', 'url(../upload/banner/'+items.ban2880+')')
+						  .css('background-position', 'center');
+					}
+					
+				});
+				//각 배너 클래스 부여
+				$('#slick-slide0'+index).addClass('idx'+items.banIndex);
+				//각배너 링크
+				$('.idx'+items.banIndex).click(function(){
+					location.href = items.banURL;
+					
+				});
+			});//each
+		}
+	});
+	
+	$('.main-content-D-inform').click(function(){
+		location.href="../guidance/medicalStaff";
+	});
+});
 </script>
